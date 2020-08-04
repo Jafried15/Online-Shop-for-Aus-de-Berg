@@ -1,0 +1,627 @@
+@charset "utf-8";
+
+html,
+html * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+    hyphens: auto;
+}
+
+header {
+    width: 100%;
+    min-height: 50px;
+    padding: 0px 12px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.fa-bars {
+    display: none;
+}
+
+.site-nav_Logo {
+    float: right;
+    padding: 12px 16px 12px;
+    font-size: 11px;
+}
+
+.site-nav li {
+    display: inline;
+    list-style-type: none;
+}
+
+.site-nav {
+    display: flex;
+    width: 70%;
+    padding: 26px 0px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.site-nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0px 14px;
+}
+
+.intro {
+    max-width: 60%;
+    padding: 200px 0px 220px;
+    font-size: 16px;
+}
+
+.headline {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+/*Home*/
+.main {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 50px;
+}
+
+.main_Designmuster {
+    max-width: 30%;
+}
+
+.main_Designmuster_description {
+    max-width: 90%
+}
+
+.main_Gestaltungsservice {
+    max-width: 30%
+}
+
+.main_Gestaltungsservie_text {
+    max-width: 90%
+}
+
+.main_Berg-Shop {
+    max-width: 30%
+}
+
+.main_Berg-Shop_text {
+    max-width: 90%
+}
+
+.kontaktformular {
+    padding: 150px 0px;
+    background-color: #D7F0F1;
+}
+
+.text {
+    max-width: 60%;
+    font-size: 16px;
+}
+
+.me {
+    padding: 50px 0px 100px;
+    font-size: 16px;
+}
+
+.me_text {
+    max-width: 50%;
+}
+
+
+/*Button zum Kontaktformular*/
+.formular li {
+    display: inline;
+    list-style-type: none;
+}
+
+.formular a {
+    color: white;
+    background-color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 10px;
+}
+
+
+/*Footer*/
+.nav-ende {
+    padding: 20px 0px;
+    letter-spacing: 2px;
+    justify-content: space-around;
+}
+
+.nav-ende a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0px 10px;
+}
+
+.footer_content {
+    background-color: #D7F0F1;
+    padding-top: 50px;
+}
+
+.nav-ende li {
+    list-style-type: none;
+    display: inline;
+}
+
+
+/*Designmuster*/
+.Designmuster {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Designmusterlinks {
+    width: 45%;
+}
+
+.Designmusterrechts {
+    width: 45%;
+}
+
+/*Kontakt*/
+input {
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    width: 49%;
+}
+
+select {
+    padding: 11.5px 5px;
+    width: 49%;
+}
+
+textarea {
+    padding: 10px 5px;
+}
+
+.Kontaktformulargross {
+    max-width: 60%;
+    padding: 100px 0px 220px;
+    font-size: 16px;
+}
+
+button {
+    color: white;
+    background-color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 10px;
+}
+
+.Nachricht {
+    color: white;
+    background-color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 10px;
+}
+
+
+/*Blog/Portfolio*/
+
+.Portfolio1 {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.Portfolio2 {
+    display: flex;
+    margin-bottom: 100px;
+    background-color: #D7F0F1;
+}
+
+.portfolio {
+    max-width: 100%;
+}
+
+.Portfolio_Text {
+    width: 100%;
+    margin: 10px -30px;
+    padding-top: 5%;
+}
+
+.Portfolio_Bild {
+    max-width: 50%;
+}
+
+.Portfolio_Text_right {
+    width: 100%;
+    padding-top: 10%;
+    padding-right: 50px;
+}
+
+
+/*Impressum*/
+.Impressum {
+    width: 60%;
+    padding: 150px 0px;
+    text-align: justify;
+}
+
+.Aufzaehlung {
+    list-style-type: circle;
+    padding-left: 15px;
+    text-indent: 15px;
+}
+
+/*BaWare*/
+
+.Bilder {
+    max-width: 60%;
+}
+
+/* Berg-Shop */
+.row {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1.5rem !important;
+}
+
+.column {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.categories .column {
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+
+.flex-columns {
+    display: flex;
+    flex-flow: column;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+
+.img-bg {
+    background-size: cover;
+}
+
+.img-text {
+    position: absolute;
+    opacity: 0.01;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 200ms ease-out;
+}
+
+.img-text:hover {
+    opacity: 1;
+}
+
+.img-text:hover .img-bg {
+    transform: scale(1.05);
+    opacity: .5;
+}
+
+.box {
+    padding-bottom: 1px;
+    display: flex;
+    align-self: stretch;
+    flex: 1 100%;
+    background: #c1c1c1;
+    text-align: center;
+    flex-flow: column;
+    align-items: stretch;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.categories {
+    max-width: 100%;
+}
+
+
+/*Media Queries*/
+
+/*Tablets*/
+@media screen and (max-width: 1024px) {
+    .site-nav_Logo {
+        display: inline;
+        position: fixed;
+        width: 50%;
+    }
+
+    .site-nav {
+        margin: 0px;
+        text-align: right;
+        display: block;
+        width: 100%;
+    }
+
+    .fa-bars {
+        font-size: 15px;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        text-align: right;
+        padding: 0px 30px 0px 0px;
+    }
+
+    .site-nav ul {
+        height: 25px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul.open {
+        height: auto;
+    }
+
+    .site-nav li {
+        width: 100%;
+        padding: 0px 30px 0 0;
+        margin: 0;
+        font-size: 15px;
+        float: none;
+        display: block;
+    }
+
+    .intro {
+        max-width: 80%;
+        padding: 100px 0px 100px;
+        font-size: 10pt;
+    }
+
+    .main {
+        font-size: 10pt;
+        display: block;
+        justify-content: space-between;
+        padding: 0px 10px 50px;
+    }
+
+    .main_Designmuster {
+        max-width: 60%;
+        padding-bottom: 100px;
+    }
+
+    .main_Designmuster_description {
+        max-width: 100%;
+    }
+
+    .main_Gestaltungsservice {
+        max-width: 60%;
+        padding-bottom: 100px;
+    }
+
+    .main_Gestaltungsservie_text {
+        max-width: 100%
+    }
+
+    .main_Berg-Shop {
+        max-width: 60%
+    }
+
+    .main_Berg-Shop_text {
+        max-width: 100%;
+    }
+
+    .text {
+        font-size: 10pt;
+    }
+
+    .kontaktformular {
+        padding: 100px 0px;
+    }
+
+    .me {
+        padding: 50px 0px 50px;
+        font-size: 10pt;
+    }
+
+    .me_text {
+        max-width: 60%;
+    }
+
+    .Designmuster {
+        display: block;
+
+    }
+
+    .Designmusterlinks {
+        width: 60%;
+        margin-bottom: 100px;
+    }
+
+    .Designmusterrechts {
+        width: 60%;
+    }
+
+    .Portfolio1 {
+        display: block;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+
+    .Portfolio2 {
+        display: block;
+        margin-bottom: 50px;
+        padding: 0px 0px 100px;
+    }
+
+    .portfolio {
+        max-width: 100%;
+    }
+
+    .Portfolio_Text {
+        width: 100%;
+        padding: 0px 0px 50px 0px;
+    }
+
+    .Portfolio_Bild {
+        max-width: 70%;
+    }
+
+    .Portfolio_Text_right {
+        width: 100%;
+        padding: 100px 0px 50px 0px;
+    }
+
+    .text {
+        font-size: 10pt;
+    }
+
+
+    .Bilder {
+        max-width: 80%;
+    }
+
+    input {
+        margin-bottom: 10px;
+        padding: 10px 10px;
+        width: 100%;
+    }
+
+    select {
+        padding: 11.5px 10px;
+        width: 100%;
+    }
+
+    textarea {
+        padding: 10px;
+        width: 100%
+    }
+
+    .fliesstext {
+        font-size: 10pt;
+    }
+
+
+    .Aufzaehlung {
+        font-size: 10pt;
+    }
+
+    .Impressum {
+        width: 80%;
+        padding: 150px 0px;
+        text-align: justify;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .site-nav_Logo p {
+        visibility: hidden;
+    }
+
+    .main_Designmuster {
+        max-width: 80%;
+        padding-bottom: 100px;
+    }
+
+    .main_Designmuster_description {
+        max-width: 100%;
+    }
+
+    .main_Gestaltungsservice {
+        max-width: 80%;
+        padding-bottom: 100px;
+    }
+
+    .main_Gestaltungsservie_text {
+        max-width: 100%
+    }
+
+    .main_Berg-Shop {
+        max-width: 80%
+    }
+
+    .main_Berg-Shop_text {
+        max-width: 100%;
+    }
+
+    .text {
+        font-size: 10pt;
+    }
+
+    .kontaktformular {
+        padding: 100px 0px;
+    }
+
+    .me {
+        padding: 50px 0px;
+        font-size: 10pt;
+    }
+
+    .me_text {
+        max-width: 80%;
+    }
+
+    .me img {
+        height: auto;
+        width: 100%;
+    }
+
+    .Designmusterlinks {
+        width: 80%;
+        margin-bottom: 100px;
+    }
+
+    .Designmusterrechts {
+        width: 80%;
+    }
+
+    .Portfolio_Bild {
+        max-width: 100%;
+    }
+
+    .Portfolio1 {
+        display: block;
+        padding: 0px 0px;
+        margin-bottom: 50px;
+    }
+
+    .Portfolio2 {
+        display: block;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+
+    .Portfolio_Text {
+        padding-top: 5%;
+    }
+
+    .Portfolio_Text_right {
+        width: 100%;
+        padding: 50px 0px 50px 0px;
+    }
+
+    .text {
+        max-width: 80%;
+    }
+
+    .Bilder {
+        max-width: 100%;
+    }
+
+}
