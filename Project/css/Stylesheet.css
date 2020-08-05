@@ -1,3 +1,13 @@
+/*
+ * <!--
+ *   ~ /**
+ *   ~ * Copyright (c) 2020, 2020 Veronika Fischer
+ *   ~ * All Rights Reserved
+ *   ~ *
+ *   -->
+ *
+ */
+
 @charset "utf-8";
 
 html,
@@ -61,7 +71,10 @@ header {
     font-size: 16px;
 }
 
-.headline {
+.headline,
+.categories h2,
+.serien h2,
+.products h2 {
     font-size: 18px;
     text-transform: uppercase;
 }
@@ -266,6 +279,12 @@ button {
 }
 
 /* Berg-Shop */
+.categories,
+.serien,
+.products {
+    padding-bottom: 10%;
+}
+
 .row {
     display: flex;
     margin: 0;
@@ -278,13 +297,24 @@ button {
 .column {
     position: relative;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
-.categories .column {
-    flex: 0 0 45%;
-    max-width: 45%;
+.column-2 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.column-3 {
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.categories .column-1 {
+    height: 200px;
 }
 
 .flex-columns {
@@ -292,15 +322,17 @@ button {
     flex-flow: column;
     -ms-flex-direction: column !important;
     flex-direction: column !important;
+    opacity: 0.8;
 }
 
 .img-bg {
     background-size: cover;
+    opacity: .7;
 }
 
 .img-text {
+    font-size: 20px;
     position: absolute;
-    opacity: 0.01;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -310,17 +342,20 @@ button {
     right: 0;
     left: 0;
     color: #fff;
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    border-style: solid;
+    border-width: 5px;
+    border-color: #fff;
+    margin: 41% 15%;
     cursor: pointer;
-    transition: opacity 200ms ease-out;
+    -webkit-transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1) 0s;
+    transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1) 0s;
 }
 
-.img-text:hover {
+.categories a:hover .img-bg,
+.serien a:hover .img-bg,
+.products a:hover .img-bg {
     opacity: 1;
-}
-
-.img-text:hover .img-bg {
-    transform: scale(1.05);
-    opacity: .5;
 }
 
 .box {
@@ -336,10 +371,75 @@ button {
     height: 100%;
 }
 
-.categories {
-    max-width: 100%;
+.box .img {
+    background-position: 50% 50%;
+    background-size: cover;
+    display: block;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
 }
 
+.box-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.box-text {
+    margin: 0 30px 30px;
+}
+
+hr {
+    background-color: #000;
+    color: #000;
+    border: #000;
+    height: 1px;
+}
+
+.serien a,
+.products a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Button */
+.button-field {
+    flex-grow: 999;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.button {
+    min-width: auto;
+    padding: 13px;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #000;
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    line-height: 1em;
+    font-weight: normal;
+}
+
+.button:hover {
+    background: #767676;
+    color: #ffffff;
+    text-decoration: none
+}
+
+.button a {
+    white-space: normal;
+}
 
 /*Media Queries*/
 

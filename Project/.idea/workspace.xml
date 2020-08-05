@@ -1,20 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="" />
+    <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scribt/Bestellablauf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scribt/Papeterie.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scribt/Serie.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scribt/Shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/Vroni_Fischer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copyright/Vroni_Fischer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Bergshop.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Bergshop.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1fdxrRoyAKSNSoYdYeqYkCBbRkO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="copyright.profiles" />
@@ -31,6 +54,7 @@
       <updated>1596561968407</updated>
       <workItem from="1596561971160" duration="1452000" />
       <workItem from="1596563870341" duration="3517000" />
+      <workItem from="1596567735354" duration="14085000" />
     </task>
     <servers />
   </component>
@@ -38,9 +62,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="461" y="163" key="SettingsEditor" timestamp="1596564148023">
+    <state x="461" y="163" key="SettingsEditor" timestamp="1596646529159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596564148023" />
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596646529159" />
+    <state x="762" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596572975002">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="762" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596572975002" />
+    <state x="568" y="215" width="784" height="610" key="find.popup" timestamp="1596571885171">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="568" y="215" width="784" height="610" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596571885171" />
   </component>
 </project>
