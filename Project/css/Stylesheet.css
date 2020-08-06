@@ -46,6 +46,16 @@ header {
     font-size: 11px;
 }
 
+.basket {
+    text-align: right;
+    width: 10%;
+    padding: 12px 16px 12px;
+}
+
+.site-nav ul {
+    width: 100%;
+}
+
 .site-nav li {
     display: inline;
     list-style-type: none;
@@ -426,7 +436,8 @@ hr {
 }
 
 .serie .button,
-.product .button {
+.product .button,
+.basket .button {
     font-weight: bold;
     background: none;
     color: #000;

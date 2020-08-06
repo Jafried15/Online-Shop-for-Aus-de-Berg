@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scribt/In-da-Not.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scribt/Leck-o-Mio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scribt/SchaustDuGuadAus.html" afterDir="false" />
+    <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="change:&#10;- Add product pages&#10;- Add modal dialog">
+      <change afterPath="$PROJECT_DIR$/scribt/Basket.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/Stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/berg-shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/berg-shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scribt/Berg-Produkte.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Berg-Produkte.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Bergshop.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Bergshop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Bestellablauf.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Bestellablauf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Datenschutz.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Datenschutz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/ExLibris.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/ExLibris.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Impressum.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Impressum.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/In-da-Not.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/In-da-Not.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Leck-o-Mio.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Leck-o-Mio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Papeterie.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Papeterie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/SchaustDuGuadAus.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/SchaustDuGuadAus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scribt/Serie-Buche.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Buche.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scribt/Serie-Kornblumen.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Kornblumen.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scribt/Serie-Rosen.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Rosen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/baware.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/baware.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/designvorschlaege.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/designvorschlaege.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +81,7 @@
       <workItem from="1596561971160" duration="1452000" />
       <workItem from="1596563870341" duration="3517000" />
       <workItem from="1596567735354" duration="14175000" />
-      <workItem from="1596688195091" duration="21982000" />
+      <workItem from="1596688195091" duration="23443000" />
     </task>
     <task id="LOCAL-00001" summary="change: Edit Layout of the Sites like expected">
       <created>1596657359783</created>
@@ -95,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596716063755</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change:&#10;- Add product pages&#10;- Add modal dialog">
+      <created>1596740619918</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596740619918</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,7 +124,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="change: Edit Layout of the Sites like expected" />
-    <option name="LAST_COMMIT_MESSAGE" value="change: Edit Layout of the Sites like expected" />
+    <MESSAGE value="change:&#10;- Add product pages&#10;- Add modal dialog" />
+    <option name="LAST_COMMIT_MESSAGE" value="change:&#10;- Add product pages&#10;- Add modal dialog" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -118,10 +135,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596737068942" />
-    <state x="530" y="29" key="CommitChangelistDialog2" timestamp="1596740607759">
+    <state x="530" y="19" key="CommitChangelistDialog2" timestamp="1596741947110">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="530" y="29" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1596740607759" />
+    <state x="530" y="19" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1596741947110" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1596737827394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -134,10 +151,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="762" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596739305455" />
-    <state x="568" y="215" width="784" height="610" key="find.popup" timestamp="1596738637521">
+    <state x="568" y="215" width="784" height="610" key="find.popup" timestamp="1596741720274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="568" y="215" width="784" height="610" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596738637521" />
+    <state x="568" y="215" width="784" height="610" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596741720274" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1596707225759">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
