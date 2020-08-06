@@ -299,11 +299,12 @@ button {
     width: 100%;
     padding-right: 20px;
     padding-left: 20px;
+    padding-top: 2%;
 }
 
 .column-2 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+    flex: 0 0 40%;
+    max-width: 40%;
 }
 
 .column-3 {
@@ -371,6 +372,12 @@ button {
     height: 100%;
 }
 
+.ablauf .box {
+    background: none;
+    text-align: left;
+    box-shadow: none;
+}
+
 .box .img {
     background-position: 50% 50%;
     background-size: cover;
@@ -407,6 +414,10 @@ hr {
     color: #000;
 }
 
+.ablauf strong {
+    text-transform: uppercase;
+}
+
 /* Button */
 .button-field {
     flex-grow: 999;
@@ -439,6 +450,45 @@ hr {
 
 .button a {
     white-space: normal;
+}
+
+/* Icons */
+.icon {
+    display: inline-block;
+    line-height: 1.8;
+    height: 40px;
+}
+
+.best-1 {
+    content: url(../img/best-1.png);
+}
+
+.best-2 {
+    content: url(../img/best-2.png);
+}
+
+.best-3 {
+    content: url(../img/best-3.png);
+}
+
+.best-4 {
+    content: url(../img/best-4.png);
+}
+
+.best-5 {
+    content: url(../img/best-5.png);
+}
+
+.best-6 {
+    content: url(../img/best-6.png);
+}
+
+.best-7 {
+    content: url(../img/best-7.png);
+}
+
+.best-8 {
+    content: url(../img/best-8.png);
 }
 
 /*Media Queries*/
