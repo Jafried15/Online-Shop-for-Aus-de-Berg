@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/best-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/best-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/best-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/best-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/best-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/best-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/best-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/best-8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scribt/Berg-Produkte.html" afterDir="false" />
+    <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="change: Edit Layout of the Sites like expected">
+      <change afterPath="$PROJECT_DIR$/js/berg-shop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scribt/Serie-Kornblumen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scribt/Serie-Rosen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/Stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Bergshop.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Bergshop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Bestellablauf.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Bestellablauf.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Shop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Berg-Produkte.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Berg-Produkte.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Papeterie.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Papeterie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Serie.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Buche.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -68,7 +64,7 @@
       <workItem from="1596561971160" duration="1452000" />
       <workItem from="1596563870341" duration="3517000" />
       <workItem from="1596567735354" duration="14175000" />
-      <workItem from="1596688195091" duration="5297000" />
+      <workItem from="1596688195091" duration="13454000" />
     </task>
     <task id="LOCAL-00001" summary="change: Edit Layout of the Sites like expected">
       <created>1596657359783</created>
@@ -77,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596657359783</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="change: Edit Layout of the Sites like expected">
+      <created>1596694047457</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596694047457</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,14 +99,14 @@
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="530" y="29" key="CommitChangelistDialog2" timestamp="1596657351997">
+    <state x="530" y="29" key="CommitChangelistDialog2" timestamp="1596714145631">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="530" y="29" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1596657351997" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1596693987193">
+    <state x="530" y="29" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1596714145631" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1596713743432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596693987193" />
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596713743432" />
     <state x="762" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596572975002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -112,5 +115,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="568" y="215" width="784" height="610" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596571885171" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1596707225759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596707225759" />
   </component>
 </project>

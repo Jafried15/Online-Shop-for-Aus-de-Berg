@@ -1,0 +1,334 @@
+<!--
+  ~
+  ~   ~ /**
+  ~   ~ * Copyright (c) 2020, 2020 Veronika Fischer
+  ~   ~ * All Rights Reserved
+  ~   ~ **/
+  ~
+  ~
+  -->
+
+<!doctype html>
+<html lang="de">
+<head>
+    <title>Serie | Rosen</title>
+
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <link href="../css/all.css" rel="stylesheet" type="text/css">
+    <link href="../css/Stylesheet.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="site-nav_Logo">
+            <img alt="" src="../img/Aus de Berg Logo_ohne Text.png" width="50px">
+            <p class="site-nav_Logo">Grafikdesign<br>Veronika Fischer</p>
+        </div>
+        <nav class="site-nav">
+            <i class="fas fa-bars"></i>
+            <ul>
+                <a href="../index.html">
+                    <li>Home</li>
+                </a>
+                <a href="designvorschlaege.html">
+                    <li>Designmuster</li>
+                </a>
+                <a href="Blog.html">
+                    <li>Portfolio</li>
+                </a>
+                <a href="Bergshop.html">
+                    <li>Berg-Shop</li>
+                </a>
+                <a href="Kontakt.php">
+                    <li>Kontakt</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <center>
+        <main>
+            <section class="intro" style="padding-bottom: 5%">
+                <p class="headline">Serie | Rosen</p>
+                <br>
+                <p>
+                    Hier findet ihr die Papeterie-Produkte zur Serie Rosen.
+                </p>
+                <br>
+                <br>
+                <p>
+                    Ihr habt eure Wunschkarte gefunden?<br>
+                    Dann findet ihr hier den genauen Bestellablauf.
+                </p>
+                <div class="button-field">
+                    <a class="button" href="Bestellablauf.html">Bestellablauf</a>
+                </div>
+            </section>
+
+            <section class="serie">
+
+                <datalist id="anzahl">
+                    <option value="25"></option>
+                    <option value="50"></option>
+                    <option value="75"></option>
+                    <option value="100"></option>
+                </datalist>
+
+                <div class="row" id="Einladungskarte">
+                    <div class="column column-3 flex-columns image-container">
+                        <img alt="Image Container" id="expandedImg-Einladung" src="../img/Muttertagskarte.JPEG" />
+                        <ul>
+                            <li><img alt="1" data-target="expandedImg-Einladung" onclick="switchImage(this);" src="../img/Muttertagskarte.JPEG" /></li>
+                            <li><img alt="2" data-target="expandedImg-Einladung" onclick="switchImage(this);" src="../img/Menu%20Card.jpg" /></li>
+                        </ul>
+                    </div>
+                    <div class="column column-2 flex-columns">
+                        <div class="box">
+                            <div class="box-title">
+                                <h2>Hochzeitseinladung | Serie Rosen</h2>
+                            </div>
+                            <div class="box-text">
+                                <ul>
+                                    <li>Geschlossenes Format: DIN A6 (10,5 cm x 14,8 cm)</li>
+                                    <li>Offenes Format: 31,5 cm x 14,8 cm</li>
+                                    <li>Druck: Digitaldruck, Beidseitig bedruckt</li>
+                                    <li>Papier: Bilderdruckpapier matt (300g)</li>
+                                    <li>Briefumschläge können seperat dazu bestellt werden<br>(Tipp:
+                                        <a href="Serie-Rosen.html#Briefumschlag">Umschläge</a>
+                                        mit passendem Innenfutter findet ihr weiter unten)
+                                    </li>
+                                    <li>Mindestbestellmenge: 25 Stück</li>
+                                    <li>Preis: <strong>2,50€/Stück</strong></li>
+                                </ul>
+                                <p style="padding-bottom: 5%">
+                                    Briefumschläge sind im Preis nicht enthalten.
+                                </p>
+                                <label>
+                                    <input list="anzahl" name="anzahl" placeholder="Stückzahl" type="text">
+                                </label>
+                                <i class="fa fa-shopping-cart button"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="Safe-the-Date">
+                    <div class="column column-3 flex-columns image-container">
+                        <img alt="Image Container" id="expandedImg-StD" src="../img/Muttertagskarte.JPEG" />
+                        <ul>
+                            <li><img alt="1" data-target="expandedImg-StD" onclick="switchImage(this);" src="../img/Muttertagskarte.JPEG" /></li>
+                            <li><img alt="2" data-target="expandedImg-StD" onclick="switchImage(this);" src="../img/Menu%20Card.jpg" /></li>
+                        </ul>
+                    </div>
+                    <div class="column column-2 flex-columns">
+                        <div class="box">
+                            <div class="box-title">
+                                <h2>Safe the Date | Serie Rosen</h2>
+                            </div>
+                            <div class="box-text">
+                                <ul>
+                                    <li>Format: DIN A6 (10,5 cm x 14,8 cm)</li>
+                                    <li>Druck: Digitaldruck, Beidseitig bedruckt</li>
+                                    <li>Papier: Bilderdruckpapier matt (300g)</li>
+                                    <li>Briefumschläge können seperat dazu bestellt werden<br>(Tipp:
+                                        <a href="Serie-Rosen.html#Briefumschlag">Umschläge</a>
+                                        mit passendem Innenfutter findet ihr weiter unten)
+                                    </li>
+                                    <li>Mindestbestellmenge: 25 Stück</li>
+                                    <li>Preis: <strong>1,50€/Stück</strong></li>
+                                </ul>
+                                <p style="padding-bottom: 5%">
+                                    Briefumschläge sind im Preis nicht enthalten.
+                                </p>
+                                <label>
+                                    <input list="anzahl" name="anzahl" placeholder="Stückzahl" type="text">
+                                </label>
+                                <i class="fa fa-shopping-cart button"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="Kirchenheft">
+                    <div class="column column-3 flex-columns image-container">
+                        <img alt="Image Container" id="expandedImg-Kirchenheft" src="../img/Muttertagskarte.JPEG" />
+                        <ul>
+                            <li><img alt="1" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);" src="../img/Muttertagskarte.JPEG" /></li>
+                            <li><img alt="2" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);" src="../img/Menu%20Card.jpg" /></li>
+                        </ul>
+                    </div>
+                    <div class="column column-2 flex-columns">
+                        <div class="box">
+                            <div class="box-title">
+                                <h2>Kirchenheft | Serie Rosen</h2>
+                            </div>
+                            <div class="box-text">
+                                <ul>
+                                    <li>Geschlossenes Format: DIN A5 (14,8 cm x 21,0 cm)</li>
+                                    <li>Offenes Format: 29,7 cm x 21,0 cm</li>
+                                    <li>Druck: Digitaldruck, Beidseitig bedruckt</li>
+                                    <li>Papier: Bilderdruckpapier matt (300g)</li>
+                                    <li>Mindestbestellmenge: 25 Stück</li>
+                                    <li>Preis: <strong>2,50€/Stück</strong></li>
+                                </ul>
+                                <p style="padding-bottom: 5%">
+                                    Kordel ist im Preis nicht enthalten.
+                                </p>
+                                <label>
+                                    <input list="anzahl" name="anzahl" placeholder="Stückzahl" type="text">
+                                </label>
+                                <i class="fa fa-shopping-cart button"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="Rücksendekarte">
+                    <div class="column column-3 flex-columns image-container">
+                        <img alt="Image Container" id="expandedImg-Rück" src="../img/Muttertagskarte.JPEG" />
+                        <ul>
+                            <li><img alt="1" data-target="expandedImg-Rück" onclick="switchImage(this);" src="../img/Muttertagskarte.JPEG" /></li>
+                            <li><img alt="2" data-target="expandedImg-Rück" onclick="switchImage(this);" src="../img/Menu%20Card.jpg" /></li>
+                        </ul>
+                    </div>
+                    <div class="column column-2 flex-columns">
+                        <div class="box">
+                            <div class="box-title">
+                                <h2>Rücksendekarte | Serie Rosen</h2>
+                            </div>
+                            <div class="box-text">
+                                <ul>
+                                    <li>(folgt)</li>
+                                </ul>
+                                <p style="padding-bottom: 5%">
+                                    (folgt)
+                                </p>
+                                <label>
+                                    <input list="anzahl" name="anzahl" placeholder="Stückzahl" type="text">
+                                </label>
+                                <i class="fa fa-shopping-cart button"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="Menükarte">
+                    <div class="column column-3 flex-columns image-container">
+                        <img alt="Image Container" id="expandedImg-Menü" src="../img/Muttertagskarte.JPEG" />
+                        <ul>
+                            <li><img alt="1" data-target="expandedImg-Menü" onclick="switchImage(this);" src="../img/Muttertagskarte.JPEG" /></li>
+                            <li><img alt="2" data-target="expandedImg-Menü" onclick="switchImage(this);" src="../img/Menu%20Card.jpg" /></li>
+                        </ul>
+                    </div>
+                    <div class="column column-2 flex-columns">
+                        <div class="box">
+                            <div class="box-title">
+                                <h2>Menükarte | Serie Rosen</h2>
+                            </div>
+                            <div class="box-text">
+                                <ul>
+                                    <li>(folgt)</li>
+                                </ul>
+                                <p style="padding-bottom: 5%">
+                                    (folgt)
+                                </p>
+                                <label>
+                                    <input list="anzahl" name="anzahl" placeholder="Stückzahl" type="text">
+                                </label>
+                                <i class="fa fa-shopping-cart button"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="Dankeskarte">
+                    <div class="column column-3 flex-columns image-container">
+                        <img alt="Image Container" id="expandedImg-Danke" src="../img/Muttertagskarte.JPEG" />
+                        <ul>
+                            <li><img alt="1" data-target="expandedImg-Danke" onclick="switchImage(this);" src="../img/Muttertagskarte.JPEG" /></li>
+                            <li><img alt="2" data-target="expandedImg-Danke" onclick="switchImage(this);" src="../img/Menu%20Card.jpg" /></li>
+                        </ul>
+                    </div>
+                    <div class="column column-2 flex-columns">
+                        <div class="box">
+                            <div class="box-title">
+                                <h2>Dankeskarte | Serie Rosen</h2>
+                            </div>
+                            <div class="box-text">
+                                <ul>
+                                    <li>(folgt)</li>
+                                </ul>
+                                <p style="padding-bottom: 5%">
+                                    (folgt)
+                                </p>
+                                <label>
+                                    <input list="anzahl" name="anzahl" placeholder="Stückzahl" type="text">
+                                </label>
+                                <i class="fa fa-shopping-cart button"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="Briefumschlag">
+                    <div class="column column-3 flex-columns image-container">
+                        <img alt="Image Container" id="expandedImg-Umschlag" src="../img/Muttertagskarte.JPEG" />
+                        <ul>
+                            <li><img alt="1" data-target="expandedImg-Umschlag" onclick="switchImage(this);" src="../img/Muttertagskarte.JPEG" /></li>
+                            <li><img alt="2" data-target="expandedImg-Umschlag" onclick="switchImage(this);" src="../img/Menu%20Card.jpg" /></li>
+                        </ul>
+                    </div>
+                    <div class="column column-2 flex-columns">
+                        <div class="box">
+                            <div class="box-title">
+                                <h2>Briefumschläge | Serie Rosen</h2>
+                            </div>
+                            <div class="box-text">
+                                <ul>
+                                    <li>Geschlossenes Format: DIN C6 (14,8 cm x 21,0 cm)</li>
+                                    <li>Offenes Format: 29,7 cm x 21,0 cm</li>
+                                    <li>Druck: Digitaldruck, Einseitg - nur Innenfutter</li>
+                                    <li>Papier: Bilderdruckpapier att (100g)</li>
+                                    <li>Mindestbestellmenge: 25 Stück</li>
+                                    <li>Preis: <strong>1,50€/Stück</strong></li>
+                                </ul>
+                                <label>
+                                    <input list="anzahl" name="anzahl" placeholder="Stückzahl" type="text">
+                                </label>
+                                <i class="fa fa-shopping-cart button"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer>
+            <div class="footer_content">
+                <img alt="" height="150" src="../img/Aus de Berg Logo_Online.png" width="150">
+                <nav class="nav-ende">
+                    <ul>
+                        <li>
+                            <a href="Impressum.html">Impressum</a>
+                        </li>
+                        <li>
+                            <a href="Datenschutz.html">Datenschutz</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </center>
+
+    <script crossorigin="anonymous" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/berg-shop.js"></script>
+
+</body>
+</html>

@@ -281,7 +281,8 @@ button {
 /* Berg-Shop */
 .categories,
 .serien,
-.products {
+.products,
+.serie {
     padding-bottom: 10%;
 }
 
@@ -353,11 +354,6 @@ button {
     transition: all 0.3s cubic-bezier(0.3, 0.1, 0.58, 1) 0s;
 }
 
-.categories a:hover .img-bg,
-.serien a:hover .img-bg,
-.products a:hover .img-bg {
-    opacity: 1;
-}
 
 .box {
     padding-bottom: 1px;
@@ -370,12 +366,6 @@ button {
     align-items: stretch;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     height: 100%;
-}
-
-.ablauf .box {
-    background: none;
-    text-align: left;
-    box-shadow: none;
 }
 
 .box .img {
@@ -408,15 +398,6 @@ hr {
     height: 1px;
 }
 
-.serien a,
-.products a {
-    text-decoration: none;
-    color: #000;
-}
-
-.ablauf strong {
-    text-transform: uppercase;
-}
 
 /* Button */
 .button-field {
@@ -440,6 +421,13 @@ hr {
     box-shadow: none;
     line-height: 1em;
     font-weight: normal;
+}
+
+.serie .button {
+    font-weight: bold;
+    background: none;
+    color: #000;
+    border: 1px solid #000;
 }
 
 .button:hover {
@@ -489,6 +477,58 @@ hr {
 
 .best-8 {
     content: url(../img/best-8.png);
+}
+
+.categories a:hover .img-bg,
+.serien a:hover .img-bg,
+.products a:hover .img-bg {
+    opacity: 1;
+}
+
+.ablauf .box,
+.serie .box {
+    background: none;
+    text-align: left;
+    box-shadow: none;
+}
+
+.serie .flex-columns {
+    align-self: center;
+}
+
+.serie ul {
+    padding-bottom: 5%;
+}
+
+.image-container ul {
+    margin: 0;
+    padding: 0;
+}
+
+.image-container li {
+    float: left;
+    margin: 4px 4px 0 0;
+    display: inline;
+    position: relative;
+    padding: 0;
+}
+
+.image-container li img {
+    height: 50px;
+}
+
+.serie input[type=text] {
+    text-transform: uppercase;
+}
+
+.serien a,
+.products a {
+    text-decoration: none;
+    color: #000;
+}
+
+.ablauf strong {
+    text-transform: uppercase;
 }
 
 /*Media Queries*/
