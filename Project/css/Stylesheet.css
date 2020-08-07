@@ -46,7 +46,7 @@ header {
     font-size: 11px;
 }
 
-.basket {
+.basket-icon {
     text-align: right;
     width: 10%;
     padding: 12px 16px 12px;
@@ -290,44 +290,71 @@ button {
 }
 
 /* Berg-Shop */
-.categories,
-.serien,
-.products,
-.serie,
-.product {
+section {
     padding-bottom: 10%;
+    width: 80vw;
+}
+
+.shopping-cart {
+    font-size: 10vh;
+    padding: 5vh;
 }
 
 .row {
     display: flex;
-    margin: 0;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 1.5rem !important;
+    margin: 0 0 1.5rem;
+    width: 100%;
 }
 
 .column {
     position: relative;
     width: 100%;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 2%;
+    padding-left: 2%;
     padding-top: 2%;
 }
 
-.column-2 {
+.column-100 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.column-75 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.column-50 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.column-40 {
     flex: 0 0 40%;
     max-width: 40%;
 }
 
-.column-3 {
-    flex: 0 0 30%;
-    max-width: 30%;
-    padding-right: 35px;
-    padding-left: 35px;
+.column-33 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding-right: 3%;
+    padding-left: 3%;
 }
 
-.categories .column-1 {
+.column-25 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.column-20 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.categories .column-100 {
     height: 200px;
 }
 
@@ -435,15 +462,6 @@ hr {
     font-weight: normal;
 }
 
-.serie .button,
-.product .button,
-.basket .button {
-    font-weight: bold;
-    background: none;
-    color: #000;
-    border: 1px solid #000;
-}
-
 .button:hover {
     background: #767676;
     color: #ffffff;
@@ -461,36 +479,48 @@ hr {
     height: 40px;
 }
 
-.best-1 {
-    content: url(../img/best-1.png);
+.step-1 {
+    content: url(../img/step-1.png);
 }
 
-.best-2 {
-    content: url(../img/best-2.png);
+.step-1-white {
+    content: url(../img/step-1-white.png);
 }
 
-.best-3 {
-    content: url(../img/best-3.png);
+.step-2 {
+    content: url(../img/step-2.png);
 }
 
-.best-4 {
-    content: url(../img/best-4.png);
+.step-2-white {
+    content: url(../img/step-2-white.png);
 }
 
-.best-5 {
-    content: url(../img/best-5.png);
+.step-3 {
+    content: url(../img/step-3.png);
 }
 
-.best-6 {
-    content: url(../img/best-6.png);
+.step-3-white {
+    content: url(../img/step-3-white.png);
 }
 
-.best-7 {
-    content: url(../img/best-7.png);
+.step-4 {
+    content: url(../img/step-4.png);
 }
 
-.best-8 {
-    content: url(../img/best-8.png);
+.step-5 {
+    content: url(../img/step-5.png);
+}
+
+.step-6 {
+    content: url(../img/step-6.png);
+}
+
+.step-7 {
+    content: url(../img/step-7.png);
+}
+
+.step-8 {
+    content: url(../img/step-8.png);
 }
 
 .categories a:hover .img-bg,
@@ -499,12 +529,34 @@ hr {
     opacity: 1;
 }
 
+.basket .column-33 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .ablauf .box,
 .serie .box,
-.product .box {
+.product .box,
+.basket .box {
     background: none;
     text-align: left;
     box-shadow: none;
+}
+
+.basket .box {
+    border-style: solid;
+    border-color: #000;
+}
+
+
+.basket .box-title {
+    line-height: 40px;
+    padding: 5px;
+}
+
+.basket .box.active {
+    background-color: #000;
+    color: #fff;
 }
 
 .serie .flex-columns,
@@ -535,9 +587,66 @@ hr {
     height: 50px;
 }
 
-.serie input[type=text],
-.product input[type=text] {
+.serie .button,
+.product .button,
+.basket-icon .button {
+    font-weight: bold;
+    background: none;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+/*Inputs */
+.step-two form {
+    text-align: left;
+}
+
+.step-two form h2 {
+    padding-bottom: 5vh;
+    text-align: center;
+}
+
+.step-two .row {
+    justify-content: left;
+    margin-bottom: 0;
+}
+
+.step-two .column {
+    padding-top: 0;
+}
+
+.step-two .column-50 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.step-two label {
     text-transform: uppercase;
+}
+
+.serie input[type=text],
+.product input[type=text],
+.step-two input[type=text], .step-two input[type=email], .step-two input[type=tel], .step-two input[type=submit], .step-two select, .step-two input[type=checkbox] {
+    text-transform: uppercase;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.step-two input[type=checkbox] {
+    width: 10%;
 }
 
 .serien a,
