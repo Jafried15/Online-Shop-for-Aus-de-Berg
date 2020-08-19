@@ -596,11 +596,12 @@ hr {
     border: 1px solid #000;
 }
 
+.basket,
 .step {
     display: none;
 }
 
-.step.active {
+.active {
     display: block;
 }
 

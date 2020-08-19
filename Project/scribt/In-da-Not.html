@@ -65,14 +65,6 @@
             </section>
 
             <section class="product">
-
-                <datalist id="anzahl">
-                    <option value="25"></option>
-                    <option value="50"></option>
-                    <option value="75"></option>
-                    <option value="100"></option>
-                </datalist>
-
                 <div class="row" id="InDaNot">
                     <div class="column column-33 flex-columns image-container">
                         <div class="dialog-item">
@@ -90,7 +82,7 @@
                             </div>
                             <div class="box-text">
                                 <ul>
-                                    <li>Größe: 30,0 cm x 18,0 cm 1,5 cm</li>
+                                    <li>Größe: 30,0 cm x 18,0 cm x 1,5 cm</li>
                                     <li>Holzart: Buche</li>
                                     <li>Produziert in Bayern</li>
                                     <li>Abgerundete Ecken, geölt, glatt geschliffen</li>
@@ -100,9 +92,18 @@
                                 <p style="padding-bottom: 3%">
                                     Preis: <strong>19,90/Stück</strong>
                                 </p>
-                                <label>
-                                    <input list="anzahl" name="anzahl" placeholder="Stückzahl" type="text">
-                                </label>
+                                <select id="anzahl" name="anzahl">
+                                    <option selected value="1">1 Stück</option>
+                                    <option value="2">2 Stück</option>
+                                    <option value="3">3 Stück</option>
+                                    <option value="4">4 Stück</option>
+                                    <option value="5">5 Stück</option>
+                                    <option value="6">6 Stück</option>
+                                    <option value="7">7 Stück</option>
+                                    <option value="8">8 Stück</option>
+                                    <option value="9">9 Stück</option>
+                                    <option value="10">10 Stück</option>
+                                </select>
 
                                 <a href="Basket.html"><i class="fa fa-shopping-cart button"></i></a>
                             </div>

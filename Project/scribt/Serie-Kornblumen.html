@@ -74,14 +74,6 @@
             </section>
 
             <section class="serie">
-
-                <datalist id="anzahl">
-                    <option value="25"></option>
-                    <option value="50"></option>
-                    <option value="75"></option>
-                    <option value="100"></option>
-                </datalist>
-
                 <div class="row" id="Einladungskarte">
                     <div class="column column-33 flex-columns image-container">
                         <div class="dialog-item">
@@ -113,9 +105,14 @@
                                     Preis: <strong>2,50€/Stück</strong><br>
                                     Briefumschläge sind im Preis nicht enthalten.
                                 </p>
-                                <label>
-                                    <input list="anzahl" name="anzahl" placeholder="Stückzahl" type="text">
-                                </label>
+                                <select id="anzahl-Einladung" name="anzahl-Einladung">
+                                    <option selected value="25">25 Stück</option>
+                                    <option value="50">50 Stück</option>
+                                    <option value="75">75 Stück</option>
+                                    <option value="100">100 Stück</option>
+                                    <option value="150">150 Stück</option>
+                                    <option value="200">200 Stück</option>
+                                </select>
 
                                 <a href="Basket.html"><i class="fa fa-shopping-cart button"></i></a>
                             </div>
@@ -153,9 +150,14 @@
                                     Preis: <strong>1,50€/Stück</strong><br>
                                     Briefumschläge sind im Preis nicht enthalten.
                                 </p>
-                                <label>
-                                    <input list="anzahl" name="anzahl" placeholder="Stückzahl" type="text">
-                                </label>
+                                <select id="anzahl-StD" name="anzahl-StD">
+                                    <option selected value="25">25 Stück</option>
+                                    <option value="50">50 Stück</option>
+                                    <option value="75">75 Stück</option>
+                                    <option value="100">100 Stück</option>
+                                    <option value="150">150 Stück</option>
+                                    <option value="200">200 Stück</option>
+                                </select>
 
                                 <a href="Basket.html"><i class="fa fa-shopping-cart button"></i></a>
                             </div>
@@ -190,9 +192,14 @@
                                     Preis: <strong>2,50€/Stück</strong><br>
                                     Kordel ist im Preis nicht enthalten.
                                 </p>
-                                <label>
-                                    <input list="anzahl" name="anzahl" placeholder="Stückzahl" type="text">
-                                </label>
+                                <select id="anzahl-Kirchenheft" name="anzahl-Kirchenheft">
+                                    <option selected value="25">25 Stück</option>
+                                    <option value="50">50 Stück</option>
+                                    <option value="75">75 Stück</option>
+                                    <option value="100">100 Stück</option>
+                                    <option value="150">150 Stück</option>
+                                    <option value="200">200 Stück</option>
+                                </select>
 
                                 <a href="Basket.html"><i class="fa fa-shopping-cart button"></i></a>
                             </div>
@@ -222,9 +229,14 @@
                                 <p style="padding-bottom: 5%">
                                     (folgt)
                                 </p>
-                                <label>
-                                    <input list="anzahl" name="anzahl" placeholder="Stückzahl" type="text">
-                                </label>
+                                <select id="anzahl-Rück" name="anzahl-Rück">
+                                    <option selected value="25">25 Stück</option>
+                                    <option value="50">50 Stück</option>
+                                    <option value="75">75 Stück</option>
+                                    <option value="100">100 Stück</option>
+                                    <option value="150">150 Stück</option>
+                                    <option value="200">200 Stück</option>
+                                </select>
 
                                 <a href="Basket.html"><i class="fa fa-shopping-cart button"></i></a>
                             </div>
@@ -254,9 +266,14 @@
                                 <p style="padding-bottom: 5%">
                                     (folgt)
                                 </p>
-                                <label>
-                                    <input list="anzahl" name="anzahl" placeholder="Stückzahl" type="text">
-                                </label>
+                                <select id="anzahl-Menü" name="anzahl-Menü">
+                                    <option selected value="25">25 Stück</option>
+                                    <option value="50">50 Stück</option>
+                                    <option value="75">75 Stück</option>
+                                    <option value="100">100 Stück</option>
+                                    <option value="150">150 Stück</option>
+                                    <option value="200">200 Stück</option>
+                                </select>
 
                                 <a href="Basket.html"><i class="fa fa-shopping-cart button"></i></a>
                             </div>
@@ -286,9 +303,14 @@
                                 <p style="padding-bottom: 5%">
                                     (folgt)
                                 </p>
-                                <label>
-                                    <input list="anzahl" name="anzahl" placeholder="Stückzahl" type="text">
-                                </label>
+                                <select id="anzahl-Danke" name="anzahl-Danke">
+                                    <option selected value="25">25 Stück</option>
+                                    <option value="50">50 Stück</option>
+                                    <option value="75">75 Stück</option>
+                                    <option value="100">100 Stück</option>
+                                    <option value="150">150 Stück</option>
+                                    <option value="200">200 Stück</option>
+                                </select>
 
                                 <a href="Basket.html"><i class="fa fa-shopping-cart button"></i></a>
                             </div>
@@ -316,15 +338,20 @@
                                     <li>Geschlossenes Format: DIN C6 (14,8 cm x 21,0 cm)</li>
                                     <li>Offenes Format: 29,7 cm x 21,0 cm</li>
                                     <li>Druck: Digitaldruck, Einseitg - nur Innenfutter</li>
-                                    <li>Papier: Bilderdruckpapier att (100g)</li>
+                                    <li>Papier: Bilderdruckpapier matt (100g)</li>
                                     <li>Mindestbestellmenge: 25 Stück</li>
                                 </ul>
                                 <p style="padding-bottom: 3%">
                                     Preis: <strong>1,50€/Stück</strong><br>
                                 </p>
-                                <label>
-                                    <input list="anzahl" name="anzahl" placeholder="Stückzahl" type="text">
-                                </label>
+                                <select id="anzahl-Umschlag" name="anzahl-Umschlag">
+                                    <option selected value="25">25 Stück</option>
+                                    <option value="50">50 Stück</option>
+                                    <option value="75">75 Stück</option>
+                                    <option value="100">100 Stück</option>
+                                    <option value="150">150 Stück</option>
+                                    <option value="200">200 Stück</option>
+                                </select>
 
                                 <a href="Basket.html"><i class="fa fa-shopping-cart button"></i></a>
                             </div>

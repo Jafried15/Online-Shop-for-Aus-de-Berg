@@ -2,42 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/step-1-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/step-2-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/step-3-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/basket.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/Stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/best-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/step-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/best-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/step-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/best-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/step-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/best-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/step-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/best-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/step-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/best-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/step-6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/best-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/step-7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/best-8.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/step-8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scribt/Basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Basket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Berg-Produkte.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Berg-Produkte.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Bergshop.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Bergshop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Bestellablauf.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Bestellablauf.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Datenschutz.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Datenschutz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/ExLibris.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/ExLibris.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Impressum.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Impressum.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scribt/In-da-Not.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/In-da-Not.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Kontakt.php" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Kontakt.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scribt/Leck-o-Mio.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Leck-o-Mio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Papeterie.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Papeterie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scribt/SchaustDuGuadAus.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/SchaustDuGuadAus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scribt/Serie-Buche.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Buche.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scribt/Serie-Kornblumen.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Kornblumen.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scribt/Serie-Rosen.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Rosen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/baware.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/baware.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/designvorschlaege.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/designvorschlaege.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,17 +47,21 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
-    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -79,6 +69,7 @@
       <recent name="C:\Users\User\Entwicklung\Projekte\Online-Shop-for-Aus-de-Berg\Project\scss" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -92,7 +83,10 @@
       <workItem from="1596561971160" duration="1452000" />
       <workItem from="1596563870341" duration="3517000" />
       <workItem from="1596567735354" duration="14175000" />
-      <workItem from="1596688195091" duration="32723000" />
+      <workItem from="1596688195091" duration="33044000" />
+      <workItem from="1597309887902" duration="6060000" />
+      <workItem from="1597330327478" duration="67000" />
+      <workItem from="1597330433194" duration="2771000" />
     </task>
     <task id="LOCAL-00001" summary="change: Edit Layout of the Sites like expected">
       <created>1596657359783</created>
@@ -129,11 +123,18 @@
       <option name="project" value="LOCAL" />
       <updated>1596742035958</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="change: Add Basket Site and Address Form">
+      <created>1596821029982</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596821029982</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
@@ -144,12 +145,21 @@
     <MESSAGE value="change: Edit Layout of the Sites like expected" />
     <MESSAGE value="change:&#10;- Add product pages&#10;- Add modal dialog" />
     <MESSAGE value="change: Add basket icon to header" />
-    <option name="LAST_COMMIT_MESSAGE" value="change: Add basket icon to header" />
+    <MESSAGE value="change: Add Basket Site and Address Form" />
+    <option name="LAST_COMMIT_MESSAGE" value="change: Add Basket Site and Address Form" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="630" y="197" width="840" height="678" key="#CLI_Interpreters" timestamp="1597330238988">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="630" y="197" width="840" height="678" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1597330238988" />
+    <state x="679" y="76" key="#PHP" timestamp="1597330241659">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="679" y="76" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1597330241659" />
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596737068942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -158,10 +168,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="530" y="19" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1596821027074" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1596819526314">
+    <state x="794" y="440" key="NewPhpFileDialog" timestamp="1597326012919">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596819526314" />
+    <state x="794" y="440" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597326012919" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1597330529925">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597330529925" />
     <state width="498" height="445" key="SwitcherDM" timestamp="1596740531506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
