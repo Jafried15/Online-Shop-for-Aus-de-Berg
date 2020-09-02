@@ -33,3 +33,25 @@ function closeModal(close) {
 
     modal.style.display = "none";
 }
+
+function nextStep(current_step) {
+    if (current_step.toString().localeCompare("step-one")) {
+        document.getElementById('step-one').style.display = "none";
+        document.getElementById('step-two').style.display = "block";
+        if (current_step.toString().localeCompare("step-two")) {
+            document.getElementById("step-two").style.display = "none";
+            document.getElementById("step-three").style.display = "block";
+        }
+    }
+}
+
+function backStep(current_step) {
+    if (current_step.toString().localeCompare("step-two")) {
+        document.getElementById("step-one").style.display = "block";
+        document.getElementById("step-two").style.display = "none";
+        if (current_step.toString().localeCompare("step-three")) {
+            document.getElementById('step-two').style.display = "block";
+            document.getElementById('step-three').style.display = "none";
+        }
+    }
+}

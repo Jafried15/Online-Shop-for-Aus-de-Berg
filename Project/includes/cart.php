@@ -1,10 +1,13 @@
-<!--
- *   ~ /**
- *   ~ * Copyright (c) 2020, 2020 Veronika Fischer
- *   ~ * All Rights Reserved
- *   ~ *
- *   -->
 <?php
+
+/**
+ *
+ *
+ * Copyright (c) 2020, 2020 Veronika Fischer
+ * All Rights Reserved
+ *
+ *
+ **/
 
 class cart
 {
@@ -14,12 +17,10 @@ class cart
      */
     public function initial_cart()
     {
-
         $cart = array();
         if (!isset($_SESSION['cart'])) {
             $_SESSION['cart'] = $cart;
         }
-
     }
 
     /**
@@ -34,12 +35,10 @@ class cart
      */
     public function insertArtikel($Artikelnummer, $Bezeichnung, $Image, $Preis, $Anzahl, $Gesamt)
     {
-
         $Artikel = array($Artikelnummer, $Bezeichnung, $Image, $Preis, $Anzahl, $Gesamt);
         $cart = $_SESSION['cart'];
         array_push($cart, $Artikel);
         $_SESSION['cart'] = $cart;
-
     }
 
     /**
@@ -48,22 +47,22 @@ class cart
      */
     public function getCart()
     {
-        $Array = $_SESSION['cart'];
-        echo "<table width='100%'>";
-        echo "<tr><th>Artikel</th><th>Einzelpreis</th>><th>Stückzahl</th><th>Gesamtpreis</th></tr>";
-        for ($i = 0; $i < count($Array); $i++) {
-            $innerArray = $Array[$i];
-
-            echo "<tr>
-            <td>$innerArray[1]</td>
-            <td>$innerArray[2]</td>
-            <td>$innerArray[3]</td>
-            <td>$innerArray[4]</td>
-            <td>$innerArray[5]</td>
-            </tr>";
+        if ($this->get_cart_count() === 0) {
+            echo '<script type = "text/javascript" >
+            document.getElementById("empty").style.display = "block";
+            document.getElementById("basket-icon").style.display = "none";
+            document.getElementById("filled").style.display = "none";
+            document.getElementById("step-one").style.display = "none";
+             </script>';
+        } else if ($this->get_cart_count() != 0) {
+            echo '<script type = "text/javascript" >
+            document.getElementById("empty").style.display = "none";
+            document.getElementById("basket-icon").style.display = "block";
+            document.getElementById("filled").style.display = "block";
+            document.getElementById("step-one").style.display = "block";
+             </script>';
         }
-
-        echo "</table>";
+        include 'cart-table.php';
     }
 
 

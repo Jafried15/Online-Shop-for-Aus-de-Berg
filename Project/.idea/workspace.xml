@@ -1,21 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/basket.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Aus-de-Berg_Favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/cart-table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/copyright.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/count-products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scribt/Bergshop.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/Stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Basket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/In-da-Not.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/In-da-Not.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/products.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/berg-shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/berg-shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Basket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Berg-Produkte.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Berg-Produkte.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Bergshop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Bestellablauf.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Bestellablauf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Datenschutz.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Datenschutz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/ExLibris.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/ExLibris.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Impressum.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Impressum.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/In-da-Not.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/In-da-Not.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scribt/Kontakt.php" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Kontakt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Leck-o-Mio.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Leck-o-Mio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/SchaustDuGuadAus.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/SchaustDuGuadAus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Serie-Buche.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Buche.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Serie-Kornblumen.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Kornblumen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Serie-Rosen.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Rosen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Leck-o-Mio.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Leck-o-Mio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Papeterie.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Papeterie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/SchaustDuGuadAus.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/SchaustDuGuadAus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Serie-Buche.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Buche.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Serie-Kornblumen.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Kornblumen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Serie-Rosen.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Rosen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/baware.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/baware.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/designvorschlaege.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/designvorschlaege.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +77,10 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/scribt/Basket.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1fdxrRoyAKSNSoYdYeqYkCBbRkO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,21 +95,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowDuplicates.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/includes" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Entwicklung\Projekte\Online-Shop-for-Aus-de-Berg\Project\includes" />
       <recent name="C:\Users\User\Entwicklung\Projekte\Online-Shop-for-Aus-de-Berg\Project\js" />
       <recent name="C:\Users\User\Entwicklung\Projekte\Online-Shop-for-Aus-de-Berg\Project\scss" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -86,7 +128,9 @@
       <workItem from="1596688195091" duration="33044000" />
       <workItem from="1597309887902" duration="6060000" />
       <workItem from="1597330327478" duration="67000" />
-      <workItem from="1597330433194" duration="2771000" />
+      <workItem from="1597330433194" duration="3714000" />
+      <workItem from="1597830192359" duration="555000" />
+      <workItem from="1599042320541" duration="3699000" />
     </task>
     <task id="LOCAL-00001" summary="change: Edit Layout of the Sites like expected">
       <created>1596657359783</created>
@@ -139,6 +183,18 @@
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -146,51 +202,64 @@
     <MESSAGE value="change:&#10;- Add product pages&#10;- Add modal dialog" />
     <MESSAGE value="change: Add basket icon to header" />
     <MESSAGE value="change: Add Basket Site and Address Form" />
-    <option name="LAST_COMMIT_MESSAGE" value="change: Add Basket Site and Address Form" />
+    <MESSAGE value="change: Add PHP" />
+    <option name="LAST_COMMIT_MESSAGE" value="change: Add PHP" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="630" y="197" width="840" height="678" key="#CLI_Interpreters" timestamp="1597330238988">
+    <state x="630" y="197" width="840" height="678" key="#CLI_Interpreters" timestamp="1597832333552">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="630" y="197" width="840" height="678" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1597330238988" />
-    <state x="679" y="76" key="#PHP" timestamp="1597330241659">
+    <state x="630" y="197" width="840" height="678" key="#CLI_Interpreters/0.0.1920.1040@0.0.1920.1040" timestamp="1597832333552" />
+    <state x="679" y="76" width="588" height="897" key="#PHP" timestamp="1597832355286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="679" y="76" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1597330241659" />
+    <state x="679" y="76" width="588" height="897" key="#PHP/0.0.1920.1040@0.0.1920.1040" timestamp="1597832355286" />
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596737068942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596737068942" />
-    <state x="530" y="19" key="CommitChangelistDialog2" timestamp="1596821027074">
+    <state x="530" y="8" key="CommitChangelistDialog2" timestamp="1597818502165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="530" y="19" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1596821027074" />
-    <state x="794" y="440" key="NewPhpFileDialog" timestamp="1597326012919">
+    <state x="530" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597818502165" />
+    <state x="753" y="279" key="FileChooserDialogImpl" timestamp="1597831643563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="440" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597326012919" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1597330529925">
+    <state x="753" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597831643563" />
+    <state x="794" y="440" key="NewPhpFileDialog" timestamp="1599044568395">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597330529925" />
+    <state x="794" y="440" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599044568395" />
+    <state x="674" y="139" key="RollbackChangesDialog" timestamp="1597930120075">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="674" y="139" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597930120075" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1599044306332">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599044306332" />
     <state width="498" height="445" key="SwitcherDM" timestamp="1596740531506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="445" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1596740531506" />
-    <state x="762" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596813898269">
+    <state x="762" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597936560217">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="762" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596813898269" />
-    <state x="568" y="215" width="784" height="610" key="find.popup" timestamp="1596818507752">
+    <state x="762" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597936560217" />
+    <state x="568" y="215" width="784" height="654" key="find.popup" timestamp="1599054346031">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="568" y="215" width="784" height="610" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596818507752" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1596812313470">
+    <state x="568" y="215" width="784" height="654" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599054346031" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1597938649763">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596812313470" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597938649763" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597849297989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597849297989" />
   </component>
 </project>

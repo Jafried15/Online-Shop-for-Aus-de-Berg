@@ -462,14 +462,28 @@ hr {
     font-weight: normal;
 }
 
+.serie .button,
+.product .button,
+.basket-icon .button {
+    font-weight: bold;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
 .button:hover {
     background: #767676;
     color: #ffffff;
-    text-decoration: none
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .button a {
     white-space: normal;
+}
+
+.step .button {
+    padding: 15px 5%;
 }
 
 /* Icons */
@@ -585,15 +599,6 @@ hr {
 
 .image-container li img {
     height: 50px;
-}
-
-.serie .button,
-.product .button,
-.basket-icon .button {
-    font-weight: bold;
-    background: none;
-    color: #000;
-    border: 1px solid #000;
 }
 
 .basket,
@@ -752,6 +757,48 @@ button.close {
 
 .fade.in {
     opacity: 1;
+}
+
+.cart-table {
+    width: 100%;
+    text-align: center;
+}
+
+.cart-table th, td {
+    padding: 10px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.cart-table th:last-child, td:last-child {
+    border-right: none;
+}
+
+.cart-table td:first-child {
+    text-align: left;
+}
+
+.cart-table td:last-child {
+    text-align: right;
+}
+
+.cart-table img {
+    height: 15vh;
+    vertical-align: middle;
+    padding-right: 3%;
+}
+
+.total {
+    justify-content: flex-end;
+    text-align: left;
+}
+
+.total .row {
+    margin: 1.0rem 0;
+}
+
+.total p {
+    text-transform: uppercase;
 }
 
 /*Media Queries*/
