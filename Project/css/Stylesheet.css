@@ -312,7 +312,6 @@ section {
 .column {
     position: relative;
     width: 100%;
-    padding-right: 2%;
     padding-left: 2%;
     padding-top: 2%;
 }
@@ -606,6 +605,10 @@ hr {
     display: none;
 }
 
+.step .button {
+    margin: 2%;
+}
+
 .active {
     display: block;
 }
@@ -635,13 +638,13 @@ hr {
 }
 
 .step-two label {
-    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .serie input[type=text],
 .product input[type=text],
+.cart-table select,
 .step-two input[type=text], .step-two input[type=email], .step-two input[type=tel], .step-two input[type=submit], .step-two select, .step-two input[type=checkbox] {
-    text-transform: uppercase;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -786,6 +789,13 @@ button.close {
     height: 15vh;
     vertical-align: middle;
     padding-right: 3%;
+}
+
+.cart-table .remove {
+    color: #000;
+    background-color: #fff;
+    border: none;
+    text-decoration: underline;
 }
 
 .total {

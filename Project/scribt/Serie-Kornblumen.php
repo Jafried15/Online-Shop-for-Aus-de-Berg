@@ -1,14 +1,16 @@
-<!--
-  ~
-  ~   ~ /**
-  ~   ~ * Copyright (c) 2020, 2020 Veronika Fischer
-  ~   ~ * All Rights Reserved
-  ~   ~ **/
-  ~
-  ~
-  -->
-
 <?php
+/*
+ * <!--
+ *   ~ /**
+ *   ~ * Copyright (c) 2020, 2020 Veronika Fischer
+ *   ~ * All Rights Reserved
+ *   ~ *
+ *   -->
+ *
+ */
+
+include '../includes/copyright.php';
+
 // Die Session Starten
 session_start();
 
@@ -26,6 +28,9 @@ $cart->initial_cart();
 <html lang="de">
 <head>
     <title>Serie | Kornblume</title>
+
+    <link href="../img/Aus-de-Berg_Favicon.png"
+          rel="shortcut icon" type="image/x-icon">
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -102,21 +107,15 @@ $cart->initial_cart();
                                 </p>
 
                                 <select id="anzahl-Einladung" name="anzahl-Einladung">
-                                    <option selected value="25">25 Stück</option>
-                                    <option value="50">50 Stück</option>
-                                    <option value="75">75 Stück</option>
-                                    <option value="100">100 Stück</option>
-                                    <option value="150">150 Stück</option>
-                                    <option value="200">200 Stück</option>
+                                    <?php include '../includes/count-papeterie.php' ?>
                                 </select>
-
-                                <input type="submit" name="basket-Einladung">
+                                <input type="submit" name="basket-Einladung" class="button" value="In den Warenkorb">
 
                                 <?php
                                 if (isset($_POST['basket-Einladung'])) {
                                     $count = $_POST['anzahl-Einladung'];
                                     $total = $price * $count;
-                                   $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
+                                    $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
                                 }
                                 ?>
                             </form>
@@ -167,21 +166,16 @@ $cart->initial_cart();
                                 </p>
 
                                 <select id="anzahl-StD" name="anzahl-StD">
-                                    <option selected value="25">25 Stück</option>
-                                    <option value="50">50 Stück</option>
-                                    <option value="75">75 Stück</option>
-                                    <option value="100">100 Stück</option>
-                                    <option value="150">150 Stück</option>
-                                    <option value="200">200 Stück</option>
+                                    <?php include '../includes/count-papeterie.php' ?>
                                 </select>
 
-                                <input type="submit" name="basket-StD">
+                                <input type="submit" name="basket-StD" class="button" value="In den Warenkorb">
 
                                 <?php
                                 if (isset($_POST['basket-StD'])) {
                                     $count = $_POST['anzahl-StD'];
                                     $total = $price * $count;
-                                   $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
+                                    $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
                                 }
                                 ?>
                             </form>
@@ -230,21 +224,16 @@ $cart->initial_cart();
                                 </p>
 
                                 <select id="anzahl-Kirchenheft" name="anzahl-Kirchenheft">
-                                    <option selected value="25">25 Stück</option>
-                                    <option value="50">50 Stück</option>
-                                    <option value="75">75 Stück</option>
-                                    <option value="100">100 Stück</option>
-                                    <option value="150">150 Stück</option>
-                                    <option value="200">200 Stück</option>
+                                    <?php include '../includes/count-papeterie.php' ?>
                                 </select>
 
-                                <input type="submit" name="basket-Kirchenheft">
+                                <input type="submit" name="basket-Kirchenheft" class="button" value="In den Warenkorb">
 
                                 <?php
                                 if (isset($_POST['basket-Kirchenheft'])) {
                                     $count = $_POST['anzahl-Kirchenheft'];
                                     $total = $price * $count;
-                                   $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
+                                    $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
                                 }
                                 ?>
                             </form>
@@ -288,21 +277,15 @@ $cart->initial_cart();
                                 </p>
 
                                 <select id="anzahl-Rück" name="anzahl-Rück">
-                                    <option selected value="25">25 Stück</option>
-                                    <option value="50">50 Stück</option>
-                                    <option value="75">75 Stück</option>
-                                    <option value="100">100 Stück</option>
-                                    <option value="150">150 Stück</option>
-                                    <option value="200">200 Stück</option>
+                                    <?php include '../includes/count-papeterie.php' ?>
                                 </select>
-
-                                <input type="submit" name="basket-Rück">
+                                <input type="submit" name="basket-Rück" class="button" value="In den Warenkorb">
 
                                 <?php
                                 if (isset($_POST['basket-Rück'])) {
                                     $count = $_POST['anzahl-Rück'];
                                     $total = $price * $count;
-                                   $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
+                                    $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
                                 }
                                 ?>
                             </form>
@@ -346,21 +329,15 @@ $cart->initial_cart();
                                 </p>
 
                                 <select id="anzahl-Menü" name="anzahl-Menü">
-                                    <option selected value="25">25 Stück</option>
-                                    <option value="50">50 Stück</option>
-                                    <option value="75">75 Stück</option>
-                                    <option value="100">100 Stück</option>
-                                    <option value="150">150 Stück</option>
-                                    <option value="200">200 Stück</option>
+                                    <?php include '../includes/count-papeterie.php' ?>
                                 </select>
-
-                                <input type="submit" name="basket-Menü">
+                                <input type="submit" name="basket-Menü" class="button" value="In den Warenkorb">
 
                                 <?php
                                 if (isset($_POST['basket-Menü'])) {
                                     $count = $_POST['anzahl-Menü'];
                                     $total = $price * $count;
-                                   $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
+                                    $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
                                 }
                                 ?>
                             </form>
@@ -404,21 +381,15 @@ $cart->initial_cart();
                                 </p>
 
                                 <select id="anzahl-Danke" name="anzahl-Danke">
-                                    <option selected value="25">25 Stück</option>
-                                    <option value="50">50 Stück</option>
-                                    <option value="75">75 Stück</option>
-                                    <option value="100">100 Stück</option>
-                                    <option value="150">150 Stück</option>
-                                    <option value="200">200 Stück</option>
+                                    <?php include '../includes/count-papeterie.php' ?>
                                 </select>
-
-                                <input type="submit" name="basket-Danke">
+                                <input type="submit" name="basket-Danke" class="button" value="In den Warenkorb">
 
                                 <?php
                                 if (isset($_POST['basket-Danke'])) {
                                     $count = $_POST['anzahl-Danke'];
                                     $total = $price * $count;
-                                   $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
+                                    $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
                                 }
                                 ?>
                             </form>
@@ -462,21 +433,16 @@ $cart->initial_cart();
                                 </p>
 
                                 <select id="anzahl-Danke" name="anzahl-Umschlag">
-                                    <option selected value="25">25 Stück</option>
-                                    <option value="50">50 Stück</option>
-                                    <option value="75">75 Stück</option>
-                                    <option value="100">100 Stück</option>
-                                    <option value="150">150 Stück</option>
-                                    <option value="200">200 Stück</option>
+                                    <?php include '../includes/count-papeterie.php' ?>
                                 </select>
 
-                                <input type="submit" name="basket-Umschlag">
+                                <input type="submit" name="basket-Umschlag" class="button" value="In den Warenkorb">
 
                                 <?php
                                 if (isset($_POST['basket-Umschlag'])) {
                                     $count = $_POST['anzahl-Umschlag'];
                                     $total = $price * $count;
-                                   $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
+                                    $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
                                 }
                                 ?>
                             </form>

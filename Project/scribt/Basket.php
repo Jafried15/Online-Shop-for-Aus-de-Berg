@@ -1,4 +1,13 @@
 <?php
+/*
+ * <!--
+ *   ~ /**
+ *   ~ * Copyright (c) 2020, 2020 Veronika Fischer
+ *   ~ * All Rights Reserved
+ *   ~ *
+ *   -->
+ *
+ */
 
 include '../includes/copyright.php';
 
@@ -63,7 +72,7 @@ $cart->initial_cart();
                 <div class="column column-33 flex-columns">
                     <div class="box active" id="step-1">
                         <div class="box-title">
-                            <i class="icon step-1-white"></i>
+                            <i class="icon step-1-white" id="step-1-icon"></i>
                             Warenkorb
                         </div>
                     </div>
@@ -71,7 +80,7 @@ $cart->initial_cart();
                 <div class="column column-33 flex-columns">
                     <div class="box" id="step-2">
                         <div class="box-title">
-                            <i class="icon step-2"></i>
+                            <i class="icon step-2" id="step-2-icon"></i>
                             Adresse
                         </div>
                     </div>
@@ -79,7 +88,7 @@ $cart->initial_cart();
                 <div class="column column-33 flex-columns">
                     <div class="box" id="step-3">
                         <div class="box-title">
-                            <i class="icon step-3"></i>
+                            <i class="icon step-3" id="step-3-icon"></i>
                             Kasse
                         </div>
                     </div>
@@ -206,7 +215,8 @@ $cart->initial_cart();
 
                 <div class="row" style="padding-top: 3vh; padding-bottom: 5vh">
                     <div class="column column-100">
-                        <input id="different" name="different" type="checkbox" value="different">
+                        <input id="different" name="different" type="checkbox" value="different"
+                               onclick="showShippingAddress(this)">
                         <label for="different">Die Lieferadresse weicht von der Rechnungsadresse ab</label>
                     </div>
                 </div>
@@ -262,13 +272,13 @@ $cart->initial_cart();
 
             <div class="row">
                 <div class="column-100" style="text-align: right">
-                    <div class="button-field" style="flex-flow: column-reverse">
-                        <a class="button" onclick="backStep('step-two')">
+                    <div class="button-field">
+                        <button class="button" onclick="backStep('step-two')">
                             Zurück
-                        </a>
-                        <a class="button" onclick="nextStep('step-two')">
+                        </button>
+                        <button class="button" onclick="nextStep('step-two')">
                             Weiter
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -278,13 +288,29 @@ $cart->initial_cart();
 
             <div class="row">
                 <div class="column-100" style="text-align: right">
-                    <div class="button-field" style="flex-flow: column-reverse">
-                        <a class="button" onclick="backStep('step-three')">
+                    <div class="button-field">
+                        <button class="button" onclick="backStep('step-three')">
                             Zurück
-                        </a>
-                        <a class="button" onclick="nextStep('step-three')">
+                        </button>
+                        <button class="button" onclick="nextStep('step-three')">
                             Weiter
-                        </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="step step-summary" id="step-summary">
+
+            <div class="row">
+                <div class="column-100" style="text-align: right">
+                    <div class="button-field">
+                        <button class="button" onclick="backStep('step-three')">
+                            Zurück
+                        </button>
+                        <button class="button" onclick="nextStep('step-three')">
+                            Weiter
+                        </button>
                     </div>
                 </div>
             </div>
@@ -311,7 +337,6 @@ $cart->initial_cart();
 <script crossorigin="anonymous" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
         src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../js/mobile-menu.js"></script>
-
 <script src="../js/berg-shop.js"></script>
 
 </body>

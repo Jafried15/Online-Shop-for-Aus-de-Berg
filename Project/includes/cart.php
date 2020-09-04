@@ -1,13 +1,14 @@
 <?php
 
-/**
+/*
+ * <!--
+ *   ~ /**
+ *   ~ * Copyright (c) 2020, 2020 Veronika Fischer
+ *   ~ * All Rights Reserved
+ *   ~ *
+ *   -->
  *
- *
- * Copyright (c) 2020, 2020 Veronika Fischer
- * All Rights Reserved
- *
- *
- **/
+ */
 
 class cart
 {
@@ -37,6 +38,11 @@ class cart
     {
         $Artikel = array($Artikelnummer, $Bezeichnung, $Image, $Preis, $Anzahl, $Gesamt);
         $cart = $_SESSION['cart'];
+        $key = array_search($Artikelnummer, $cart);
+        if ($key) {
+            $count = intval($this->get_cartValue_at_Point($key));
+            $count = $count + $Anzahl;
+        }
         array_push($cart, $Artikel);
         $_SESSION['cart'] = $cart;
     }
@@ -83,10 +89,8 @@ class cart
      */
     public function get_cartValue_at_Point($point)
     {
-
         $Array = $_SESSION['cart'];
         return $Array[$point];
-
     }
 
     /**
@@ -96,8 +100,7 @@ class cart
      */
     public function delete_cartValue_at_Point($point)
     {
-        $Array = $_SESSION['cart'];
-        unset($Array[$point]);
+        array_splice($_SESSION['cart'], $point, $point);
     }
 
     /**

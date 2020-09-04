@@ -1,14 +1,16 @@
-<!--
-  ~
-  ~   ~ /**
-  ~   ~ * Copyright (c) 2020, 2020 Veronika Fischer
-  ~   ~ * All Rights Reserved
-  ~   ~ **/
-  ~
-  ~
-  -->
-
 <?php
+/*
+ * <!--
+ *   ~ /**
+ *   ~ * Copyright (c) 2020, 2020 Veronika Fischer
+ *   ~ * All Rights Reserved
+ *   ~ *
+ *   -->
+ *
+ */
+
+include '../includes/copyright.php';
+
 // Die Session Starten
 session_start();
 
@@ -36,6 +38,9 @@ if (isset($_POST['basket'])) {
 <html lang="de">
 <head>
     <title><?php echo $article ?></title>
+
+    <link href="../img/Aus-de-Berg_Favicon.png"
+          rel="shortcut icon" type="image/x-icon">
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -95,7 +100,7 @@ if (isset($_POST['basket'])) {
 
                             <form method="post">
                                 <?php include '../includes/count-products.php' ?>
-                                <input type="submit" name="basket">
+                                <input type="submit" name="basket" class="button" value="In den Warenkorb">
                             </form>
                         </div>
                     </div>

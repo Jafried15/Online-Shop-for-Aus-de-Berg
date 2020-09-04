@@ -35,23 +35,56 @@ function closeModal(close) {
 }
 
 function nextStep(current_step) {
-    if (current_step.toString().localeCompare("step-one")) {
-        document.getElementById('step-one').style.display = "none";
-        document.getElementById('step-two').style.display = "block";
-        if (current_step.toString().localeCompare("step-two")) {
-            document.getElementById("step-two").style.display = "none";
-            document.getElementById("step-three").style.display = "block";
-        }
+    if (current_step === "step-one") {
+        document.getElementById("step-one").style.display = "none";
+        document.getElementById("step-two").style.display = "block";
+        document.getElementById("step-1").classList.remove("active");
+        document.getElementById("step-2").classList.add("active");
+        document.getElementById("step-1-icon").classList.remove("step-1-white");
+        document.getElementById("step-1-icon").classList.add("step-1");
+        document.getElementById("step-2-icon").classList.remove("step-2");
+        document.getElementById("step-2-icon").classList.add("step-2-white");
+
+    } else if (current_step === "step-two") {
+        document.getElementById("step-two").style.display = "none";
+        document.getElementById("step-three").style.display = "block";
+        document.getElementById("step-2").classList.remove("active");
+        document.getElementById("step-3").classList.add("active");
+        document.getElementById("step-2-icon").classList.remove("step-2-white");
+        document.getElementById("step-2-icon").classList.add("step-2");
+        document.getElementById("step-3-icon").classList.remove("step-3");
+        document.getElementById("step-3-icon").classList.add("step-3-white");
     }
 }
 
+
 function backStep(current_step) {
-    if (current_step.toString().localeCompare("step-two")) {
+    if (current_step === "step-two") {
         document.getElementById("step-one").style.display = "block";
         document.getElementById("step-two").style.display = "none";
-        if (current_step.toString().localeCompare("step-three")) {
-            document.getElementById('step-two').style.display = "block";
-            document.getElementById('step-three').style.display = "none";
-        }
+        document.getElementById("step-2").classList.remove("active");
+        document.getElementById("step-1").classList.add("active");
+        document.getElementById("step-2-icon").classList.remove("step-2-white");
+        document.getElementById("step-2-icon").classList.add("step-2");
+        document.getElementById("step-1-icon").classList.remove("step-1");
+        document.getElementById("step-1-icon").classList.add("step-1-white");
+    } else if (current_step === "step-three") {
+        document.getElementById("step-two").style.display = "block";
+        document.getElementById("step-three").style.display = "none";
+        document.getElementById("step-3").classList.remove("active");
+        document.getElementById("step-2").classList.add("active");
+        document.getElementById("step-3-icon").classList.remove("step-3-white");
+        document.getElementById("step-3-icon").classList.add("step-3");
+        document.getElementById("step-2-icon").classList.remove("step-2");
+        document.getElementById("step-2-icon").classList.add("step-2-white");
+    }
+}
+
+function showShippingAddress(checkbox) {
+    const checked = checkbox.checked;
+    if (checked) {
+        document.getElementById("lieferadresse").style.display = "block";
+    } else {
+        document.getElementById("lieferadresse").style.display = "none";
     }
 }
