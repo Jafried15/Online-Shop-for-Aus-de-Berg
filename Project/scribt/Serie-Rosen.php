@@ -46,42 +46,60 @@ $cart->initial_cart();
 
 <center>
     <main>
-        <section class="intro" style="padding-bottom: 5%">
-            <p class="headline">Serie | Rosen</p>
-            <br>
-            <p>
-                Hier findet ihr die Papeterie-Produkte zur Serie Rosen.
-            </p>
-            <br>
-            <br>
-            <p>
-                Ihr habt eure Wunschkarte gefunden?<br>
-                Dann findet ihr hier den genauen Bestellablauf.
-            </p>
-            <div class="button-field">
-                <a class="button" href="Bestellablauf.html">Bestellablauf</a>
+        <section class="site-hero">
+            <div class="head-slider">
+                <div class="slide showing load-image" data-href="contact.html" data-stellar-background-ratio="0.5"
+                     style="background-image: url('../img/Serie_Rosen/Rosen_Titel.jpg')">
+                    <div class="slide-content">
+                        <a>
+                            <p class="headline">Serie | Rosen</p>
+                            <br>
+                            <p>
+                                Hier findet ihr die Papeterie-Produkte zur Serie Rosen.
+                            </p>
+                            <br>
+                            <br>
+                            <p>
+                                Ihr habt eure Wunschkarte gefunden?<br>
+                                Dann findet ihr hier den genauen Bestellablauf.
+                            </p>
+                            <div class="button-field">
+                                <a class="button" href="Bestellablauf.html">Bestellablauf</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="serie">
             <div class="row" id="Einladungskarte">
-                <div class="column column-33 flex-columns image-container">
+                <div class="column column-40 flex-columns image-container">
                     <div class="dialog-item">
                         <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
-                             id="expandedImg-Einladung" onclick="showModal(this);" src="../img/Muttertagskarte.JPEG"/>
+                             id="expandedImg-Einladung" onclick="showModal(this);"
+                             src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg"/>
                     </div>
                     <ul>
                         <li><img alt="1" data-target="expandedImg-Einladung" onclick="switchImage(this);"
-                                 src="../img/Muttertagskarte.JPEG"/></li>
+                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg"/></li>
                         <li><img alt="2" data-target="expandedImg-Einladung" onclick="switchImage(this);"
-                                 src="../img/Menu%20Card.jpg"/></li>
+                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_2.jpg"/></li>
+                        <li><img alt="3" data-target="expandedImg-Einladung" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_3.jpg"/></li>
+                        <li><img alt="4" data-target="expandedImg-Einladung" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_4.jpg"/></li>
+                        <li><img alt="5" data-target="expandedImg-Einladung" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_5.jpg"/></li>
+                        <li><img alt="6" data-target="expandedImg-Einladung" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_6.jpg"/></li>
                     </ul>
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
                     $article_number = "1.1";
                     $article = "Hochzeitseinladung | Serie Rosen";
-                    $image = "../img/Muttertagskarte.JPEG";
+                    $image = "../img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg";
                     $price = 2.50;
                     ?>
                     <div class="box">
@@ -125,7 +143,7 @@ $cart->initial_cart();
             </div>
 
             <div class="row" id="Safe-the-Date">
-                <div class="column column-33 flex-columns image-container">
+                <div class="column column-40 flex-columns image-container">
                     <div class="dialog-item">
                         <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
                              id="expandedImg-StD" onclick="showModal(this);" src="../img/Muttertagskarte.JPEG"/>
@@ -185,7 +203,7 @@ $cart->initial_cart();
             </div>
 
             <div class="row" id="Kirchenheft">
-                <div class="column column-33 flex-columns image-container">
+                <div class="column column-40 flex-columns image-container">
                     <div class="dialog-item">
                         <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
                              id="expandedImg-Kirchenheft" onclick="showModal(this);" src="../img/Muttertagskarte.JPEG"/>
@@ -243,7 +261,7 @@ $cart->initial_cart();
             </div>
 
             <div class="row" id="Rücksendekarte">
-                <div class="column column-33 flex-columns image-container">
+                <div class="column column-40 flex-columns image-container">
                     <div class="dialog-item">
                         <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
                              id="expandedImg-Rück" onclick="showModal(this);" src="../img/Muttertagskarte.JPEG"/>
@@ -295,7 +313,7 @@ $cart->initial_cart();
             </div>
 
             <div class="row" id="Menükarte">
-                <div class="column column-33 flex-columns image-container">
+                <div class="column column-40 flex-columns image-container">
                     <div class="dialog-item">
                         <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
                              id="expandedImg-Menü" onclick="showModal(this);" src="../img/Muttertagskarte.JPEG"/>
@@ -347,7 +365,7 @@ $cart->initial_cart();
             </div>
 
             <div class="row" id="Dankeskarte">
-                <div class="column column-33 flex-columns image-container">
+                <div class="column column-40 flex-columns image-container">
                     <div class="dialog-item">
                         <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
                              id="expandedImg-Danke" onclick="showModal(this);" src="../img/Muttertagskarte.JPEG"/>
@@ -399,7 +417,7 @@ $cart->initial_cart();
             </div>
 
             <div class="row" id="Briefumschlag">
-                <div class="column column-33 flex-columns image-container">
+                <div class="column column-40 flex-columns image-container">
                     <div class="dialog-item">
                         <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
                              id="expandedImg-Danke" onclick="showModal(this);" src="../img/Muttertagskarte.JPEG"/>

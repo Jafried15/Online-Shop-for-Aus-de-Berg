@@ -287,6 +287,13 @@ $cart->initial_cart();
         <section class="step step-three" id="step-three">
 
             <div class="row">
+                <div class="column-100" id="paypal-container"></div>
+            </div>
+            <div class="row">
+                <div class="column-100" id="vorkasse-container"></div>
+            </div>
+
+            <div class="row">
                 <div class="column-100" style="text-align: right">
                     <div class="button-field">
                         <button class="button" onclick="backStep('step-three')">
@@ -301,15 +308,59 @@ $cart->initial_cart();
         </section>
 
         <section class="step step-summary" id="step-summary">
+            <div class="row">
+                <?php
+                $cart->getCart();
+                ?>
+            </div>
+            <div class="row total">
+                <div class="column-50">
+                    <hr>
+                    <div class="row">
+                        <div class="column-50">
+                            <p>Gesamtsumme</p>
+                            <p>Versandkosten</p>
+                            <p>inkl. MWST 19%</p>
+                        </div>
+                        <div class="column-50" style="text-align: right">
+                            <?php
+                            $Array = $_SESSION['cart'];
+                            $total = 0;
+                            for ($i = 0; $i < count($Array); $i++) {
+                                $innerArray = $Array[$i];
+                                $total = $total + $innerArray[5];
+                            }
+
+                            $MWSTRate = 0.19;
+                            $MWSTSum = $total * $MWSTRate;
+
+                            $amount = $total + $MWSTSum;
+                            ?>
+                            <p><?php echo number_format($total, 2, ',', '.'); ?> €</>
+                            <p>testing €</p>
+                            <p><?php echo number_format($MWSTSum, 2, ',', '.'); ?> €</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="column-50">
+                            <p style="font-weight: bold">Rechnungsbetrag</p>
+                        </div>
+                        <div class=" column-50" style="text-align: right">
+                            <p style="font-weight: bold"><?php echo number_format($amount, 2, ',', '.'); ?> €</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="column-100" style="text-align: right">
                     <div class="button-field">
-                        <button class="button" onclick="backStep('step-three')">
+                        <button class="button" onclick="backStep('step-summary')">
                             Zurück
                         </button>
-                        <button class="button" onclick="nextStep('step-three')">
-                            Weiter
+                        <button class="button" onclick="">
+                            Bestellung absenden
                         </button>
                     </div>
                 </div>

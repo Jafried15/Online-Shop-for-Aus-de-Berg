@@ -295,6 +295,92 @@ section {
     width: 80vw;
 }
 
+.site-hero {
+    background-size: cover;
+    background-position: center center;
+    max-height: 65vh;
+    width: 100vw;
+}
+
+.site-hero > .container {
+    position: relative;
+    z-index: 2;
+}
+
+.head-slider {
+    height: 56.25vw;
+    position: relative;
+    max-height: 60vh;
+}
+
+.head-slider a, .head-slider a:hover {
+    text-decoration: none;
+}
+
+.head-slider .slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #424242;
+    background-position: 50% 25%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.head-slider .slide {
+    max-height: 60vh;
+    background-position: center center;
+}
+
+.head-slider .slide:before {
+    content: '';
+    background: rgba(0, 0, 0, .63);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+.head-slider .slide a {
+    color: inherit;
+}
+
+.head-slider .slide h1 {
+    font-size: 80px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.head-slider .slide p {
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.head-slider .showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.head-slider .slide .slide-content {
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 75%;
+    color: #ffffff;
+    z-index: 99;
+    padding-top: 6%;
+}
+
 .shopping-cart {
     font-size: 10vh;
     padding: 5vh;
@@ -719,7 +805,7 @@ hr {
     outline: none;
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-    max-width: 80vh;
+    max-width: 55vw;
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
