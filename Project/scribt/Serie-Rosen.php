@@ -73,93 +73,30 @@ $cart->initial_cart();
         </section>
 
         <section class="serie">
-            <div class="row" id="Einladungskarte">
-                <div class="column column-40 flex-columns image-container">
-                    <div class="dialog-item">
-                        <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
-                             id="expandedImg-Einladung" onclick="showModal(this);"
-                             src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg"/>
-                    </div>
-                    <ul>
-                        <li><img alt="1" data-target="expandedImg-Einladung" onclick="switchImage(this);"
-                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg"/></li>
-                        <li><img alt="2" data-target="expandedImg-Einladung" onclick="switchImage(this);"
-                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_2.jpg"/></li>
-                        <li><img alt="3" data-target="expandedImg-Einladung" onclick="switchImage(this);"
-                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_3.jpg"/></li>
-                        <li><img alt="4" data-target="expandedImg-Einladung" onclick="switchImage(this);"
-                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_4.jpg"/></li>
-                        <li><img alt="5" data-target="expandedImg-Einladung" onclick="switchImage(this);"
-                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_5.jpg"/></li>
-                        <li><img alt="6" data-target="expandedImg-Einladung" onclick="switchImage(this);"
-                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_6.jpg"/></li>
-                    </ul>
-                </div>
-                <div class="column column-50 flex-columns">
-                    <?php
-                    $article_number = "1.1";
-                    $article = "Hochzeitseinladung | Serie Rosen";
-                    $image = "../img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg";
-                    $price = 2.50;
-                    ?>
-                    <div class="box">
-                        <div class="box-title">
-                            <h2><?php echo $article ?></h2>
-                        </div>
-                        <div class="box-text">
-                            <ul>
-                                <li>Geschlossenes Format: DIN A6 (10,5 cm x 14,8 cm)</li>
-                                <li>Offenes Format: 31,5 cm x 14,8 cm</li>
-                                <li>Druck: Digitaldruck, Beidseitig bedruckt</li>
-                                <li>Papier: Bilderdruckpapier matt (300g)</li>
-                                <li>Briefumschläge können seperat dazu bestellt werden<br>(Tipp: Umschläge mit passendem
-                                    Innenfutter findet ihr weiter unten)
-                                </li>
-                                <li>Mindestbestellmenge: 25 Stück</li>
-                            </ul>
-                            <form method="post">
-                                <p style="padding-bottom: 3%">
-                                    Preis: <strong><?php echo number_format($price, 2, ',', '.'); ?>€/Stück</strong>
-                                    <br>
-                                    Briefumschläge sind im Preis nicht enthalten.
-                                </p>
-
-                                <select id="anzahl-Einladung" name="anzahl-Einladung">
-                                    <?php include '../includes/count-papeterie.php' ?>
-                                </select>
-                                <input type="submit" name="basket-Einladung" class="button" value="In den Warenkorb">
-
-                                <?php
-                                if (isset($_POST['basket-Einladung'])) {
-                                    $count = $_POST['anzahl-Einladung'];
-                                    $total = $price * $count;
-                                    $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
-                                }
-                                ?>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div class="row" id="Safe-the-Date">
                 <div class="column column-40 flex-columns image-container">
                     <div class="dialog-item">
                         <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
-                             id="expandedImg-StD" onclick="showModal(this);" src="../img/Muttertagskarte.JPEG"/>
+                             id="expandedImg-StD" onclick="showModal(this);"
+                             src="../img/Serie_Rosen/Save-the-Date/Rosen_StD_1.jpg"/>
                     </div>
                     <ul>
                         <li><img alt="1" data-target="expandedImg-StD" onclick="switchImage(this);"
-                                 src="../img/Muttertagskarte.JPEG"/></li>
+                                 src="../img/Serie_Rosen/Save-the-Date/Rosen_StD_1.jpg"/></li>
                         <li><img alt="2" data-target="expandedImg-StD" onclick="switchImage(this);"
-                                 src="../img/Menu%20Card.jpg"/></li>
+                                 src="../img/Serie_Rosen/Save-the-Date/Rosen_StD_2.jpg"/></li>
+                        <li><img alt="3" data-target="expandedImg-StD" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Save-the-Date/Rosen_StD_3.jpg"/></li>
+                        <li><img alt="4" data-target="expandedImg-StD" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Save-the-Date/Rosen_StD_4.jpg"/></li>
                     </ul>
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "1.2";
+                    $article_number = "2.1";
                     $article = "Safe the Date | Serie Rosen";
-                    $image = "../img/Muttertagskarte.JPEG";
+                    $image = "../img/Serie_Rosen/Save-the-Date/Rosen_StD_1.jpg";
                     $price = 1.50;
                     ?>
                     <div class="box">
@@ -171,8 +108,7 @@ $cart->initial_cart();
                                 <li>Format: DIN A6 (10,5 cm x 14,8 cm)</li>
                                 <li>Druck: Digitaldruck, Beidseitig bedruckt</li>
                                 <li>Papier: Bilderdruckpapier matt (300g)</li>
-                                <li>Briefumschläge können seperat dazu bestellt werden<br>(Tipp: Umschläge mit passendem
-                                    Innenfutter findet ihr weiter unten)
+                                <li>Briefumschläge können seperat dazu bestellt werden
                                 </li>
                                 <li>Mindestbestellmenge: 25 Stück</li>
                             </ul>
@@ -202,25 +138,34 @@ $cart->initial_cart();
                 </div>
             </div>
 
-            <div class="row" id="Kirchenheft">
+            <div class="row" id="Einladungskarte">
                 <div class="column column-40 flex-columns image-container">
                     <div class="dialog-item">
                         <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
-                             id="expandedImg-Kirchenheft" onclick="showModal(this);" src="../img/Muttertagskarte.JPEG"/>
+                             id="expandedImg-Einladung" onclick="showModal(this);"
+                             src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg"/>
                     </div>
                     <ul>
-                        <li><img alt="1" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
-                                 src="../img/Muttertagskarte.JPEG"/></li>
-                        <li><img alt="2" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
-                                 src="../img/Menu%20Card.jpg"/></li>
+                        <li><img alt="1" data-target="expandedImg-Einladung" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg"/></li>
+                        <li><img alt="2" data-target="expandedImg-Einladung" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_2.jpg"/></li>
+                        <li><img alt="3" data-target="expandedImg-Einladung" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_3.jpg"/></li>
+                        <li><img alt="4" data-target="expandedImg-Einladung" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_4.jpg"/></li>
+                        <li><img alt="5" data-target="expandedImg-Einladung" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_5.jpg"/></li>
+                        <li><img alt="6" data-target="expandedImg-Einladung" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Einladungskarte/Rosen_Einl_6.jpg"/></li>
                     </ul>
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "1.3";
-                    $article = "Kirchenheft | Serie Rosen";
-                    $image = "../img/Muttertagskarte.JPEG";
-                    $price = 2.50;
+                    $article_number = "2.2";
+                    $article = "Hochzeitseinladung | Serie Rosen";
+                    $image = "../img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg";
+                    $price = 1.80;
                     ?>
                     <div class="box">
                         <div class="box-title">
@@ -228,28 +173,85 @@ $cart->initial_cart();
                         </div>
                         <div class="box-text">
                             <ul>
-                                <li>Geschlossenes Format: DIN A5 (14,8 cm x 21,0 cm)</li>
-                                <li>Offenes Format: 29,7 cm x 21,0 cm</li>
+                                <li>Geschlossenes Format: DIN A6 (10,5 cm x 14,8 cm)</li>
+                                <li>Offenes Format: 31,5 cm x 14,8 cm</li>
                                 <li>Druck: Digitaldruck, Beidseitig bedruckt</li>
                                 <li>Papier: Bilderdruckpapier matt (300g)</li>
+                                <li>Briefumschläge können seperat dazu bestellt werden
+                                </li>
                                 <li>Mindestbestellmenge: 25 Stück</li>
                             </ul>
                             <form method="post">
                                 <p style="padding-bottom: 3%">
                                     Preis: <strong><?php echo number_format($price, 2, ',', '.'); ?>€/Stück</strong>
                                     <br>
-                                    Kordel ist im Preis nicht enthalten.
+                                    Briefumschläge, Polaroid-Bild und Rücksendekarte sind im Preis nicht enthalten.
                                 </p>
 
-                                <select id="anzahl-Kirchenheft" name="anzahl-Kirchenheft">
+                                <select id="anzahl-Einladung" name="anzahl-Einladung">
                                     <?php include '../includes/count-papeterie.php' ?>
                                 </select>
-
-                                <input type="submit" name="basket-Kirchenheft" class="button" value="In den Warenkorb">
+                                <input type="submit" name="basket-Einladung" class="button" value="In den Warenkorb">
 
                                 <?php
-                                if (isset($_POST['basket-Kirchenheft'])) {
-                                    $count = $_POST['anzahl-Kirchenheft'];
+                                if (isset($_POST['basket-Einladung'])) {
+                                    $count = $_POST['anzahl-Einladung'];
+                                    $total = $price * $count;
+                                    $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
+                                }
+                                ?>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="Polaroid">
+                <div class="column column-40 flex-columns image-container">
+                    <div class="dialog-item">
+                        <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
+                             id="expandedImg-polaroid" onclick="showModal(this);"
+                             src="../img/Serie_Rosen/Polaroid/Rosen_Polaroid_1.jpg"/>
+                    </div>
+                    <ul>
+                        <li><img alt="1" data-target="expandedImg-polaroid" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Polaroid/Rosen_Polaroid_1.jpg"/></li>
+                        <li><img alt="2" data-target="expandedImg-polaroid" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Polaroid/Rosen_Polaroid_2.jpg"/></li>
+                    </ul>
+                </div>
+                <div class="column column-50 flex-columns">
+                    <?php
+                    $article_number = "2.3";
+                    $article = "Polaroid-Bild | Serie Rosen";
+                    $image = "../img/Serie_Rosen/Polaroid/Rosen_Polaroid_1.jpg";
+                    $price = 1.30;
+                    ?>
+                    <div class="box">
+                        <div class="box-title">
+                            <h2><?php echo $article ?></h2>
+                        </div>
+                        <div class="box-text">
+                            <ul>
+                                <li>Format: DIN A7 (7,4 cm x 10,5 cm)</li>
+                                <li>Druck: Digitaldruck, einseitig bedruckt</li>
+                                <li>Papier: Bilderdruckpapier glänzend mit exklusivem UV-Lack (250g)</li>
+                                <li>Mindestbestellmenge: 25</li>
+                            </ul>
+                            <form method="post">
+                                <p style="padding-bottom: 3%">
+                                    Preis: <strong><?php echo number_format($price, 2, ',', '.'); ?>€/Stück</strong>
+                                    <br>
+                                </p>
+
+                                <select id="anzahl-polaroid" name="anzahl-polaroid">
+                                    <?php include '../includes/count-papeterie.php' ?>
+                                </select>
+                                <input type="submit" name="basket-polaroid" class="button" value="In den Warenkorb">
+
+                                <?php
+                                if (isset($_POST['basket-polaroid'])) {
+                                    $count = $_POST['anzahl-polaroid'];
                                     $total = $price * $count;
                                     $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
                                 }
@@ -264,21 +266,26 @@ $cart->initial_cart();
                 <div class="column column-40 flex-columns image-container">
                     <div class="dialog-item">
                         <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
-                             id="expandedImg-Rück" onclick="showModal(this);" src="../img/Muttertagskarte.JPEG"/>
+                             id="expandedImg-Rück" onclick="showModal(this);"
+                             src="../img/Serie_Rosen/Rücksendekarte/Rosen_Rueck_1.jpg"/>
                     </div>
                     <ul>
                         <li><img alt="1" data-target="expandedImg-Rück" onclick="switchImage(this);"
-                                 src="../img/Muttertagskarte.JPEG"/></li>
+                                 src="../img/Serie_Rosen/Rücksendekarte/Rosen_Rueck_1.jpg"/></li>
                         <li><img alt="2" data-target="expandedImg-Rück" onclick="switchImage(this);"
-                                 src="../img/Menu%20Card.jpg"/></li>
+                                 src="../img/Serie_Rosen/Rücksendekarte/Rosen_Rueck_2.jpg"/></li>
+                        <li><img alt="3" data-target="expandedImg-Rück" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Rücksendekarte/Rosen_Rueck_3.jpg"/></li>
+                        <li><img alt="4" data-target="expandedImg-Rück" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Rücksendekarte/Rosen_Rueck_4.jpg"/></li>
                     </ul>
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "1.4";
+                    $article_number = "2.4";
                     $article = "Rücksendekarte | Serie Rosen";
-                    $image = "../img/Muttertagskarte.JPEG";
-                    $price = 2.50;
+                    $image = "../img/Serie_Rosen/Rücksendekarte/Rosen_Rueck_1.jpg";
+                    $price = 1.30;
                     ?>
                     <div class="box">
                         <div class="box-title">
@@ -286,7 +293,11 @@ $cart->initial_cart();
                         </div>
                         <div class="box-text">
                             <ul>
-                                <li>(folgt)</li>
+                                <li>Format: Sonderformat (9,5 cm x 13,8 cm) passend zur Einladungskarte</li>
+                                <li>Druck: Digitaldruck, Beidseitig bedruckt</li>
+                                <li>Papier: Bilderdruckpapier matt (300g)</li>
+                                <li>Briefumschläge können seperat dazu bestellt werden</li>
+                                <li>Mindestbestellmenge: 25 Stück</li>
                             </ul>
                             <form method="post">
                                 <p style="padding-bottom: 3%">
@@ -312,25 +323,40 @@ $cart->initial_cart();
                 </div>
             </div>
 
-            <div class="row" id="Menükarte">
+            <div class="row" id="Kirchenheft">
                 <div class="column column-40 flex-columns image-container">
                     <div class="dialog-item">
                         <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
-                             id="expandedImg-Menü" onclick="showModal(this);" src="../img/Muttertagskarte.JPEG"/>
+                             id="expandedImg-Kirchenheft" onclick="showModal(this);"
+                             src="../img/Serie_Rosen/Kirchenheft/Rosen_Kirche_1.jpg"/>
                     </div>
                     <ul>
-                        <li><img alt="1" data-target="expandedImg-Menü" onclick="switchImage(this);"
-                                 src="../img/Muttertagskarte.JPEG"/></li>
-                        <li><img alt="2" data-target="expandedImg-Menü" onclick="switchImage(this);"
-                                 src="../img/Menu%20Card.jpg"/></li>
+                        <li><img alt="1" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Kirchenheft/Rosen_Kirche_1.jpg"/></li>
+                        <li><img alt="2" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Kirchenheft/Rosen_Kirche_2.jpg"/></li>
+                        <li><img alt="3" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Kirchenheft/Rosen_Kirche_3.jpg"/></li>
+                        <li><img alt="4" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Kirchenheft/Rosen_Kirche_4.jpg"/></li>
+                        <li><img alt="5" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Kirchenheft/Rosen_Kirche_5.jpg"/></li>
+                        <li><img alt="6" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Kirchenheft/Rosen_Kirche_6.jpg"/></li>
+                        <li><img alt="7" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Kirchenheft/Rosen_Kirche_7.jpg"/></li>
+                        <li><img alt="8" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Kirchenheft/Rosen_Kirche_8.jpg"/></li>
+                        <li><img alt="9" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Kirchenheft/Rosen_Kirche_9.jpg"/></li>
                     </ul>
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "1.5";
-                    $article = "Menükarte | Serie Rosen";
-                    $image = "../img/Muttertagskarte.JPEG";
-                    $price = 2.50;
+                    $article_number = "2.5";
+                    $article = "Kirchenheft | Serie Rosen";
+                    $image = "../img/Serie_Rosen/Kirchenheft/Rosen_Kirche_1.jpg";
+                    $price = 2.80;
                     ?>
                     <div class="box">
                         <div class="box-title">
@@ -338,7 +364,74 @@ $cart->initial_cart();
                         </div>
                         <div class="box-text">
                             <ul>
-                                <li>(folgt)</li>
+                                <li>Geschlossenes Format: DIN A5 (14,8 cm x 21,0 cm)</li>
+                                <li>Offenes Format: 29,7 cm x 21,0 cm</li>
+                                <li>Druck: Digitaldruck, Beidseitig bedruckt</li>
+                                <li>Papier: Bilderdruckpapier matt (250g)</li>
+                                <li>Seiten: 8-Seitig inkl. Umschlag (auf Anfrage auch gerne 12/16 Seiten)</li>
+                                <li>Mindestbestellmenge: 25 Stück</li>
+                            </ul>
+                            <form method="post">
+                                <p style="padding-bottom: 3%">
+                                    Preis: <strong><?php echo number_format($price, 2, ',', '.'); ?>€/Stück</strong>
+                                </p>
+
+                                <select id="anzahl-Kirchenheft" name="anzahl-Kirchenheft">
+                                    <?php include '../includes/count-papeterie.php' ?>
+                                </select>
+
+                                <input type="submit" name="basket-Kirchenheft" class="button" value="In den Warenkorb">
+
+                                <?php
+                                if (isset($_POST['basket-Kirchenheft'])) {
+                                    $count = $_POST['anzahl-Kirchenheft'];
+                                    $total = $price * $count;
+                                    $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
+                                }
+                                ?>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="Menükarte">
+                <div class="column column-40 flex-columns image-container">
+                    <div class="dialog-item">
+                        <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
+                             id="expandedImg-Menü" onclick="showModal(this);"
+                             src="../img/Serie_Rosen/Menükarte/Rosen_Menue_1.jpg"/>
+                    </div>
+                    <ul>
+                        <li><img alt="1" data-target="expandedImg-Menü" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Menükarte/Rosen_Menue_1.jpg"/></li>
+                        <li><img alt="2" data-target="expandedImg-Menü" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Menükarte/Rosen_Menue_2.jpg"/></li>
+                        <li><img alt="3" data-target="expandedImg-Menü" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Menükarte/Rosen_Menue_3.jpg"/></li>
+                        <li><img alt="4" data-target="expandedImg-Menü" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Menükarte/Rosen_Menue_4.jpg"/></li>
+                        <li><img alt="5" data-target="expandedImg-Menü" onclick="switchImage(this);"
+                                 src="../img/Serie_Rosen/Menükarte/Rosen_Menue_5.jpg"/></li>
+                    </ul>
+                </div>
+                <div class="column column-50 flex-columns">
+                    <?php
+                    $article_number = "2.6";
+                    $article = "Menükarte | Serie Rosen";
+                    $image = "../img/Serie_Rosen/Menükarte/Rosen_Menue_1.jpg";
+                    $price = 1.50;
+                    ?>
+                    <div class="box">
+                        <div class="box-title">
+                            <h2><?php echo $article ?></h2>
+                        </div>
+                        <div class="box-text">
+                            <ul>
+                                <li>Format: DIN Lang (10,5 cm x 21,0 cm)</li>
+                                <li>Druck: Digitaldruck, Beidseitig bedruckt</li>
+                                <li>Papier: Bilderdruckpapier matt (300g)</li>
+                                <li>Mindestbestellmenge: 25 Stück</li>
                             </ul>
                             <form method="post">
                                 <p style="padding-bottom: 3%">
@@ -364,110 +457,6 @@ $cart->initial_cart();
                 </div>
             </div>
 
-            <div class="row" id="Dankeskarte">
-                <div class="column column-40 flex-columns image-container">
-                    <div class="dialog-item">
-                        <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
-                             id="expandedImg-Danke" onclick="showModal(this);" src="../img/Muttertagskarte.JPEG"/>
-                    </div>
-                    <ul>
-                        <li><img alt="1" data-target="expandedImg-Danke" onclick="switchImage(this);"
-                                 src="../img/Muttertagskarte.JPEG"/></li>
-                        <li><img alt="2" data-target="expandedImg-Danke" onclick="switchImage(this);"
-                                 src="../img/Menu%20Card.jpg"/></li>
-                    </ul>
-                </div>
-                <div class="column column-50 flex-columns">
-                    <?php
-                    $article_number = "1.6";
-                    $article = "Dankeskarte | Serie Rosen";
-                    $image = "../img/Muttertagskarte.JPEG";
-                    $price = 2.50;
-                    ?>
-                    <div class="box">
-                        <div class="box-title">
-                            <h2><?php echo $article ?></h2>
-                        </div>
-                        <div class="box-text">
-                            <ul>
-                                <li>(folgt)</li>
-                            </ul>
-                            <form method="post">
-                                <p style="padding-bottom: 3%">
-                                    Preis: <strong><?php echo number_format($price, 2, ',', '.'); ?>€/Stück</strong>
-                                    <br>
-                                </p>
-
-                                <select id="anzahl-Danke" name="anzahl-Danke">
-                                    <?php include '../includes/count-papeterie.php' ?>
-                                </select>
-                                <input type="submit" name="basket-Danke" class="button" value="In den Warenkorb">
-
-                                <?php
-                                if (isset($_POST['basket-Danke'])) {
-                                    $count = $_POST['anzahl-Danke'];
-                                    $total = $price * $count;
-                                    $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
-                                }
-                                ?>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" id="Briefumschlag">
-                <div class="column column-40 flex-columns image-container">
-                    <div class="dialog-item">
-                        <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
-                             id="expandedImg-Danke" onclick="showModal(this);" src="../img/Muttertagskarte.JPEG"/>
-                    </div>
-                    <ul>
-                        <li><img alt="1" data-target="expandedImg-Danke" onclick="switchImage(this);"
-                                 src="../img/Muttertagskarte.JPEG"/></li>
-                        <li><img alt="2" data-target="expandedImg-Danke" onclick="switchImage(this);"
-                                 src="../img/Menu%20Card.jpg"/></li>
-                    </ul>
-                </div>
-                <div class="column column-50 flex-columns">
-                    <?php
-                    $article_number = "1.6";
-                    $article = "Briefumschläge | Serie Rosen";
-                    $image = "../img/Muttertagskarte.JPEG";
-                    $price = 2.50;
-                    ?>
-                    <div class="box">
-                        <div class="box-title">
-                            <h2><?php echo $article ?></h2>
-                        </div>
-                        <div class="box-text">
-                            <ul>
-                                <li>(folgt)</li>
-                            </ul>
-                            <form method="post">
-                                <p style="padding-bottom: 3%">
-                                    Preis: <strong><?php echo number_format($price, 2, ',', '.'); ?>€/Stück</strong>
-                                    <br>
-                                </p>
-
-                                <select id="anzahl-Danke" name="anzahl-Umschlag">
-                                    <?php include '../includes/count-papeterie.php' ?>
-                                </select>
-
-                                <input type="submit" name="basket-Umschlag" class="button" value="In den Warenkorb">
-
-                                <?php
-                                if (isset($_POST['basket-Umschlag'])) {
-                                    $count = $_POST['anzahl-Umschlag'];
-                                    $total = $price * $count;
-                                    $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
-                                }
-                                ?>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="modal fade in" id="modal-dialog" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content" data-target="modal-dialog">

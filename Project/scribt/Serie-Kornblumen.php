@@ -95,7 +95,7 @@ $cart->initial_cart();
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "1.1";
+                    $article_number = "3.1";
                     $article = "Safe the Date | Serie Kornblume";
                     $image = "../img/Serie_Kornblumen/Save_the_Date/Korn_StD_1.jpg";
                     $price = 1.40;
@@ -163,7 +163,7 @@ $cart->initial_cart();
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "1.2";
+                    $article_number = "3.2";
                     $article = "Hochzeitseinladung | Serie Kornblume";
                     $image = "../img/Serie_Kornblumen/Einladung/Korn_Einl_1.jpg";
                     $price = 1.80;
@@ -227,7 +227,7 @@ $cart->initial_cart();
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "1.3";
+                    $article_number = "3.3";
                     $article = "Info-Blatt | Serie Kornblume";
                     $image = "../img/Serie_Kornblumen/Info/Korn_Info_1.jpg";
                     $price = 1.40;
@@ -287,7 +287,7 @@ $cart->initial_cart();
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "1.4";
+                    $article_number = "3.4";
                     $article = "Rücksendekarte | Serie Kornblume";
                     $image = "../img/Serie_Kornblumen/Ruecksende/Korn_Rueck_1.jpg";
                     $price = 1.40;
@@ -351,7 +351,7 @@ $cart->initial_cart();
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "1.5";
+                    $article_number = "3.5";
                     $article = "Kirchenheft | Serie Kornblume";
                     $image = "../img/Serie_Kornblumen/Kirche/Korn_Kirche_1.jpg";
                     $price = 2.80;
@@ -414,7 +414,7 @@ $cart->initial_cart();
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "1.6";
+                    $article_number = "3.6";
                     $article = "Menükarte | Serie Kornblume";
                     $image = "../img/Serie_Kornblumen/Menue/Korn_Menue_1.jpg";
                     $price = 1.40;

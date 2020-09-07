@@ -19,72 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="change: Add &quot;Add to Basket&quot; function">
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Einladung/Korn_Einl_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Einladung/Korn_Einl_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Einladung/Korn_Einl_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Einladung/Korn_Einl_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Einladung/Korn_Einl_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Einladung/Korn_Einl_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Info/Korn_Info_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Info/Korn_Info_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Info/Korn_Info_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Info/Korn_Info_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Kirche/Korn_Kirche_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Kirche/Korn_Kirche_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Kirche/Korn_Kirche_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Kirche/Korn_Kirche_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Kirche/Korn_Kirche_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Korn_Titel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Menue/Korn_Menue_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Menue/Korn_Menue_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Ruecksende/Korn_Rueck_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Ruecksende/Korn_Rueck_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Ruecksende/Korn_Rueck_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Save_the_Date/Korn_StD_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Save_the_Date/Korn_StD_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Save_the_Date/Korn_StD_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Save_the_Date/Korn_StD_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Save_the_Date/Korn_StD_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/Texte und Kosten_Serie Kornblumen.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Kornblumen/~$xte und Kosten_Serie Kornblumen.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Menükarte/Rosen_Menue_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Menükarte/Rosen_Menue_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Menükarte/Rosen_Menue_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Menükarte/Rosen_Menue_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Menükarte/Rosen_Menue_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Polaroid/Rosen_Polaroid_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Polaroid/Rosen_Polaroid_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Rosen_Titel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Rücksendekarte/Rosen_Rueck_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Rücksendekarte/Rosen_Rueck_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Rücksendekarte/Rosen_Rueck_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Rücksendekarte/Rosen_Rueck_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Save-the-Date/Rosen_StD_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Save-the-Date/Rosen_StD_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Save-the-Date/Rosen_StD_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Save-the-Date/Rosen_StD_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Rosen/Texte und Kosten_Serie Rosen.docx" afterDir="false" />
+    <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="change: Add Images and Texts for Serie | Rosen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/count-papeterie.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/count-papeterie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Basket.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Papeterie.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Papeterie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scribt/Serie-Kornblumen.php" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Kornblumen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scribt/Serie-Rosen.php" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Rosen.php" afterDir="false" />
     </list>
@@ -165,7 +101,7 @@
       <workItem from="1597330327478" duration="67000" />
       <workItem from="1597330433194" duration="3714000" />
       <workItem from="1597830192359" duration="555000" />
-      <workItem from="1599042320541" duration="23063000" />
+      <workItem from="1599042320541" duration="24226000" />
     </task>
     <task id="LOCAL-00001" summary="change: Edit Layout of the Sites like expected">
       <created>1596657359783</created>
@@ -216,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599232707989</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="change: Add Images and Texts for Serie | Rosen">
+      <created>1599464034342</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599464034342</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +190,8 @@
     <MESSAGE value="change: Add PHP" />
     <MESSAGE value="new: Add items to basket" />
     <MESSAGE value="change: Add &quot;Add to Basket&quot; function" />
-    <option name="LAST_COMMIT_MESSAGE" value="change: Add &quot;Add to Basket&quot; function" />
+    <MESSAGE value="change: Add Images and Texts for Serie | Rosen" />
+    <option name="LAST_COMMIT_MESSAGE" value="change: Add Images and Texts for Serie | Rosen" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -281,10 +225,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="674" y="139" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597930120075" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1599226270471">
+    <state x="461" y="163" key="SettingsEditor" timestamp="1599465012081">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599226270471" />
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599465012081" />
     <state width="498" height="445" key="SwitcherDM" timestamp="1596740531506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
