@@ -1,13 +1,4 @@
 <?php
-/*
- * <!--
- *   ~ /**
- *   ~ * Copyright (c) 2020, 2020 Veronika Fischer
- *   ~ * All Rights Reserved
- *   ~ *
- *   -->
- *
- */
 
 include '../includes/copyright.php';
 
@@ -63,8 +54,8 @@ $cart->initial_cart();
             </p>
         </section>
 
-        <section class="basket intro" id="basket-icon" style="padding-bottom: 5%">
-            <p class="headline">Warenkorb</p>
+        <section class="basket intro" id="basket-icon" style="padding-bottom: 0">
+            <p class="headline" id="headline_basket">Warenkorb</p>
         </section>
 
         <section class="basket" id="filled" style="padding-bottom: 5%">
@@ -120,13 +111,15 @@ $cart->initial_cart();
                                 $total = $total + $innerArray[5];
                             }
 
+                            $delivery = 4.90;
+
                             $MWSTRate = 0.19;
                             $MWSTSum = $total * $MWSTRate;
 
-                            $amount = $total + $MWSTSum;
+                            $amount = $total + $delivery + $MWSTSum;
                             ?>
                             <p><?php echo number_format($total, 2, ',', '.'); ?> €</>
-                            <p>testing €</p>
+                            <p><?php echo number_format($delivery, 2, ',', '.'); ?> €</p>
                             <p><?php echo number_format($MWSTSum, 2, ',', '.'); ?> €</p>
                         </div>
                     </div>
@@ -144,7 +137,7 @@ $cart->initial_cart();
 
             <div class="row">
                 <div class="column-100" style="text-align: right">
-                    <div class="button-field" style="flex-flow: column-reverse">
+                    <div class="button-field">
                         <button class="button" onclick="nextStep('step-one')">
                             Weiter
                         </button>
@@ -308,6 +301,9 @@ $cart->initial_cart();
         </section>
 
         <section class="step step-summary" id="step-summary">
+            <div class="row" style="padding-top: 3%">
+            </div>
+            
             <div class="row">
                 <?php
                 $cart->getCart();
@@ -331,13 +327,15 @@ $cart->initial_cart();
                                 $total = $total + $innerArray[5];
                             }
 
+                            $delivery = 4.90;
+
                             $MWSTRate = 0.19;
                             $MWSTSum = $total * $MWSTRate;
 
-                            $amount = $total + $MWSTSum;
+                            $amount = $total + $delivery + $MWSTSum;
                             ?>
                             <p><?php echo number_format($total, 2, ',', '.'); ?> €</>
-                            <p>testing €</p>
+                            <p><?php echo number_format($delivery, 2, ',', '.'); ?> €</p>
                             <p><?php echo number_format($MWSTSum, 2, ',', '.'); ?> €</p>
                         </div>
                     </div>

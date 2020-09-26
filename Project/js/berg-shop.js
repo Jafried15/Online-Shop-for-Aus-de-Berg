@@ -44,6 +44,7 @@ function nextStep(current_step) {
         document.getElementById("step-1-icon").classList.add("step-1");
         document.getElementById("step-2-icon").classList.remove("step-2");
         document.getElementById("step-2-icon").classList.add("step-2-white");
+        document.getElementById("headline_basket").innerHTML = "Adresse eingeben";
 
     } else if (current_step === "step-two") {
         document.getElementById("step-two").style.display = "none";
@@ -54,6 +55,15 @@ function nextStep(current_step) {
         document.getElementById("step-2-icon").classList.add("step-2");
         document.getElementById("step-3-icon").classList.remove("step-3");
         document.getElementById("step-3-icon").classList.add("step-3-white");
+        document.getElementById("headline_basket").innerHTML = "Zahlungsart wählen";
+    } else if (current_step === "step-three") {
+        document.getElementById("step-three").style.display = "none";
+        document.getElementById("step-summary").style.display = "block";
+        document.getElementById("step-3").classList.add("active");
+        document.getElementById("step-3-icon").classList.remove("step-3-white");
+        document.getElementById("step-3-icon").classList.add("step-3");
+        document.getElementById("filled").style.display = "none";
+        document.getElementById("headline_basket").innerHTML = "Zusammenfassung";
     }
 }
 
@@ -68,6 +78,7 @@ function backStep(current_step) {
         document.getElementById("step-2-icon").classList.add("step-2");
         document.getElementById("step-1-icon").classList.remove("step-1");
         document.getElementById("step-1-icon").classList.add("step-1-white");
+        document.getElementById("headline_basket").innerHTML = "Warenkorb";
     } else if (current_step === "step-three") {
         document.getElementById("step-two").style.display = "block";
         document.getElementById("step-three").style.display = "none";
@@ -77,6 +88,15 @@ function backStep(current_step) {
         document.getElementById("step-3-icon").classList.add("step-3");
         document.getElementById("step-2-icon").classList.remove("step-2");
         document.getElementById("step-2-icon").classList.add("step-2-white");
+        document.getElementById("headline_basket").innerHTML = "Adresse eingeben";
+    } else if (current_step === "step-summary") {
+        document.getElementById("step-three").style.display = "block";
+        document.getElementById("step-summary").style.display = "none";
+        document.getElementById("step-3").classList.add("active");
+        document.getElementById("step-3-icon").classList.remove("step-3");
+        document.getElementById("step-3-icon").classList.add("step-3-white");
+        document.getElementById("filled").style.display = "block";
+        document.getElementById("headline_basket").innerHTML = "Zahlungsart wählen";
     }
 }
 

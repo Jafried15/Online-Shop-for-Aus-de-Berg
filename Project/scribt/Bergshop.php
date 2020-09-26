@@ -1,14 +1,7 @@
-<!--
-  ~
-  ~   ~ /**
-  ~   ~ * Copyright (c) 2020, 2020 Veronika Fischer
-  ~   ~ * All Rights Reserved
-  ~   ~ **/
-  ~
-  ~
-  -->
-
 <?php
+
+include '../includes/copyright.php';
+
 // Die Session Starten
 session_start();
 
@@ -26,6 +19,9 @@ $cart->initial_cart();
 <html lang="de">
 <head>
     <title>Berg-Shop</title>
+
+    <link href="../img/Aus-de-Berg_Favicon.png"
+          rel="shortcut icon" type="image/x-icon">
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">

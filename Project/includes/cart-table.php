@@ -42,6 +42,8 @@ $Array = $_SESSION['cart'];
         <td><img src="<?php echo $innerArray[2] ?>" alt="article-image"> <?php echo $innerArray[1] ?></td>
         <td><?php echo number_format($innerArray[3], 2, ',', '.') . " €/Stück" ?></td>
         <td><?php echo $innerArray[4] ?>
+            <br>
+            <button>Löschen</button>
         </td>
         <td><?php echo number_format($innerArray[5], 2, ',', '.') . " €" ?></td>
         <?php
@@ -49,3 +51,5 @@ $Array = $_SESSION['cart'];
         ?>
     </tr>
 </table>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

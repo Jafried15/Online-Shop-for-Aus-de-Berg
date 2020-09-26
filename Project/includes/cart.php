@@ -34,7 +34,7 @@ class cart
      * @param int $Anzahl
      * @param float $Gesamt
      */
-    public function insertArtikel($Artikelnummer, $Bezeichnung, $Image, $Preis, $Anzahl, $Gesamt)
+    public function insertArtikel(int $Artikelnummer, string $Bezeichnung, string $Image, float $Preis, int $Anzahl, float $Gesamt)
     {
         $Artikel = array($Artikelnummer, $Bezeichnung, $Image, $Preis, $Anzahl, $Gesamt);
         $cart = $_SESSION['cart'];
@@ -42,8 +42,12 @@ class cart
         if ($key) {
             $count = intval($this->get_cartValue_at_Point($key));
             $count = $count + $Anzahl;
+            $Artikel[4] = $count;
+            $id = $this->get_cartValue_at_Point($key);
+            $array = array($id => $Artikel);
+        } else {
+            array_push($cart, $Artikel);
         }
-        array_push($cart, $Artikel);
         $_SESSION['cart'] = $cart;
     }
 
