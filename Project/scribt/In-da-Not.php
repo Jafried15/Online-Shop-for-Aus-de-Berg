@@ -21,7 +21,7 @@ $price = 19.90;
 if (isset($_POST['basket'])) {
     $count = $_POST['anzahl'];
     $total = $price * $count;
-    $cart->insertArtikel($article_number, $article, $image, $price, $count, $total);
+    $cart->insertArticle($article_number, $article, $image, $price, $count, $total);
 }
 ?>
 

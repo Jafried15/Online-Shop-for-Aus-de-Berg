@@ -26,34 +26,33 @@ class cart
 
     /**
      *
-     * Fügt einen Artikel in das Array ein
-     * @param int $Artikelnummer
-     * @param string $Bezeichnung
+     * Add Article to Cart
+     * @param int $Article_number
+     * @param string $Description
      * @param string $Image
-     * @param float $Preis
-     * @param int $Anzahl
-     * @param float $Gesamt
+     * @param float $Price
+     * @param int $Count
+     * @param float $Total
      */
-    public function insertArtikel(int $Artikelnummer, string $Bezeichnung, string $Image, float $Preis, int $Anzahl, float $Gesamt)
+    public function insertArticle(int $Article_number, string $Description, string $Image, float $Price, int $Count, float $Total)
     {
-        $Artikel = array($Artikelnummer, $Bezeichnung, $Image, $Preis, $Anzahl, $Gesamt);
+        $Article = array($Article_number, $Description, $Image, $Price, $Count, $Total);
         $cart = $_SESSION['cart'];
-        $key = array_search($Artikelnummer, $cart);
+        $key = array_search($Article_number, $cart);
         if ($key) {
             $count = intval($this->get_cartValue_at_Point($key));
-            $count = $count + $Anzahl;
-            $Artikel[4] = $count;
+            $count = $count + $Count;
+            $Article[4] = $count;
             $id = $this->get_cartValue_at_Point($key);
-            $array = array($id => $Artikel);
+            $array = array($id => $Article);
         } else {
-            array_push($cart, $Artikel);
+            array_push($cart, $Article);
         }
         $_SESSION['cart'] = $cart;
     }
 
     /**
-     *
-     * Gibt Alle Artikel des Array in einer Tabelle aus.
+     * Show all Articles from Array in an table
      */
     public function getCart()
     {
@@ -77,8 +76,7 @@ class cart
 
 
     /**
-     *
-     * Löscht den Waren Korb
+     * Delete Cart
      */
     public function undo_cart()
     {
@@ -87,30 +85,30 @@ class cart
 
 
     /**
-     * Gibt einen Datensatz Zurück
+     * Returns one Value
      * @param int $point
-     * @return
+     * @return mixed
      */
-    public function get_cartValue_at_Point($point)
+    public function get_cartValue_at_Point(int $point)
     {
         $Array = $_SESSION['cart'];
         return $Array[$point];
     }
 
+    // TODO: Delete article by id at point (Get function over search for point)
+
     /**
-     *
-     * Entfernt ein Artikel am Point n
+     * Delete Value at one Point
      * @param int $article
      */
-    public function delete_cartValue_at_Point($article)
+    public function delete_cartValue_at_Point(int $article)
     {
 
         unset($_SESSION['cart'], $point);
     }
 
     /**
-     *
-     * Gibt die Anzahl der Artikel zurück
+     * Get Article Count in Cart
      */
     public function get_cart_count()
     {
@@ -118,6 +116,5 @@ class cart
     }
 }
 
-?>
 
 

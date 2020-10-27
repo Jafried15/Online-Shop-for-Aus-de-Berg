@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d2cd333-01ee-490d-923a-987eace00547" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Online-Shop-for-Aus-de-Berg.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/includes/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/includes/cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scribt/In-da-Not.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/In-da-Not.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scribt/Leck-o-Mio.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/Leck-o-Mio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scribt/SchaustDuGuadAus.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/SchaustDuGuadAus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scribt/Serie-Buche.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/Serie-Buche.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scribt/Serie-Kornblumen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/Serie-Kornblumen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scribt/Serie-Rosen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/Serie-Rosen.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jT1IlOveldGC8ysIsOTkIaUKaX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d2cd333-01ee-490d-923a-987eace00547" name="Default Changelist" comment="" />
+      <created>1603813189965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603813189965</updated>
+      <workItem from="1603813191178" duration="35000" />
+      <workItem from="1603813235845" duration="1376000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="906" y="378" width="1049" height="680" key="#Inspections" timestamp="1603813853078">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="906" y="378" width="1049" height="680" key="#Inspections/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603813853078" />
+    <state x="781" y="345" key="SettingsEditor" timestamp="1603813471353">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="345" key="SettingsEditor/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603813471353" />
+    <state x="964" y="286" width="632" height="828" key="find.popup" timestamp="1603814295281">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="964" y="286" width="632" height="828" key="find.popup/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603814295281" />
+  </component>
+</project>
