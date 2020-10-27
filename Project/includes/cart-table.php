@@ -33,19 +33,16 @@ $Array = $_SESSION['cart'];
         <th>Gesamtpreis</th>
     </tr>
     <?php
-    for ($i = 0;
-    $i < count($Array);
-    $i++) {
-    $innerArray = $Array[$i];
+    foreach ($_SESSION["cart"] as $item) {
     ?>
     <tr>
-        <td><img src="<?php echo $innerArray[2] ?>" alt="article-image"> <?php echo $innerArray[1] ?></td>
-        <td><?php echo number_format($innerArray[3], 2, ',', '.') . " €/Stück" ?></td>
-        <td><?php echo $innerArray[4] ?>
+        <td><img src="<?php echo $item[2] ?>" alt="article-image"> <?php echo $item[1] ?></td>
+        <td><?php echo number_format($item[3], 2, ',', '.') . " €/Stück" ?></td>
+        <td><?php echo $item[4] ?>
             <br>
-            <button>Löschen</button>
+            <a onclick="<?php $cart->delete_cartValue_at_Point($item[1]) ?>"
         </td>
-        <td><?php echo number_format($innerArray[5], 2, ',', '.') . " €" ?></td>
+        <td><?php echo number_format($item[5], 2, ',', '.') . " €" ?></td>
         <?php
         }
         ?>

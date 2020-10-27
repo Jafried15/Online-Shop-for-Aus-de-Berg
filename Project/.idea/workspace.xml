@@ -20,21 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="change: Add &quot;Add to Basket&quot; function">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/shopping-cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/cart-table.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/cart-table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/copyright.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/copyright.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/count-papeterie.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/count-papeterie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/berg-shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/berg-shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Basket.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Berg-Produkte.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Berg-Produkte.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Bergshop.php" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Bergshop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/In-da-Not.php" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/In-da-Not.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Serie-Kornblumen.php" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Kornblumen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Serie-Rosen.php" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Serie-Rosen.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -118,6 +108,7 @@
       <workItem from="1600844222353" duration="348000" />
       <workItem from="1600846323336" duration="569000" />
       <workItem from="1600870787138" duration="5667000" />
+      <workItem from="1602929117489" duration="4109000" />
     </task>
     <task id="LOCAL-00001" summary="change: Edit Layout of the Sites like expected">
       <created>1596657359783</created>
@@ -276,9 +267,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600872973023" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599144611022">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2751" y="-57" width="896" height="913" key="search.everywhere.popup" timestamp="1602931451204">
+      <screen x="1920" y="-360" width="2560" height="1400" />
     </state>
+    <state x="2751" y="-57" width="896" height="913" key="search.everywhere.popup/0.0.1920.1040/1920.-360.2560.1400@1920.-360.2560.1400" timestamp="1602931451204" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599144611022" />
   </component>
 </project>

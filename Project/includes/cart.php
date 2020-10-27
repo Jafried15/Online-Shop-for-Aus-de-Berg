@@ -100,11 +100,12 @@ class cart
     /**
      *
      * Entfernt ein Artikel am Point n
-     * @param int $point
+     * @param int $article
      */
-    public function delete_cartValue_at_Point($point)
+    public function delete_cartValue_at_Point($article)
     {
-        array_splice($_SESSION['cart'], $point, $point);
+
+        unset($_SESSION['cart'], $point);
     }
 
     /**
