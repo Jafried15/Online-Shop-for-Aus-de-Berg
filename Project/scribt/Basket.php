@@ -104,11 +104,10 @@ $cart->initial_cart();
                         </div>
                         <div class="column-50" style="text-align: right">
                             <?php
-                            $Array = $_SESSION['cart'];
+                            $cart = $_SESSION['cart'];
                             $total = 0;
-                            for ($i = 0; $i < count($Array); $i++) {
-                                $innerArray = $Array[$i];
-                                $total = $total + $innerArray[5];
+                            foreach ($cart as $item) {
+                                $total = $total + $item['total'];
                             }
 
                             $delivery = 4.90;
@@ -303,7 +302,7 @@ $cart->initial_cart();
         <section class="step step-summary" id="step-summary">
             <div class="row" style="padding-top: 3%">
             </div>
-            
+
             <div class="row">
                 <?php
                 $cart->getCart();

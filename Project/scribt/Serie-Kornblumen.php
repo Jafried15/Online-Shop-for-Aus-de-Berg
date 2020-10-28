@@ -2,16 +2,16 @@
 
 include '../includes/copyright.php';
 
-// Die Session Starten
+// Start Session
 session_start();
 
-// Die Klasse Includieren
+// Include Class
 include_once '../includes/cart.php';
 
-// Eine Neue Instanz der Klasse cart erstellen
+// Create new Instance of cart
 $cart = new cart();
 
-// Prüfen ob der Warenkorb besteht
+// Check if cart exists
 $cart->initial_cart();
 ?>
 
@@ -86,7 +86,7 @@ $cart->initial_cart();
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "3.1";
+                    $article_number = 3.1;
                     $article = "Safe the Date | Serie Kornblume";
                     $image = "../img/Serie_Kornblumen/Save_the_Date/Korn_StD_1.jpg";
                     $price = 1.40;
@@ -120,8 +120,7 @@ $cart->initial_cart();
                                 <?php
                                 if (isset($_POST['basket-StD'])) {
                                     $count = $_POST['anzahl-StD'];
-                                    $total = $price * $count;
-                                    $cart->insertArticle($article_number, $article, $image, $price, $count, $total);
+                                    $cart->insertArticle($article_number, $article, $image, $price, $count);
                                 }
                                 ?>
                             </form>
@@ -154,7 +153,7 @@ $cart->initial_cart();
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "3.2";
+                    $article_number = 3.2;
                     $article = "Hochzeitseinladung | Serie Kornblume";
                     $image = "../img/Serie_Kornblumen/Einladung/Korn_Einl_1.jpg";
                     $price = 1.80;
@@ -188,8 +187,7 @@ $cart->initial_cart();
                                 <?php
                                 if (isset($_POST['basket-Einladung'])) {
                                     $count = $_POST['anzahl-Einladung'];
-                                    $total = $price * $count;
-                                    $cart->insertArticle($article_number, $article, $image, $price, $count, $total);
+                                    $cart->insertArticle($article_number, $article, $image, $price, $count);
                                 }
                                 ?>
                             </form>
@@ -218,7 +216,7 @@ $cart->initial_cart();
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "3.3";
+                    $article_number = 3.3;
                     $article = "Info-Blatt | Serie Kornblume";
                     $image = "../img/Serie_Kornblumen/Info/Korn_Info_1.jpg";
                     $price = 1.40;
@@ -250,8 +248,7 @@ $cart->initial_cart();
                                 <?php
                                 if (isset($_POST['basket-Info'])) {
                                     $count = $_POST['anzahl-Info'];
-                                    $total = $price * $count;
-                                    $cart->insertArticle($article_number, $article, $image, $price, $count, $total);
+                                    $cart->insertArticle($article_number, $article, $image, $price, $count);
                                 }
                                 ?>
                             </form>
@@ -278,7 +275,7 @@ $cart->initial_cart();
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "3.4";
+                    $article_number = 3.4;
                     $article = "Rücksendekarte | Serie Kornblume";
                     $image = "../img/Serie_Kornblumen/Ruecksende/Korn_Rueck_1.jpg";
                     $price = 1.40;
@@ -310,8 +307,7 @@ $cart->initial_cart();
                                 <?php
                                 if (isset($_POST['basket-Rück'])) {
                                     $count = $_POST['anzahl-Rück'];
-                                    $total = $price * $count;
-                                    $cart->insertArticle($article_number, $article, $image, $price, $count, $total);
+                                    $cart->insertArticle($article_number, $article, $image, $price, $count);
                                 }
                                 ?>
                             </form>
@@ -342,7 +338,7 @@ $cart->initial_cart();
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "3.5";
+                    $article_number = 3.5;
                     $article = "Kirchenheft | Serie Kornblume";
                     $image = "../img/Serie_Kornblumen/Kirche/Korn_Kirche_1.jpg";
                     $price = 2.80;
@@ -379,8 +375,7 @@ $cart->initial_cart();
                                 <?php
                                 if (isset($_POST['basket-Kirchenheft'])) {
                                     $count = $_POST['anzahl-Kirchenheft'];
-                                    $total = $price * $count;
-                                    $cart->insertArticle($article_number, $article, $image, $price, $count, $total);
+                                    $cart->insertArticle($article_number, $article, $image, $price, $count);
                                 }
                                 ?>
                             </form>
@@ -405,7 +400,7 @@ $cart->initial_cart();
                 </div>
                 <div class="column column-50 flex-columns">
                     <?php
-                    $article_number = "3.6";
+                    $article_number = 3.6;
                     $article = "Menükarte | Serie Kornblume";
                     $image = "../img/Serie_Kornblumen/Menue/Korn_Menue_1.jpg";
                     $price = 1.40;
@@ -435,8 +430,7 @@ $cart->initial_cart();
                                 <?php
                                 if (isset($_POST['basket-Menü'])) {
                                     $count = $_POST['anzahl-Menü'];
-                                    $total = $price * $count;
-                                    $cart->insertArticle($article_number, $article, $image, $price, $count, $total);
+                                    $cart->insertArticle($article_number, $article, $image, $price, $count);
                                 }
                                 ?>
                             </form>

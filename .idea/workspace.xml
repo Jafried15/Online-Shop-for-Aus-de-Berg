@@ -19,17 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d2cd333-01ee-490d-923a-987eace00547" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Online-Shop-for-Aus-de-Berg.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="5d2cd333-01ee-490d-923a-987eace00547" name="Default Changelist" comment="Add to Cart now adds up items">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/includes/cart-table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/includes/cart-table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/includes/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/includes/cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/scribt/In-da-Not.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/In-da-Not.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/scribt/Leck-o-Mio.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/Leck-o-Mio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/scribt/SchaustDuGuadAus.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/SchaustDuGuadAus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/scribt/Serie-Buche.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/Serie-Buche.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/includes/count-papeterie.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/includes/count-papeterie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/includes/count-products.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/includes/count-products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/js/berg-shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/js/berg-shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/js/shopping-cart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scribt/Basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/Basket.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/scribt/Serie-Kornblumen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/Serie-Kornblumen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/scribt/Serie-Rosen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/Serie-Rosen.php" afterDir="false" />
     </list>
@@ -44,6 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1jT1IlOveldGC8ysIsOTkIaUKaX" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,9 +55,8 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/programs/php-7.4.12-Win32-vc15-x64/php.exe" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -70,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603813189965</updated>
       <workItem from="1603813191178" duration="35000" />
-      <workItem from="1603813235845" duration="1376000" />
+      <workItem from="1603813235845" duration="21834000" />
     </task>
     <servers />
   </component>
@@ -91,12 +90,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add to Cart now adds up items" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add to Cart now adds up items" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="906" y="378" width="1049" height="680" key="#Inspections" timestamp="1603813853078">
+    <state x="860" y="354" key="#CLI_Interpreters" timestamp="1603871320624">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="906" y="378" width="1049" height="680" key="#Inspections/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603813853078" />
+    <state x="860" y="354" key="#CLI_Interpreters/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603871320624" />
+    <state x="906" y="378" width="1049" height="680" key="#Inspections" timestamp="1603893546212">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="906" y="378" width="1049" height="680" key="#Inspections/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603893546212" />
+    <state x="923" y="251" key="#PHP" timestamp="1603871323305">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="923" y="251" key="#PHP/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603871323305" />
+    <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1603876370687">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1060" y="454" key="FileChooserDialogImpl/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603876370687" />
     <state x="781" y="345" key="SettingsEditor" timestamp="1603813471353">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -105,5 +118,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="964" y="286" width="632" height="828" key="find.popup/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603814295281" />
+    <state x="994" y="465" key="refactoring.ChangeSignatureDialog" timestamp="1603889139167">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="994" y="465" key="refactoring.ChangeSignatureDialog/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603889139167" />
   </component>
 </project>

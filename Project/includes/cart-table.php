@@ -1,26 +1,14 @@
 <?php
 
-/*
- * <!--
- *   ~ /**
- *   ~ * Copyright (c) 2020, 2020 Veronika Fischer
- *   ~ * All Rights Reserved
- *   ~ *
- *   -->
- *
- */
+include '../includes/copyright.php';
 
-
-// Die Session Starten
-session_start();
-
-// Die Klasse Includieren
+// Include Class
 include_once '../includes/cart.php';
 
-// Eine Neue Instanz der Klasse cart erstellen
+// Create new Instance of cart
 $cart = new cart();
 
-// Prüfen ob der Warenkorb besteht
+// Check if cart exists
 $cart->initial_cart();
 $Array = $_SESSION['cart'];
 ?>
@@ -36,17 +24,15 @@ $Array = $_SESSION['cart'];
     foreach ($_SESSION["cart"] as $item) {
     ?>
     <tr>
-        <td><img src="<?php echo $item[2] ?>" alt="article-image"> <?php echo $item[1] ?></td>
-        <td><?php echo number_format($item[3], 2, ',', '.') . " €/Stück" ?></td>
-        <td><?php echo $item[4] ?>
-            <br>
-            <a onclick="<?php $cart->delete_cartValue_at_Point($item[1]) ?>"
+        <td><img src="<?php echo $item['image'] ?>" alt="article-image"> <?php echo $item['name'] ?></td>
+        <td><?php echo number_format($item['price'], 2, ',', '.') . " €/Stück" ?></td>
+        <td>
+            <?php echo $item['count'] ?>
+            <button onclick="<?php $cart->removeArticle($item['id']) ?>"><i class="fa fa-trash"></i></button>
         </td>
-        <td><?php echo number_format($item[5], 2, ',', '.') . " €" ?></td>
+        <td><?php echo number_format($item['total'], 2, ',', '.') . " €" ?></td>
         <?php
         }
         ?>
     </tr>
 </table>
-
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
