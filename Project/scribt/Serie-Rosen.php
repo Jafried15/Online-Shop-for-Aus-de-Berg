@@ -84,15 +84,17 @@ $cart->initial_cart();
                     </ul>
                 </div>
                 <div class="column column-50 flex-columns">
-                    <?php
-                    $article_number = 2.1;
-                    $article = "Safe the Date | Serie Rosen";
-                    $image = "../img/Serie_Rosen/Save-the-Date/Rosen_StD_1.jpg";
-                    $price = 1.50;
-                    ?>
+                    <script>
+                        let article_number = 2.1;
+                        let name = "Safe the Date | Serie Rosen"
+                        let image = "../img/Serie_Rosen/Save-the-Date/Rosen_StD_1.jpg"
+                        let price = 1.50;
+                    </script>
                     <div class="box">
                         <div class="box-title">
-                            <h2><?php echo $article ?></h2>
+                            <h2>
+                                <script>document.write(name)</script>
+                            </h2>
                         </div>
                         <div class="box-text">
                             <ul>
@@ -105,23 +107,27 @@ $cart->initial_cart();
                             </ul>
                             <form method="post">
                                 <p style="padding-bottom: 3%">
-                                    Preis: <strong><?php echo number_format($price, 2, ',', '.'); ?>€/Stück</strong>
+                                    Preis: <strong>
+                                        <script>document.write(price.toString())</script>
+                                        €/Stück</strong>
                                     <br>
                                     Briefumschläge sind im Preis nicht enthalten.
                                 </p>
 
                                 <select id="anzahl-StD" name="anzahl-StD">
-                                    <?php include '../includes/count-papeterie.php' ?>
+                                    <option selected value="25">25 Stück</option>
+                                    <option value="50">50 Stück</option>
+                                    <option value="75">75 Stück</option>
+                                    <option value="100">100 Stück</option>
+                                    <option value="125">125 Stück</option>
+                                    <option value="150">150 Stück</option>
+                                    <option value="175">175 Stück</option>
+                                    <option value="200">200 Stück</option>
                                 </select>
 
-                                <input type="submit" name="basket-StD" class="button" value="In den Warenkorb">
+                                <input type="submit" name="basket-StD" class="button" value="In den Warenkorb"
+                                       onclick="addItemToCart(article_number, name, image, price, document.getElementById('anzahl-StD').value)">
 
-                                <?php
-                                if (isset($_POST['basket-StD'])) {
-                                    $count = $_POST['anzahl-StD'];
-                                    $cart->insertArticle($article_number, $article, $image, $price, $count);
-                                }
-                                ?>
                             </form>
                         </div>
                     </div>
@@ -181,14 +187,9 @@ $cart->initial_cart();
                                 <select id="anzahl-Einladung" name="anzahl-Einladung">
                                     <?php include '../includes/count-papeterie.php' ?>
                                 </select>
-                                <input type="submit" name="basket-Einladung" class="button" value="In den Warenkorb">
 
-                                <?php
-                                if (isset($_POST['basket-Einladung'])) {
-                                    $count = $_POST['anzahl-Einladung'];
-                                    $cart->insertArticle($article_number, $article, $image, $price, $count);
-                                }
-                                ?>
+                                <input type="submit" name="basket-Einladung" class="button" value="In den Warenkorb"
+                                       onclick="addItemToCart(article_number, name, image, price, document.getElementById('anzahl-Einladung').value)">
                             </form>
                         </div>
                     </div>
@@ -233,17 +234,12 @@ $cart->initial_cart();
                                     <br>
                                 </p>
 
-                                <select id="anzahl-polaroid" name="anzahl-polaroid">
+                                <select id="anzahl-Polaroid" name="anzahl-polaroid">
                                     <?php include '../includes/count-papeterie.php' ?>
                                 </select>
-                                <input type="submit" name="basket-polaroid" class="button" value="In den Warenkorb">
 
-                                <?php
-                                if (isset($_POST['basket-polaroid'])) {
-                                    $count = $_POST['anzahl-polaroid'];
-                                    $cart->insertArticle($article_number, $article, $image, $price, $count);
-                                }
-                                ?>
+                                <input type="submit" name="basket-polaroid" class="button" value="In den Warenkorb"
+                                       onclick="addItemToCart(article_number, name, image, price, document.getElementById('anzahl-Polaroid').value)">
                             </form>
                         </div>
                     </div>
@@ -296,14 +292,10 @@ $cart->initial_cart();
                                 <select id="anzahl-Rück" name="anzahl-Rück">
                                     <?php include '../includes/count-papeterie.php' ?>
                                 </select>
-                                <input type="submit" name="basket-Rück" class="button" value="In den Warenkorb">
 
-                                <?php
-                                if (isset($_POST['basket-Rück'])) {
-                                    $count = $_POST['anzahl-Rück'];
-                                    $cart->insertArticle($article_number, $article, $image, $price, $count);
-                                }
-                                ?>
+                                <input type="submit" name="basket-Rück" class="button" value="In den Warenkorb"
+                                       onclick="addItemToCart(article_number, name, image, price, document.getElementById('anzahl-Rück').value)">
+
                             </form>
                         </div>
                     </div>
@@ -367,14 +359,8 @@ $cart->initial_cart();
                                     <?php include '../includes/count-papeterie.php' ?>
                                 </select>
 
-                                <input type="submit" name="basket-Kirchenheft" class="button" value="In den Warenkorb">
-
-                                <?php
-                                if (isset($_POST['basket-Kirchenheft'])) {
-                                    $count = $_POST['anzahl-Kirchenheft'];
-                                    $cart->insertArticle($article_number, $article, $image, $price, $count);
-                                }
-                                ?>
+                                <input type="submit" name="basket-Kirchenheft" class="button" value="In den Warenkorb"
+                                       onclick="addItemToCart(article_number, name, image, price, document.getElementById('anzahl-Kirchenheft').value)">
                             </form>
                         </div>
                     </div>
@@ -428,14 +414,9 @@ $cart->initial_cart();
                                 <select id="anzahl-Menü" name="anzahl-Menü">
                                     <?php include '../includes/count-papeterie.php' ?>
                                 </select>
-                                <input type="submit" name="basket-Menü" class="button" value="In den Warenkorb">
 
-                                <?php
-                                if (isset($_POST['basket-Menü'])) {
-                                    $count = $_POST['anzahl-Menü'];
-                                    $cart->insertArticle($article_number, $article, $image, $price, $count);
-                                }
-                                ?>
+                                <input type="submit" name="basket-Menü" class="button" value="In den Warenkorb"
+                                       onclick="addItemToCart(article_number, name, image, price, document.getElementById('anzahl-Menü').value)">
                             </form>
                         </div>
                     </div>
