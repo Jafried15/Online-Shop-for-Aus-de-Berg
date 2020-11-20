@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="change: Add &quot;Add to Basket&quot; function">
-      <change afterPath="$PROJECT_DIR$/js/shopping-cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/cart-table.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/cart-table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/cart.php" afterDir="false" />
-    </list>
+    <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="change: Add &quot;Add to Basket&quot; function" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,6 +103,7 @@
       <workItem from="1600846323336" duration="569000" />
       <workItem from="1600870787138" duration="5667000" />
       <workItem from="1602929117489" duration="4109000" />
+      <workItem from="1605866212714" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="change: Edit Layout of the Sites like expected">
       <created>1596657359783</created>
