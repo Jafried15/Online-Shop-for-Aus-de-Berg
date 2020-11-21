@@ -1,16 +1,3 @@
-<?php
-
-/*
- * <!--
- *   ~ /**
- *   ~ * Copyright (c) 2020, 2020 Veronika Fischer
- *   ~ * All Rights Reserved
- *   ~ *
- *   -->
- *
- */
-?>
-
 <select name="anzahl" id="count-products">
     <option selected value="1">1 Stück</option>
     <option value="2">2 Stück</option>

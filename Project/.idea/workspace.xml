@@ -19,7 +19,82 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="change: Add &quot;Add to Basket&quot; function" />
+    <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="change: Add &quot;Add to Basket&quot; function">
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Farbe_Titel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Info/Farbe_Info_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Info/Farbe_Info_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Info/Farbe_Info_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Info/Farbe_Info_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Menue/Farbe_Menue_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Menue/Farbe_Menue_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Menue/Farbe_Menue_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Ruecksende/Farbe_Rueck_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Ruecksende/Farbe_Rueck_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Ruecksende/Farbe_Rueck_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Ruecksende/Farbe_Rueck_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Save_the_Date/Farbe_StD_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Save_the_Date/Farbe_StD_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Save_the_Date/Farbe_StD_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Save_the_Date/Farbe_StD_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Save_the_Date/Farbe_StD_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Texte und Kosten_Serie Farben.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladung/Rosen_Einl_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladung/Rosen_Einl_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladung/Rosen_Einl_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladung/Rosen_Einl_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladung/Rosen_Einl_5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladung/Rosen_Einl_6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Save-the-Date/Rosen_StD_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Save_the_Date/Rosen_StD_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Save-the-Date/Rosen_StD_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Save_the_Date/Rosen_StD_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Save-the-Date/Rosen_StD_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Save_the_Date/Rosen_StD_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Save-the-Date/Rosen_StD_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Save_the_Date/Rosen_StD_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/cart-table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/cart.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/copyright.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/count-papeterie.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/count-papeterie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/count-products.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/count-products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Basket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Berg-Produkte.html" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Berg-Produkte.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Bestellablauf.html" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Bestellablauf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Datenschutz.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Datenschutz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/ExLibris.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/ExLibris.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Impressum.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Impressum.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/In-da-Not.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/In-da-Not.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Leck-o-Mio.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Leck-o-Mio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Papeterie.html" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Papeterie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/SchaustDuGuadAus.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/SchaustDuGuadAus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Serie-Buche.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Serie-Farbe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Serie-Kornblumen.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Serie-Kornblumen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/Serie-Rosen.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Serie-Rosen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/baware.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/baware.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scribt/designvorschlaege.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/designvorschlaege.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +120,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/scribt/Basket.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/berg-shop/Basket.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1fdxrRoyAKSNSoYdYeqYkCBbRkO" />
@@ -73,6 +148,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Entwicklung\Projekte\Online-Shop-for-Aus-de-Berg\Project\berg-shop" />
+      <recent name="C:\Users\User\Entwicklung\Projekte\Online-Shop-for-Aus-de-Berg\Project\" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Entwicklung\Projekte\Online-Shop-for-Aus-de-Berg\Project\includes" />
       <recent name="C:\Users\User\Entwicklung\Projekte\Online-Shop-for-Aus-de-Berg\Project\js" />
@@ -103,7 +182,7 @@
       <workItem from="1600846323336" duration="569000" />
       <workItem from="1600870787138" duration="5667000" />
       <workItem from="1602929117489" duration="4109000" />
-      <workItem from="1605866212714" duration="25000" />
+      <workItem from="1605866212714" duration="208000" />
     </task>
     <task id="LOCAL-00001" summary="change: Edit Layout of the Sites like expected">
       <created>1596657359783</created>
@@ -222,10 +301,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600844229497" />
-    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596737068942">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596737068942" />
     <state x="530" y="8" key="CommitChangelistDialog2" timestamp="1597818502165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -246,18 +321,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600872954935" />
-    <state width="498" height="445" key="SwitcherDM" timestamp="1596740531506">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="498" height="445" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1596740531506" />
     <state x="762" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599466921232">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="762" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599466921232" />
-    <state x="568" y="215" width="784" height="740" key="find.popup" timestamp="1599232121427">
+    <state x="568" y="215" width="784" height="740" key="find.popup" timestamp="1605961329781">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="568" y="215" width="784" height="740" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599232121427" />
+    <state x="568" y="215" width="784" height="740" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605961329781" />
+    <state x="601" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1605961309812">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="601" y="246" width="700" height="530" key="recent.locations.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605961309812" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1600872973023">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

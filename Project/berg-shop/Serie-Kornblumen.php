@@ -33,7 +33,36 @@ $cart->initial_cart();
 </head>
 
 <body>
-<?php include '../includes/header.php' ?>
+<header>
+    <div class="site-nav_Logo">
+        <img alt="" src="../img/Aus de Berg Logo_ohne Text.png" width="50px">
+        <p class="site-nav_Logo">Grafikdesign<br>Veronika Fischer</p>
+    </div>
+    <nav class="site-nav">
+        <i class="fas fa-bars"></i>
+        <ul>
+            <a href="../index.html">
+                <li>Home</li>
+            </a>
+            <a href="designvorschlaege.html">
+                <li>Designmuster</li>
+            </a>
+            <a href="Blog.html">
+                <li>Portfolio</li>
+            </a>
+            <a href="Bergshop.php">
+                <li>Berg-Shop</li>
+            </a>
+            <a href="Kontakt.php">
+                <li>Kontakt</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="basket-icon">
+        <a href="Basket.php"><i class="fa fa-shopping-cart button"></i>
+        </a>
+    </div>
+</header>
 
 <center>
     <main>
@@ -112,7 +141,14 @@ $cart->initial_cart();
                                 </p>
 
                                 <select id="anzahl-StD" name="anzahl-StD">
-                                    <?php include '../includes/count-papeterie.php' ?>
+                                    <option selected value="25">25 Stück</option>
+<option value="50">50 Stück</option>
+<option value="75">75 Stück</option>
+<option value="100">100 Stück</option>
+<option value="125">125 Stück</option>
+<option value="150">150 Stück</option>
+<option value="175">175 Stück</option>
+<option value="200">200 Stück</option>
                                 </select>
 
                                 <input type="submit" name="basket-StD" class="button" value="In den Warenkorb">
@@ -180,7 +216,14 @@ $cart->initial_cart();
                                 </p>
 
                                 <select id="anzahl-Einladung" name="anzahl-Einladung">
-                                    <?php include '../includes/count-papeterie.php' ?>
+                                    <option selected value="25">25 Stück</option>
+<option value="50">50 Stück</option>
+<option value="75">75 Stück</option>
+<option value="100">100 Stück</option>
+<option value="125">125 Stück</option>
+<option value="150">150 Stück</option>
+<option value="175">175 Stück</option>
+<option value="200">200 Stück</option>
                                 </select>
                                 <input type="submit" name="basket-Einladung" class="button" value="In den Warenkorb">
 
@@ -241,7 +284,14 @@ $cart->initial_cart();
                                 </p>
 
                                 <select id="anzahl-Info" name="anzahl-Info">
-                                    <?php include '../includes/count-papeterie.php' ?>
+                                    <option selected value="25">25 Stück</option>
+<option value="50">50 Stück</option>
+<option value="75">75 Stück</option>
+<option value="100">100 Stück</option>
+<option value="125">125 Stück</option>
+<option value="150">150 Stück</option>
+<option value="175">175 Stück</option>
+<option value="200">200 Stück</option>
                                 </select>
                                 <input type="submit" name="basket-Info" class="button" value="In den Warenkorb">
 
@@ -300,7 +350,14 @@ $cart->initial_cart();
                                 </p>
 
                                 <select id="anzahl-Rück" name="anzahl-Rück">
-                                    <?php include '../includes/count-papeterie.php' ?>
+                                    <option selected value="25">25 Stück</option>
+<option value="50">50 Stück</option>
+<option value="75">75 Stück</option>
+<option value="100">100 Stück</option>
+<option value="125">125 Stück</option>
+<option value="150">150 Stück</option>
+<option value="175">175 Stück</option>
+<option value="200">200 Stück</option>
                                 </select>
                                 <input type="submit" name="basket-Rück" class="button" value="In den Warenkorb">
 
@@ -367,7 +424,14 @@ $cart->initial_cart();
                                 </p>
 
                                 <select id="anzahl-Kirchenheft" name="anzahl-Kirchenheft">
-                                    <?php include '../includes/count-papeterie.php' ?>
+                                    <option selected value="25">25 Stück</option>
+<option value="50">50 Stück</option>
+<option value="75">75 Stück</option>
+<option value="100">100 Stück</option>
+<option value="125">125 Stück</option>
+<option value="150">150 Stück</option>
+<option value="175">175 Stück</option>
+<option value="200">200 Stück</option>
                                 </select>
 
                                 <input type="submit" name="basket-Kirchenheft" class="button" value="In den Warenkorb">
@@ -423,7 +487,14 @@ $cart->initial_cart();
                                 </p>
 
                                 <select id="anzahl-Menü" name="anzahl-Menü">
-                                    <?php include '../includes/count-papeterie.php' ?>
+                                    <option selected value="25">25 Stück</option>
+<option value="50">50 Stück</option>
+<option value="75">75 Stück</option>
+<option value="100">100 Stück</option>
+<option value="125">125 Stück</option>
+<option value="150">150 Stück</option>
+<option value="175">175 Stück</option>
+<option value="200">200 Stück</option>
                                 </select>
                                 <input type="submit" name="basket-Menü" class="button" value="In den Warenkorb">
 

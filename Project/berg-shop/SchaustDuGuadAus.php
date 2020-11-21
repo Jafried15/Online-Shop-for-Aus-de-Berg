@@ -1,4 +1,13 @@
 <?php
+/*
+ * <!--
+ *   ~ /**
+ *   ~ * Copyright (c) 2020, 2020 Veronika Fischer
+ *   ~ * All Rights Reserved
+ *   ~ *
+ *   -->
+ *
+ */
 
 include '../includes/copyright.php';
 
@@ -13,8 +22,9 @@ $cart = new cart();
 
 // Prüfen ob der Warenkorb besteht
 $cart->initial_cart();
-$article_number = "4";
-$article = "Holzbrett | In da Not";
+
+$article_number = "6";
+$article = "Beutel | Mei Schaust du heid guad aus";
 $image = "../img/Muttertagskarte.JPEG";
 $price = 19.90;
 
@@ -43,7 +53,36 @@ if (isset($_POST['basket'])) {
 </head>
 
 <body>
-<?php include '../includes/header.php' ?>
+<header>
+    <div class="site-nav_Logo">
+        <img alt="" src="../img/Aus de Berg Logo_ohne Text.png" width="50px">
+        <p class="site-nav_Logo">Grafikdesign<br>Veronika Fischer</p>
+    </div>
+    <nav class="site-nav">
+        <i class="fas fa-bars"></i>
+        <ul>
+            <a href="../index.html">
+                <li>Home</li>
+            </a>
+            <a href="designvorschlaege.html">
+                <li>Designmuster</li>
+            </a>
+            <a href="Blog.html">
+                <li>Portfolio</li>
+            </a>
+            <a href="Bergshop.php">
+                <li>Berg-Shop</li>
+            </a>
+            <a href="Kontakt.php">
+                <li>Kontakt</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="basket-icon">
+        <a href="Basket.php"><i class="fa fa-shopping-cart button"></i>
+        </a>
+    </div>
+</header>
 
 <center>
     <main>
@@ -51,49 +90,45 @@ if (isset($_POST['basket'])) {
             <p class="headline"><?php echo $article ?></p>
             <br>
             <p>
-                "In da Not isst ma die Wurst auch ohne Brot"<br>
+                "Mei Schaust du heid guad aus isst ma die Wurst auch ohne Brot"<br>
                 Das war schon der Spruch von Oma, wenn wir als Kinder die Wurst-Scheiben einfach so genascht haben. Na,
                 seid ihr noch immer solche Naschkatzen?
             </p>
         </section>
-
         <section class="product">
-            <div class="row" id="InDaNot">
+            <div class="row" id="SchaustDuGuadAus">
                 <div class="column column-33 flex-columns image-container">
                     <div class="dialog-item">
                         <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
-                             id="expandedImg-InDaNot" onclick="showModal(this);" src="../img/Muttertagskarte.JPEG"/>
+                             id="expandedImg-SchaustDuGuadAus" onclick="showModal(this);"
+                             src="../img/Muttertagskarte.JPEG"/>
                     </div>
                     <ul>
-                        <li><img alt="1" data-target="expandedImg-InDaNot" onclick="switchImage(this);"
+                        <li><img alt="1" data-target="expandedImg-SchaustDuGuadAus" onclick="switchImage(this);"
                                  src="../img/Muttertagskarte.JPEG"/></li>
-                        <li><img alt="2" data-target="expandedImg-InDaNot" onclick="switchImage(this);"
+                        <li><img alt="2" data-target="expandedImg-SchaustDuGuadAus" onclick="switchImage(this);"
                                  src="../img/Menu%20Card.jpg"/></li>
                     </ul>
                 </div>
                 <div class="column column-50 flex-columns">
                     <div class="box">
-                        <div class="in-da-not">
-                            <div class="box-title">
-                                <h2><?php echo $article ?></h2>
-                            </div>
-                            <div class="box-text">
-                                <ul>
-                                    <li>Größe: 30,0 cm x 18,0 cm x 1,5 cm</li>
-                                    <li>Holzart: Buche</li>
-                                    <li>Produziert in Bayern</li>
-                                    <li>Abgerundete Ecken, geölt, glatt geschliffen</li>
-                                    <li>Lasergravur: "In da Not isst ma die Wurscht auch ohne Brot"</li>
-                                    <li>Nicht geeignet für die Spülmaschine</li>
-                                </ul>
-                                <p style="padding-bottom: 3%">
-                                    Preis: <strong><?php echo number_format($price, 2, ',', '.'); ?> €/Stück</strong>
-                                </p>
-                                <form method="post">
-                                    <?php include '../includes/count-products.php' ?>
-                                    <input type="submit" name="basket" class="button" value="In den Warenkorb">
-                                </form>
-                            </div>
+                        <div class="box-title">
+                            <h2><?php echo $article ?></h2>
+                        </div>
+                        <div class="box-text">
+                            <ul>
+                                <li>Größe: 30,0 cm x 18,0 cm 1,5 cm</li>
+                                <li>Holzart: Buche</li>
+                                <li>Produziert in Bayern</li>
+                                <li>Abgerundete Ecken, geölt, glatt geschliffen</li>
+                                <li>Lasergravur: "Mei Schaust du heid guad aus isst ma die Wurscht auch ohne Brot"</li>
+                                <li>Nicht geeignet für die Spülmaschine</li>
+                            </ul>
+                            <form method="post">
+                                <?php include '../includes/count-products.php' ?>
+                                <input type="submit" name="basket" class="button" value="In den Warenkorb">
+                            </form>
+
                         </div>
                     </div>
                 </div>

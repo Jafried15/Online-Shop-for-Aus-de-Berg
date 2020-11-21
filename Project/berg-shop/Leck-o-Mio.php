@@ -22,9 +22,8 @@ $cart = new cart();
 
 // Prüfen ob der Warenkorb besteht
 $cart->initial_cart();
-
-$article_number = "6";
-$article = "Beutel | Mei Schaust du heid guad aus";
+$article_number = "5";
+$article = "Holzbrett | Leck o Mio";
 $image = "../img/Muttertagskarte.JPEG";
 $price = 19.90;
 
@@ -53,7 +52,36 @@ if (isset($_POST['basket'])) {
 </head>
 
 <body>
-<?php include '../includes/header.php' ?>
+<header>
+    <div class="site-nav_Logo">
+        <img alt="" src="../img/Aus de Berg Logo_ohne Text.png" width="50px">
+        <p class="site-nav_Logo">Grafikdesign<br>Veronika Fischer</p>
+    </div>
+    <nav class="site-nav">
+        <i class="fas fa-bars"></i>
+        <ul>
+            <a href="../index.html">
+                <li>Home</li>
+            </a>
+            <a href="designvorschlaege.html">
+                <li>Designmuster</li>
+            </a>
+            <a href="Blog.html">
+                <li>Portfolio</li>
+            </a>
+            <a href="Bergshop.php">
+                <li>Berg-Shop</li>
+            </a>
+            <a href="Kontakt.php">
+                <li>Kontakt</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="basket-icon">
+        <a href="Basket.php"><i class="fa fa-shopping-cart button"></i>
+        </a>
+    </div>
+</header>
 
 <center>
     <main>
@@ -61,23 +89,23 @@ if (isset($_POST['basket'])) {
             <p class="headline"><?php echo $article ?></p>
             <br>
             <p>
-                "Mei Schaust du heid guad aus isst ma die Wurst auch ohne Brot"<br>
+                "Leck o Mio isst ma die Wurst auch ohne Brot"<br>
                 Das war schon der Spruch von Oma, wenn wir als Kinder die Wurst-Scheiben einfach so genascht haben. Na,
                 seid ihr noch immer solche Naschkatzen?
             </p>
         </section>
+
         <section class="product">
-            <div class="row" id="SchaustDuGuadAus">
+            <div class="row" id="LeckOMio">
                 <div class="column column-33 flex-columns image-container">
                     <div class="dialog-item">
                         <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
-                             id="expandedImg-SchaustDuGuadAus" onclick="showModal(this);"
-                             src="../img/Muttertagskarte.JPEG"/>
+                             id="expandedImg-LeckOMio" onclick="showModal(this);" src="../img/Muttertagskarte.JPEG"/>
                     </div>
                     <ul>
-                        <li><img alt="1" data-target="expandedImg-SchaustDuGuadAus" onclick="switchImage(this);"
+                        <li><img alt="1" data-target="expandedImg-LeckOMio" onclick="switchImage(this);"
                                  src="../img/Muttertagskarte.JPEG"/></li>
-                        <li><img alt="2" data-target="expandedImg-SchaustDuGuadAus" onclick="switchImage(this);"
+                        <li><img alt="2" data-target="expandedImg-LeckOMio" onclick="switchImage(this);"
                                  src="../img/Menu%20Card.jpg"/></li>
                     </ul>
                 </div>
@@ -92,14 +120,17 @@ if (isset($_POST['basket'])) {
                                 <li>Holzart: Buche</li>
                                 <li>Produziert in Bayern</li>
                                 <li>Abgerundete Ecken, geölt, glatt geschliffen</li>
-                                <li>Lasergravur: "Mei Schaust du heid guad aus isst ma die Wurscht auch ohne Brot"</li>
+                                <li>Lasergravur: "Leck o Mio"</li>
                                 <li>Nicht geeignet für die Spülmaschine</li>
                             </ul>
+                            <p style="padding-bottom: 3%">
+                                Preis: <strong><?php echo number_format($price, 2, ',', '.'); ?> €/Stück</strong>
+                            </p>
+
                             <form method="post">
                                 <?php include '../includes/count-products.php' ?>
                                 <input type="submit" name="basket" class="button" value="In den Warenkorb">
                             </form>
-
                         </div>
                     </div>
                 </div>

@@ -1,16 +1,3 @@
-<?php
-
-/*
- * <!--
- *   ~ /**
- *   ~ * Copyright (c) 2020, 2020 Veronika Fischer
- *   ~ * All Rights Reserved
- *   ~ *
- *   -->
- *
- */
-?>
-
 <option selected value="25">25 Stück</option>
 <option value="50">50 Stück</option>
 <option value="75">75 Stück</option>
