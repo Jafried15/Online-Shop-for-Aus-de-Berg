@@ -1,0 +1,38 @@
+/*
+ * <!--
+ *   ~ /**
+ *   ~ * Copyright (c) 2020, 2020 Veronika Fischer
+ *   ~ * All Rights Reserved
+ *   ~ *
+ *   -->
+ *
+ */
+
+.cart {
+    display: grid;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.cart h3 {
+    margin: 0;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 2px dashed lightgrey
+}
+
+
+.cart-item-image {
+    max-width: 250px;
+}
+
+.cart-item-price.after,
+.product-price:after {
+    content: '€/Stück';
+}

@@ -20,80 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="change: Add &quot;Add to Basket&quot; function">
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Einladung/Farbe_Einl_9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Farbe_Titel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Info/Farbe_Info_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Info/Farbe_Info_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Info/Farbe_Info_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Info/Farbe_Info_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Kirche/Farbe_Kirche_9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Menue/Farbe_Menue_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Menue/Farbe_Menue_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Menue/Farbe_Menue_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Ruecksende/Farbe_Rueck_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Ruecksende/Farbe_Rueck_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Ruecksende/Farbe_Rueck_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Ruecksende/Farbe_Rueck_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Save_the_Date/Farbe_StD_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Save_the_Date/Farbe_StD_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Save_the_Date/Farbe_StD_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Save_the_Date/Farbe_StD_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Save_the_Date/Farbe_StD_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Serie_Farbe/Texte und Kosten_Serie Farben.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/berg-shop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladung/Rosen_Einl_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladung/Rosen_Einl_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladung/Rosen_Einl_3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladung/Rosen_Einl_4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladung/Rosen_Einl_5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Einladungskarte/Rosen_Einl_6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Einladung/Rosen_Einl_6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Save-the-Date/Rosen_StD_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Save_the_Date/Rosen_StD_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Save-the-Date/Rosen_StD_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Save_the_Date/Rosen_StD_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Save-the-Date/Rosen_StD_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Save_the_Date/Rosen_StD_3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Save-the-Date/Rosen_StD_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Save_the_Date/Rosen_StD_4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/cart-table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/cart.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/copyright.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/count-papeterie.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/count-papeterie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/count-products.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/count-products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/berg-shop/Serie-Farbe.html" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Serie-Farbe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Basket.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Berg-Produkte.html" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Berg-Produkte.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Bestellablauf.html" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Bestellablauf.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Datenschutz.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Datenschutz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/ExLibris.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/ExLibris.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Impressum.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Impressum.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/In-da-Not.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/In-da-Not.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Leck-o-Mio.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Leck-o-Mio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Papeterie.html" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Papeterie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/SchaustDuGuadAus.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/SchaustDuGuadAus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Serie-Buche.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Serie-Farbe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Serie-Kornblumen.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Serie-Kornblumen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Serie-Rosen.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Serie-Rosen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/baware.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/baware.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/designvorschlaege.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/designvorschlaege.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +38,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -141,6 +72,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/includes" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -183,6 +115,7 @@
       <workItem from="1600870787138" duration="5667000" />
       <workItem from="1602929117489" duration="4109000" />
       <workItem from="1605866212714" duration="208000" />
+      <workItem from="1606048049341" duration="3919000" />
     </task>
     <task id="LOCAL-00001" summary="change: Edit Layout of the Sites like expected">
       <created>1596657359783</created>
@@ -317,10 +250,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="674" y="139" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597930120075" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1600872954935">
+    <state x="461" y="163" key="SettingsEditor" timestamp="1605966811173">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600872954935" />
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605966811173" />
     <state x="762" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599466921232">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -337,10 +270,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600872973023" />
-    <state x="2751" y="-57" width="896" height="913" key="search.everywhere.popup" timestamp="1602931451204">
-      <screen x="1920" y="-360" width="2560" height="1400" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605970109296">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2751" y="-57" width="896" height="913" key="search.everywhere.popup/0.0.1920.1040/1920.-360.2560.1400@1920.-360.2560.1400" timestamp="1602931451204" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599144611022" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605970109296" />
   </component>
 </project>

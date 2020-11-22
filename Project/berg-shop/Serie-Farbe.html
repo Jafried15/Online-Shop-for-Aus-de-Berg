@@ -21,6 +21,7 @@
 
     <link href="../css/all.css" rel="stylesheet" type="text/css">
     <link href="../css/Stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="../css/berg-shop.css" rel="stylesheet" type="text/css">
 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
 </head>
@@ -37,16 +38,16 @@
                 <a href="../index.html">
                     <li>Home</li>
                 </a>
-                <a href="designvorschlaege.html">
+                <a href="../scribt/designvorschlaege.html">
                     <li>Designmuster</li>
                 </a>
-                <a href="Blog.html">
+                <a href="../scribt/Blog.html">
                     <li>Portfolio</li>
                 </a>
-                <a href="Bergshop.php">
+                <a href="../scribt/Bergshop.php">
                     <li>Berg-Shop</li>
                 </a>
-                <a href="Kontakt.php">
+                <a href="../scribt/Kontakt.php">
                     <li>Kontakt</li>
                 </a>
             </ul>
@@ -89,7 +90,7 @@
                 <div class="product" id="Safe-the-Date">
                     <div class="column column-40 flex-columns image-container">
                         <div class="dialog-item">
-                            <img class="product-img" alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
+                            <img alt="Image Container" class="product-image" data-lazy-loaded="true" data-target="modal-dialog"
                                  id="expandedImg-StD" onclick="showModal(this);"
                                  src="../img/Serie_Farbe/Save_the_Date/Farbe_StD_1.jpg" />
                         </div>
@@ -107,54 +108,45 @@
                     <div class="column column-50 flex-columns">
                         <div class="box">
                             <div class="box-title">
-                                <h2 class="product-name">Safe the Date | Serie Farbe</h2>
+                                <h2 class="product-name" data-article_number="1.1">Safe the Date | Serie Farbe</h2>
                             </div>
                             <div class="box-text">
                                 <ul>
-                                    <li>Format: DIN A6 (10,5 cm x 14,8 cm)</li>
+                                    <li>Format: DIN Lang (21,0 cm x 9,9 cm)</li>
                                     <li>Druck: Digitaldruck, Beidseitig bedruckt</li>
                                     <li>Papier: Bilderdruckpapier matt (300g)</li>
                                     <li>Briefumschläge können seperat dazu bestellt werden
                                     </li>
                                     <li>Mindestbestellmenge: 25 Stück</li>
                                 </ul>
-                                <form method="post">
-                                    <p style="padding-bottom: 3%" class="product-price" data-price="1.50">
-                                        Preis: <strong>1.50€/Stück</strong>
-                                        <br>
-                                        Briefumschläge sind im Preis nicht enthalten.
-                                    </p>
 
-                                    <select class="product-count" id="anzahl-StD" name="anzahl-StD">
-                                        <option selected value="25">25 Stück</option>
-                                        <option value="50">50 Stück</option>
-                                        <option value="75">75 Stück</option>
-                                        <option value="100">100 Stück</option>
-                                        <option value="125">125 Stück</option>
-                                        <option value="150">150 Stück</option>
-                                        <option value="175">175 Stück</option>
-                                        <option value="200">200 Stück</option>
-                                    </select>
+                                <p style="padding-bottom: 3%">
+                                    Preis: <strong class="product-price">1,40</strong>
+                                    <br>
+                                    Briefumschläge sind im Preis nicht enthalten.
+                                </p>
 
-                                    <input type="submit" name="basket-StD" class="button" value="In den Warenkorb"
-                                           onclick="addItemToCart(article_number, name, image, price, document.getElementById('anzahl-StD').value)">
+                                <select class="product-count" id="anzahl-StD" name="anzahl-StD">
+                                    <option selected value="25">25 Stück</option>
+                                    <option value="50">50 Stück</option>
+                                    <option value="75">75 Stück</option>
+                                    <option value="100">100 Stück</option>
+                                    <option value="125">125 Stück</option>
+                                    <option value="150">150 Stück</option>
+                                    <option value="175">175 Stück</option>
+                                    <option value="200">200 Stück</option>
+                                </select>
 
-                                </form>
+                                <button class="button" data-action="ADD_TO_CART" data-target="Safe-the-Date">In den Warenkorb</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row" id="Einladungskarte">
-                    <script>
-                        let article_number = 2.2;
-                        let name = "Hochzeitseinladung | Serie Farbe";
-                        let image = "../img/Serie_Farbe/Einladung/Rosen_Einl_1.jpg";
-                        let price = 1.80;
-                    </script>
                     <div class="column column-40 flex-columns image-container">
                         <div class="dialog-item">
-                            <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
+                            <img alt="Image Container" class="product-image" data-lazy-loaded="true" data-target="modal-dialog"
                                  id="expandedImg-Einladung" onclick="showModal(this);"
                                  src="../img/Serie_Farbe/Einladung/Farbe_Einl_1.jpg" />
                         </div>
@@ -186,98 +178,93 @@
                     <div class="column column-50 flex-columns">
                         <div class="box">
                             <div class="box-title">
-                                <h2 class="product-name">
-                                    <script>document.write(name)</script>
-                                </h2>
+                                <h2 class="product-name" data-article_number="1.2">Hochzeitseinladung | Serie Farbe</h2>
                             </div>
                             <div class="box-text">
                                 <ul>
-                                    <li>Geschlossenes Format: DIN A6 (10,5 cm x 14,8 cm)</li>
-                                    <li>Offenes Format: 31,5 cm x 14,8 cm</li>
+                                    <li>Geschlossenes Format: DIN Lang (21,0 cm x 10,0 cm)</li>
+                                    <li>Offenes Format: A4 29,7 cm x 21,0 cm</li>
                                     <li>Druck: Digitaldruck, Beidseitig bedruckt</li>
                                     <li>Papier: Bilderdruckpapier matt (300g)</li>
                                     <li>Briefumschläge können seperat dazu bestellt werden
                                     </li>
                                     <li>Mindestbestellmenge: 25 Stück</li>
                                 </ul>
-                                <form method="post">
-                                    <p style="padding-bottom: 3%">
-                                        Preis: <strong><?php echo number_format($price, 2, ',', '.'); ?>€/Stück</strong>
-                                        <br>
-                                        Briefumschläge, Polaroid-Bild und Rücksendekarte sind im Preis nicht enthalten.
-                                    </p>
 
-                                    <select id="anzahl-Einladung" name="anzahl-Einladung">
-                                        <option selected value="25">25 Stück</option>
-                                        <option value="50">50 Stück</option>
-                                        <option value="75">75 Stück</option>
-                                        <option value="100">100 Stück</option>
-                                        <option value="125">125 Stück</option>
-                                        <option value="150">150 Stück</option>
-                                        <option value="175">175 Stück</option>
-                                        <option value="200">200 Stück</option>
-                                    </select>
+                                <p style="padding-bottom: 3%">
+                                    Preis: <strong class="product-price">1,80</strong>
+                                    <br>
+                                    Briefumschläge, Wachs & Deko-Band sind im Preis nicht enthalten.
+                                </p>
 
-                                    <input type="submit" name="basket-Einladung" class="button" value="In den Warenkorb"
-                                           onclick="addItemToCart(article_number, name, image, price, document.getElementById('anzahl-Einladung').value)">
-                                </form>
+                                <select class="product-count" id="anzahl-Einladung" name="anzahl-Einladung">
+                                    <option selected value="25">25 Stück</option>
+                                    <option value="50">50 Stück</option>
+                                    <option value="75">75 Stück</option>
+                                    <option value="100">100 Stück</option>
+                                    <option value="125">125 Stück</option>
+                                    <option value="150">150 Stück</option>
+                                    <option value="175">175 Stück</option>
+                                    <option value="200">200 Stück</option>
+                                </select>
+
+                                <button class="button" data-action="ADD_TO_CART" data-target="Einladungskarte">In den Warenkorb</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row" id="Polaroid">
+                <div class="row" id="Info-Blatt">
                     <div class="column column-40 flex-columns image-container">
                         <div class="dialog-item">
-                            <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
-                                 id="expandedImg-polaroid" onclick="showModal(this);"
-                                 src="../img/Serie_Farbe/Polaroid/Rosen_Polaroid_1.jpg" />
+                            <img alt="Image Container" class="product-image" data-lazy-loaded="true" data-target="modal-dialog"
+                                 id="expandedImg-Info" onclick="showModal(this);"
+                                 src="../img/Serie_Farbe/Info/Farbe_Info_1.jpg" />
                         </div>
                         <ul>
-                            <li><img alt="1" data-target="expandedImg-polaroid" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Polaroid/Rosen_Polaroid_1.jpg" /></li>
-                            <li><img alt="2" data-target="expandedImg-polaroid" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Polaroid/Rosen_Polaroid_2.jpg" /></li>
+                            <li><img alt="1" data-target="expandedImg-Info" onclick="switchImage(this);"
+                                     src="../img/Serie_Farbe/Info/Farbe_Info_1.jpg" /></li>
+                            <li><img alt="1" data-target="expandedImg-Info" onclick="switchImage(this);"
+                                     src="../img/Serie_Farbe/Info/Farbe_Info_2.jpg" /></li>
+                            <li><img alt="1" data-target="expandedImg-Info" onclick="switchImage(this);"
+                                     src="../img/Serie_Farbe/Info/Farbe_Info_3.jpg" /></li>
+                            <li><img alt="1" data-target="expandedImg-Info" onclick="switchImage(this);"
+                                     src="../img/Serie_Farbe/Info/Farbe_Info_4.jpg" /></li>
                         </ul>
                     </div>
                     <div class="column column-50 flex-columns">
-                        <?php
-                    $article_number = 2.3;
-                    $article = "Polaroid-Bild | Serie Rosen";
-                    $image = "../img/Serie_Farbe/Polaroid/Rosen_Polaroid_1.jpg";
-                    $price = 1.30;
-                    ?>
                         <div class="box">
                             <div class="box-title">
-                                <h2><?php echo $article ?></h2>
+                                <h2 class="product-name" data-article_number="1.3">Info-Blatt | Serie Farbe</h2>
                             </div>
                             <div class="box-text">
                                 <ul>
-                                    <li>Format: DIN A7 (7,4 cm x 10,5 cm)</li>
-                                    <li>Druck: Digitaldruck, einseitig bedruckt</li>
-                                    <li>Papier: Bilderdruckpapier glänzend mit exklusivem UV-Lack (250g)</li>
-                                    <li>Mindestbestellmenge: 25</li>
+                                    <li>Format: Freies Format (20,0 cm x 9,0 cm)</li>
+                                    <li>Druck: Digitaldruck, Beidseitig bedruckt</li>
+                                    <li>Papier: Bilderdruckpapier matt (300g)</li>
+                                    <li>Briefumschläge können seperat dazu bestellt werden
+                                    </li>
+                                    <li>Mindestbestellmenge: 25 Stück</li>
                                 </ul>
-                                <form method="post">
-                                    <p style="padding-bottom: 3%">
-                                        Preis: <strong><?php echo number_format($price, 2, ',', '.'); ?>€/Stück</strong>
-                                        <br>
-                                    </p>
 
-                                    <select id="anzahl-Polaroid" name="anzahl-polaroid">
-                                        <option selected value="25">25 Stück</option>
-                                        <option value="50">50 Stück</option>
-                                        <option value="75">75 Stück</option>
-                                        <option value="100">100 Stück</option>
-                                        <option value="125">125 Stück</option>
-                                        <option value="150">150 Stück</option>
-                                        <option value="175">175 Stück</option>
-                                        <option value="200">200 Stück</option>
-                                    </select>
+                                <p style="padding-bottom: 3%">
+                                    Preis: <strong class="product-price">1,40</strong>
+                                    <br>
+                                    Briefumschläge sind im Preis nicht enthalten.
+                                </p>
 
-                                    <input type="submit" name="basket-polaroid" class="button" value="In den Warenkorb"
-                                           onclick="addItemToCart(article_number, name, image, price, document.getElementById('anzahl-Polaroid').value)">
-                                </form>
+                                <select class="product-count" id="anzahl-Info" name="anzahl-Info">
+                                    <option selected value="25">25 Stück</option>
+                                    <option value="50">50 Stück</option>
+                                    <option value="75">75 Stück</option>
+                                    <option value="100">100 Stück</option>
+                                    <option value="125">125 Stück</option>
+                                    <option value="150">150 Stück</option>
+                                    <option value="175">175 Stück</option>
+                                    <option value="200">200 Stück</option>
+                                </select>
+
+                                <button class="button" data-action="ADD_TO_CART" data-target="Info-Blatt">In den Warenkorb</button>
                             </div>
                         </div>
                     </div>
@@ -286,61 +273,53 @@
                 <div class="row" id="Rücksendekarte">
                     <div class="column column-40 flex-columns image-container">
                         <div class="dialog-item">
-                            <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
+                            <img alt="Image Container" class="product-image" data-lazy-loaded="true" data-target="modal-dialog"
                                  id="expandedImg-Rück" onclick="showModal(this);"
-                                 src="../img/Serie_Farbe/Rücksendekarte/Rosen_Rueck_1.jpg" />
+                                 src="../img/Serie_Farbe/Ruecksende/Farbe_Rueck_1.jpg" />
                         </div>
                         <ul>
                             <li><img alt="1" data-target="expandedImg-Rück" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Rücksendekarte/Rosen_Rueck_1.jpg" /></li>
-                            <li><img alt="2" data-target="expandedImg-Rück" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Rücksendekarte/Rosen_Rueck_2.jpg" /></li>
-                            <li><img alt="3" data-target="expandedImg-Rück" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Rücksendekarte/Rosen_Rueck_3.jpg" /></li>
-                            <li><img alt="4" data-target="expandedImg-Rück" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Rücksendekarte/Rosen_Rueck_4.jpg" /></li>
+                                     src="../img/Serie_Farbe/Ruecksende/Farbe_Rueck_1.jpg" /></li>
+                            <li><img alt="1" data-target="expandedImg-Rück" onclick="switchImage(this);"
+                                     src="../img/Serie_Farbe/Ruecksende/Farbe_Rueck_2.jpg" /></li>
+                            <li><img alt="1" data-target="expandedImg-Rück" onclick="switchImage(this);"
+                                     src="../img/Serie_Farbe/Ruecksende/Farbe_Rueck_3.jpg" /></li>
+                            <li><img alt="1" data-target="expandedImg-Rück" onclick="switchImage(this);"
+                                     src="../img/Serie_Farbe/Ruecksende/Farbe_Rueck_4.jpg" /></li>
                         </ul>
                     </div>
                     <div class="column column-50 flex-columns">
-                        <?php
-                    $article_number = 2.4;
-                    $article = "Rücksendekarte | Serie Rosen";
-                    $image = "../img/Serie_Farbe/Rücksendekarte/Rosen_Rueck_1.jpg";
-                    $price = 1.30;
-                    ?>
                         <div class="box">
                             <div class="box-title">
-                                <h2><?php echo $article ?></h2>
+                                <h2 class="product-name" data-article_number="1.4">Rücksendekarte | Serie Farbe</h2>
                             </div>
                             <div class="box-text">
                                 <ul>
-                                    <li>Format: Sonderformat (9,5 cm x 13,8 cm) passend zur Einladungskarte</li>
+                                    <li>Format: Freies Format (20,0 cm x 9,0 cm)</li>
                                     <li>Druck: Digitaldruck, Beidseitig bedruckt</li>
                                     <li>Papier: Bilderdruckpapier matt (300g)</li>
                                     <li>Briefumschläge können seperat dazu bestellt werden</li>
                                     <li>Mindestbestellmenge: 25 Stück</li>
                                 </ul>
-                                <form method="post">
-                                    <p style="padding-bottom: 3%">
-                                        Preis: <strong><?php echo number_format($price, 2, ',', '.'); ?>€/Stück</strong>
-                                        <br>
-                                    </p>
 
-                                    <select id="anzahl-Rück" name="anzahl-Rück">
-                                        <option selected value="25">25 Stück</option>
-                                        <option value="50">50 Stück</option>
-                                        <option value="75">75 Stück</option>
-                                        <option value="100">100 Stück</option>
-                                        <option value="125">125 Stück</option>
-                                        <option value="150">150 Stück</option>
-                                        <option value="175">175 Stück</option>
-                                        <option value="200">200 Stück</option>
-                                    </select>
+                                <p style="padding-bottom: 3%">
+                                    Preis: <strong class="product-price">1,40</strong>
+                                    <br>
+                                    Briefumschläge sind im Preis nicht enthalten.
+                                </p>
 
-                                    <input type="submit" name="basket-Rück" class="button" value="In den Warenkorb"
-                                           onclick="addItemToCart(article_number, name, image, price, document.getElementById('anzahl-Rück').value)">
+                                <select class="product-count" id="anzahl-Rück" name="anzahl-Rück">
+                                    <option selected value="25">25 Stück</option>
+                                    <option value="50">50 Stück</option>
+                                    <option value="75">75 Stück</option>
+                                    <option value="100">100 Stück</option>
+                                    <option value="125">125 Stück</option>
+                                    <option value="150">150 Stück</option>
+                                    <option value="175">175 Stück</option>
+                                    <option value="200">200 Stück</option>
+                                </select>
 
-                                </form>
+                                <button class="button" data-action="ADD_TO_CART" data-target="Rücksendekarte">In den Warenkorb</button>
                             </div>
                         </div>
                     </div>
@@ -349,70 +328,66 @@
                 <div class="row" id="Kirchenheft">
                     <div class="column column-40 flex-columns image-container">
                         <div class="dialog-item">
-                            <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
+                            <img alt="Image Container" class="product-image" data-lazy-loaded="true" data-target="modal-dialog"
                                  id="expandedImg-Kirchenheft" onclick="showModal(this);"
-                                 src="../img/Serie_Farbe/Kirchenheft/Rosen_Kirche_1.jpg" />
+                                 src="../img/Serie_Farbe/Kirche/Farbe_Kirche_1.jpg" />
                         </div>
                         <ul>
                             <li><img alt="1" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Kirchenheft/Rosen_Kirche_1.jpg" /></li>
-                            <li><img alt="2" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Kirchenheft/Rosen_Kirche_2.jpg" /></li>
-                            <li><img alt="3" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Kirchenheft/Rosen_Kirche_3.jpg" /></li>
-                            <li><img alt="4" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Kirchenheft/Rosen_Kirche_4.jpg" /></li>
-                            <li><img alt="5" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Kirchenheft/Rosen_Kirche_5.jpg" /></li>
-                            <li><img alt="6" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Kirchenheft/Rosen_Kirche_6.jpg" /></li>
-                            <li><img alt="7" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Kirchenheft/Rosen_Kirche_7.jpg" /></li>
-                            <li><img alt="8" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Kirchenheft/Rosen_Kirche_8.jpg" /></li>
-                            <li><img alt="9" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Kirchenheft/Rosen_Kirche_9.jpg" /></li>
+                                     src="../img/Serie_Farbe/Kirche/Farbe_Kirche_1.jpg" /></li>
+                            <li><img alt="1" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                     src="../img/Serie_Farbe/Kirche/Farbe_Kirche_2.jpg" /></li>
+                            <li><img alt="1" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                     src="../img/Serie_Farbe/Kirche/Farbe_Kirche_3.jpg" /></li>
+                            <li><img alt="1" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                     src="../img/Serie_Farbe/Kirche/Farbe_Kirche_4.jpg" /></li>
+                            <li><img alt="1" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                     src="../img/Serie_Farbe/Kirche/Farbe_Kirche_5.jpg" /></li>
+                            <li><img alt="1" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                     src="../img/Serie_Farbe/Kirche/Farbe_Kirche_6.jpg" /></li>
+                            <li><img alt="1" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                     src="../img/Serie_Farbe/Kirche/Farbe_Kirche_7.jpg" /></li>
+                            <li><img alt="1" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                     src="../img/Serie_Farbe/Kirche/Farbe_Kirche_8.jpg" /></li>
+                            <li><img alt="1" data-target="expandedImg-Kirchenheft" onclick="switchImage(this);"
+                                     src="../img/Serie_Farbe/Kirche/Farbe_Kirche_9.jpg" /></li>
                         </ul>
                     </div>
                     <div class="column column-50 flex-columns">
-                        <?php
-                    $article_number = 2.5;
-                    $article = "Kirchenheft | Serie Rosen";
-                    $image = "../img/Serie_Farbe/Kirchenheft/Rosen_Kirche_1.jpg";
-                    $price = 2.80;
-                    ?>
                         <div class="box">
                             <div class="box-title">
-                                <h2><?php echo $article ?></h2>
+                                <h2 class="product-name" data-article_number="1.5">Kirchenheft | Serie Farbe</h2>
                             </div>
                             <div class="box-text">
                                 <ul>
                                     <li>Geschlossenes Format: DIN A5 (14,8 cm x 21,0 cm)</li>
                                     <li>Offenes Format: 29,7 cm x 21,0 cm</li>
                                     <li>Druck: Digitaldruck, Beidseitig bedruckt</li>
+                                    <li>Heftung: Rückendrahtheftung</li>
                                     <li>Papier: Bilderdruckpapier matt (250g)</li>
-                                    <li>Seiten: 8-Seitig inkl. Umschlag (auf Anfrage auch gerne 12/16 Seiten)</li>
-                                    <li>Mindestbestellmenge: 25 Stück</li>
+                                    <li>Seiten: 8-Seitig inkl. Umschlag (auf Anfrage gerne auch 12/16 Seiten)</li>
+                                    <li>Mindestbestellmenge: 20 Stück</li>
                                 </ul>
-                                <form method="post">
-                                    <p style="padding-bottom: 3%">
-                                        Preis: <strong><?php echo number_format($price, 2, ',', '.'); ?>€/Stück</strong>
-                                    </p>
 
-                                    <select id="anzahl-Kirchenheft" name="anzahl-Kirchenheft">
-                                        <option selected value="25">25 Stück</option>
-                                        <option value="50">50 Stück</option>
-                                        <option value="75">75 Stück</option>
-                                        <option value="100">100 Stück</option>
-                                        <option value="125">125 Stück</option>
-                                        <option value="150">150 Stück</option>
-                                        <option value="175">175 Stück</option>
-                                        <option value="200">200 Stück</option>
-                                    </select>
+                                <p style="padding-bottom: 3%">
+                                    Preis: <strong class="product-price">2,80</strong>
+                                    <br>
+                                    Deko-Band ist im Preis nicht enthalten.
+                                </p>
 
-                                    <input type="submit" name="basket-Kirchenheft" class="button" value="In den Warenkorb"
-                                           onclick="addItemToCart(article_number, name, image, price, document.getElementById('anzahl-Kirchenheft').value)">
-                                </form>
+                                <select class="product-count" id="anzahl-Kirchenheft" name="anzahl-Kirchenheft">
+                                    <option selected value="20">20 Stück</option>
+                                    <option value="40">40 Stück</option>
+                                    <option value="60">60 Stück</option>
+                                    <option value="80">80 Stück</option>
+                                    <option value="100">100 Stück</option>
+                                    <option value="125">125 Stück</option>
+                                    <option value="150">150 Stück</option>
+                                    <option value="175">175 Stück</option>
+                                    <option value="200">200 Stück</option>
+                                </select>
+
+                                <button class="button" data-action="ADD_TO_CART" data-target="Kirchenheft">In den Warenkorb</button>
                             </div>
                         </div>
                     </div>
@@ -421,60 +396,52 @@
                 <div class="row" id="Menükarte">
                     <div class="column column-40 flex-columns image-container">
                         <div class="dialog-item">
-                            <img alt="Image Container" data-lazy-loaded="true" data-target="modal-dialog"
+                            <img alt="Image Container" class="product-image" data-lazy-loaded="true" data-target="modal-dialog"
                                  id="expandedImg-Menü" onclick="showModal(this);"
-                                 src="../img/Serie_Farbe/Menükarte/Rosen_Menue_1.jpg" />
+                                 src="../img/Serie_Rosen/Menükarte/Rosen_Menue_1.jpg" />
                         </div>
                         <ul>
                             <li><img alt="1" data-target="expandedImg-Menü" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Menükarte/Rosen_Menue_1.jpg" /></li>
+                                     src="../img/Serie_Rosen/Menükarte/Rosen_Menue_1.jpg" /></li>
                             <li><img alt="2" data-target="expandedImg-Menü" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Menükarte/Rosen_Menue_2.jpg" /></li>
+                                     src="../img/Serie_Rosen/Menükarte/Rosen_Menue_2.jpg" /></li>
                             <li><img alt="3" data-target="expandedImg-Menü" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Menükarte/Rosen_Menue_3.jpg" /></li>
+                                     src="../img/Serie_Rosen/Menükarte/Rosen_Menue_3.jpg" /></li>
                             <li><img alt="4" data-target="expandedImg-Menü" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Menükarte/Rosen_Menue_4.jpg" /></li>
+                                     src="../img/Serie_Rosen/Menükarte/Rosen_Menue_4.jpg" /></li>
                             <li><img alt="5" data-target="expandedImg-Menü" onclick="switchImage(this);"
-                                     src="../img/Serie_Farbe/Menükarte/Rosen_Menue_5.jpg" /></li>
+                                     src="../img/Serie_Rosen/Menükarte/Rosen_Menue_5.jpg" /></li>
                         </ul>
                     </div>
                     <div class="column column-50 flex-columns">
-                        <?php
-                    $article_number = 2.6;
-                    $article = "Menükarte | Serie Rosen";
-                    $image = "../img/Serie_Farbe/Menükarte/Rosen_Menue_1.jpg";
-                    $price = 1.50;
-                    ?>
                         <div class="box">
                             <div class="box-title">
-                                <h2><?php echo $article ?></h2>
+                                <h2 class="product-name" data-article_number="1.6">Menükarte | Serie Farbe</h2>
                             </div>
                             <div class="box-text">
                                 <ul>
-                                    <li>Format: DIN Lang (10,5 cm x 21,0 cm)</li>
+                                    <li>Format: DIN Lang (21,0 cm x 9,9 cm)</li>
                                     <li>Druck: Digitaldruck, Beidseitig bedruckt</li>
                                     <li>Papier: Bilderdruckpapier matt (300g)</li>
                                     <li>Mindestbestellmenge: 25 Stück</li>
                                 </ul>
-                                <form method="post">
-                                    <p style="padding-bottom: 3%">
-                                        Preis: <strong><?php echo number_format($price, 2, ',', '.'); ?>€/Stück</strong>
-                                        <br>
 
-                                        <select id="anzahl-Menü" name="anzahl-Menü">
-                                            <option selected value="25">25 Stück</option>
-                                            <option value="50">50 Stück</option>
-                                            <option value="75">75 Stück</option>
-                                            <option value="100">100 Stück</option>
-                                            <option value="125">125 Stück</option>
-                                            <option value="150">150 Stück</option>
-                                            <option value="175">175 Stück</option>
-                                            <option value="200">200 Stück</option>
-                                        </select>
+                                <p style="padding-bottom: 3%">
+                                    Preis: <strong class="product-price">1,40</strong>
+                                </p>
 
-                                        <input type="submit" name="basket-Menü" class="button" value="In den Warenkorb"
-                                               onclick="addItemToCart(article_number, name, image, price, document.getElementById('anzahl-Menü').value)">
-                                </form>
+                                <select class="product-count" id="anzahl-Menü" name="anzahl-Menü">
+                                    <option selected value="25">25 Stück</option>
+                                    <option value="50">50 Stück</option>
+                                    <option value="75">75 Stück</option>
+                                    <option value="100">100 Stück</option>
+                                    <option value="125">125 Stück</option>
+                                    <option value="150">150 Stück</option>
+                                    <option value="175">175 Stück</option>
+                                    <option value="200">200 Stück</option>
+                                </select>
+
+                                <button class="button" data-action="ADD_TO_CART" data-target="Menükarte">In den Warenkorb</button>
                             </div>
                         </div>
                     </div>
@@ -493,6 +460,11 @@
                     </div>
                 </div>
             </section>
+
+            <section class="section">
+                <h2 class="text-center">Cart</h2>
+                <div class="cart"></div>
+            </section>
         </main>
 
         <footer>
@@ -501,10 +473,10 @@
                 <nav class="nav-ende">
                     <ul>
                         <li>
-                            <a href="Impressum.html">Impressum</a>
+                            <a href="../scribt/Impressum.html">Impressum</a>
                         </li>
                         <li>
-                            <a href="Datenschutz.html">Datenschutz</a>
+                            <a href="../scribt/Datenschutz.html">Datenschutz</a>
                         </li>
                     </ul>
                 </nav>
@@ -516,6 +488,7 @@
             src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="../js/mobile-menu.js"></script>
     <script src="../js/berg-shop.js"></script>
+    <script src="../js/cart.js"></script>
 
 </body>
 </html>
