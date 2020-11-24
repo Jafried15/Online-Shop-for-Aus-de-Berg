@@ -45,7 +45,6 @@ function nextStep(current_step) {
         document.getElementById("step-2-icon").classList.remove("step-2");
         document.getElementById("step-2-icon").classList.add("step-2-white");
         document.getElementById("headline_basket").innerHTML = "Adresse eingeben";
-
     } else if (current_step === "step-two") {
         document.getElementById("step-two").style.display = "none";
         document.getElementById("step-three").style.display = "block";

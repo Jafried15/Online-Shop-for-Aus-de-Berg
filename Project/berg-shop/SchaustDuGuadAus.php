@@ -70,7 +70,7 @@ if (isset($_POST['basket'])) {
             <a href="Blog.html">
                 <li>Portfolio</li>
             </a>
-            <a href="Bergshop.php">
+            <a href="Bergshop.html">
                 <li>Berg-Shop</li>
             </a>
             <a href="Kontakt.php">
@@ -79,7 +79,7 @@ if (isset($_POST['basket'])) {
         </ul>
     </nav>
     <div class="basket-icon">
-        <a href="Basket.php"><i class="fa fa-shopping-cart button"></i>
+        <a href="Basket.html"><i class="fa fa-shopping-cart button"></i>
         </a>
     </div>
 </header>
