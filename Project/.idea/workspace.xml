@@ -19,53 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/berg-shop/Basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Basket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/berg-shop/Berg-Produkte.html" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Berg-Produkte.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/berg-shop/Bestellablauf.html" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Bestellablauf.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/berg-shop/In-da-Not.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/In-da-Not.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/berg-shop/Leck-o-Mio.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Leck-o-Mio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/berg-shop/Papeterie.html" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Papeterie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/berg-shop/SchaustDuGuadAus.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/SchaustDuGuadAus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/berg-shop/Serie-Farbe.html" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Serie-Farbe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/berg-shop/Serie-Kornblumen.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Serie-Kornblumen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/berg-shop/Serie-Rosen.php" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Serie-Rosen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/berg-shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/berg-shop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirche/Rosen_Kirche_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirche/Rosen_Kirche_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirche/Rosen_Kirche_3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirche/Rosen_Kirche_4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirche/Rosen_Kirche_5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirche/Rosen_Kirche_6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirche/Rosen_Kirche_7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirche/Rosen_Kirche_8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Kirchenheft/Rosen_Kirche_9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Kirche/Rosen_Kirche_9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Menükarte/Rosen_Menue_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Menue/Rosen_Menue_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Menükarte/Rosen_Menue_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Menue/Rosen_Menue_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Menükarte/Rosen_Menue_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Menue/Rosen_Menue_3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Menükarte/Rosen_Menue_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Menue/Rosen_Menue_4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Menükarte/Rosen_Menue_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Menue/Rosen_Menue_5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Rücksendekarte/Rosen_Rueck_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Ruecksende/Rosen_Rueck_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Rücksendekarte/Rosen_Rueck_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Ruecksende/Rosen_Rueck_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Rücksendekarte/Rosen_Rueck_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Ruecksende/Rosen_Rueck_3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Serie_Rosen/Rücksendekarte/Rosen_Rueck_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Serie_Rosen/Ruecksende/Rosen_Rueck_4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/count-papeterie.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/count-products.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/berg-shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/berg-shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Bergshop.php" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Bergshop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Datenschutz.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Datenschutz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/ExLibris.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/ExLibris.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Impressum.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Impressum.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Kontakt.php" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Kontakt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/baware.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/baware.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/designvorschlaege.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/designvorschlaege.html" afterDir="false" />
-    </list>
+    <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,7 +112,10 @@
       <workItem from="1605866212714" duration="208000" />
       <workItem from="1606048049341" duration="7711000" />
       <workItem from="1606131071908" duration="3391000" />
-      <workItem from="1606210281050" duration="4492000" />
+      <workItem from="1606210281050" duration="5189000" />
+      <workItem from="1606222134752" duration="9000" />
+      <workItem from="1606223684656" duration="92000" />
+      <workItem from="1606232121277" duration="9593000" />
     </task>
     <task id="LOCAL-00001" summary="change: Edit Layout of the Sites like expected">
       <created>1596657359783</created>
@@ -325,10 +282,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600872973023" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605970109296">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606303557982">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="2751" y="-57" width="896" height="913" key="search.everywhere.popup/0.0.1920.1040/1920.-360.2560.1400@1920.-360.2560.1400" timestamp="1602931451204" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605970109296" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606303557982" />
   </component>
 </project>
