@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="showCart()">
     <header>
         <div class="site-nav_Logo">
             <img alt="" src="../img/Aus de Berg Logo_ohne Text.png" width="50px">
@@ -71,7 +71,7 @@
                 <br>
                 <p>
                     Damit das nicht so bleibt, besuche einfach den
-                    <a href="Bergshop.html">Berg-Shop</a>
+                    <a href="../scribt/Bergshop.html">Berg-Shop</a>
                     - dort findest du alle Papeterie-Artikel und Berg-Produkte.<br>
                     Viel Spaß beim Shoppen und bis später!
                 </p>
@@ -112,17 +112,14 @@
 
             <section class="step step-one" id="step-one">
                 <div class="row">
-                    <div class="cart">
-                        <table class="cart-table">
-                            <tr>
-                                <th>Produkt</th>
-                                <th>Einzelpreis</th>
-                                <th>Stückzahl</th>
-                                <th>Gesamtpreis</th>
-                            </tr>
-                            <script>showCart()</script>
-                        </table>
-                    </div>
+                    <table class="cart-table">
+                        <tr>
+                            <th><h3>Produkt</h3></th>
+                            <th><h3>Einzelpreis</h3></th>
+                            <th><h3>Stückzahl</h3></th>
+                            <th><h3>Gesamtpreis</h3></th>
+                        </tr>
+                    </table>
                 </div>
                 <div class="row total">
                     <div class="column-50">
@@ -133,7 +130,7 @@
                                 <p>Versandkosten</p>
                                 <p>inkl. MWST 19%</p>
                             </div>
-                            <div class="column-50" style="text-align: right">
+                            <div class="column-50 calculated-billing" style="text-align: right">
                             </div>
                         </div>
                         <hr>
@@ -141,7 +138,7 @@
                             <div class="column-50">
                                 <p style="font-weight: bold">Rechnungsbetrag</p>
                             </div>
-                            <div class=" column-50" style="text-align: right">
+                            <div class=" column-50 total-billing" style="text-align: right">
                             </div>
                         </div>
                     </div>
@@ -378,5 +375,6 @@
     <script src="../js/mobile-menu.js"></script>
     <script src="../js/berg-shop.js"></script>
     <script src="../js/cart.js"></script>
+
 </body>
 </html>

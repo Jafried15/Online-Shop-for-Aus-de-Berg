@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*
  * <!--
  *   ~ /**
@@ -609,6 +610,10 @@ button.close {
     text-align: left;
 }
 
+.cart-table td:first-child h3 {
+    display: contents;
+}
+
 .cart-table td:last-child {
     text-align: right;
 }
@@ -617,6 +622,24 @@ button.close {
     height: 15vh;
     vertical-align: middle;
     padding-right: 3%;
+}
+
+.quantity-btn {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.quantity-btn:hover {
+    background-color: #555555;
+    color: white;
 }
 
 .cart-table .remove {
@@ -637,4 +660,5 @@ button.close {
 
 .total p {
     text-transform: uppercase;
+    font-size: 1.2rem;
 }
