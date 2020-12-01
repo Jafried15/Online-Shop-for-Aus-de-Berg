@@ -430,7 +430,11 @@ button.close {
     opacity: 1;
 }
 
-/* Add €/Stück after Price automatically */
+/* Add € and €/Stück after Price automatically */
+.amount:after {
+    content: '€';
+}
+
 .product-price:after {
     content: '€/Stück';
 }
@@ -610,7 +614,7 @@ button.close {
     text-align: left;
 }
 
-.cart-table td:first-child h3 {
+.cart-table td:first-child p {
     display: contents;
 }
 
@@ -631,7 +635,6 @@ button.close {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -660,5 +663,4 @@ button.close {
 
 .total p {
     text-transform: uppercase;
-    font-size: 1.2rem;
 }

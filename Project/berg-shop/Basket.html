@@ -114,10 +114,10 @@
                 <div class="row">
                     <table class="cart-table">
                         <tr>
-                            <th><h3>Produkt</h3></th>
-                            <th><h3>Einzelpreis</h3></th>
-                            <th><h3>Stückzahl</h3></th>
-                            <th><h3>Gesamtpreis</h3></th>
+                            <th><p>Produkt</p></th>
+                            <th><p>Einzelpreis</p></th>
+                            <th><p>Stückzahl</p></th>
+                            <th><p>Gesamtpreis</p></th>
                         </tr>
                     </table>
                 </div>
@@ -131,6 +131,9 @@
                                 <p>inkl. MWST 19%</p>
                             </div>
                             <div class="column-50 calculated-billing" style="text-align: right">
+                                <p id="totalItem" class="amount"></p>
+                                <p id="delivery" class="amount"></p>
+                                <p id="mwst" class="amount"></p>
                             </div>
                         </div>
                         <hr>
@@ -139,6 +142,7 @@
                                 <p style="font-weight: bold">Rechnungsbetrag</p>
                             </div>
                             <div class=" column-50 total-billing" style="text-align: right">
+                                <p id="totalBilling" style="font-weight: bold" class="amount"></p>
                             </div>
                         </div>
                     </div>

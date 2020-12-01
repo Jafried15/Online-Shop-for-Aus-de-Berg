@@ -13,8 +13,6 @@
 let cart = (JSON.parse(localStorage.getItem('cart')) || []);
 
 const cartDOM = document.querySelector('.cart-table');
-const totalCalcDOM = document.querySelector('.calculated-billing');
-const totalDOM = document.querySelector('.total-billing');
 
 const addToCartButtonsDOM = document.querySelectorAll('[data-action="ADD_TO_CART"]');
 
@@ -31,10 +29,8 @@ addToCartButtonsDOM.forEach(addItemToCart => {
 
         const isInCart = (cart.filter(cartItem => (cartItem.article_number === product.article_number)).length > 0);
         if (isInCart) {
-            console.log("in Cart")
             increaseItemCountAdd(product, product.count);
         } else {
-            console.log("in not")
             cart.push(product);
             localStorage.setItem('cart', JSON.stringify(cart));
         }
@@ -75,18 +71,18 @@ function addToDOM(product) {
     cartDOM.insertAdjacentHTML('beforeend', `
             <tr class="cart-item" data-article_number="${product.article_number}">
                 <td><img class="cart-item-image" src="${product.image}" alt="${product.name}">
-                     <h3 class="cart-item-name">${product.name}</h3></td>
-                <td><h3 class="cart-item-price product-price">${product.price}</h3></td>
+                     <p class="cart-item-name">${product.name}</p></td>
+                <td><p class="cart-item-price product-price">${product.price}</p></td>
                 <td>
                 <div>
                     <button class="quantity-btn fa fa-minus" data-action="DECREASE_ITEM"></button>
-                    <h3 class="cart-item-count">${product.count}</h3>
+                    <p class="cart-item-count">${product.count}</p>
                     <button class="quantity-btn fa fa-plus" data-action="INCREASE_ITEM"></button>
                     <button class="quantity-btn fa fa-trash" data-action="REMOVE_ITEM"></button>
                     </div>
                 </td>
                 <td>
-                    <h3 class="cart-item-total product-price">${total}</h3>
+                    <p class="cart-item-total amount">${total}</p>
                 </td>
             </tr>
         `);
@@ -114,6 +110,7 @@ function increaseItemCountCart(product, cartItemDOM) {
             }
             cartItemDOM.querySelector('.cart-item-count').innerText = cartItem.count;
             cartItemDOM.querySelector('.cart-item-total').innerText = calculateTotal(cartItem.count, cartItem.price).replace(".", ",");
+            calculateBilling();
             localStorage.setItem('cart', JSON.stringify(cart));
         }
     })
@@ -129,6 +126,7 @@ function decreaseItemCount(product, cartItemDOM) {
             }
             cartItemDOM.querySelector('.cart-item-count').innerText = cartItem.count;
             cartItemDOM.querySelector('.cart-item-total').innerText = calculateTotal(cartItem.count, cartItem.price).replace(".", ",");
+            calculateBilling();
             localStorage.setItem('cart', JSON.stringify(cart));
         }
     });
@@ -141,9 +139,9 @@ function removeItem(product, cartItemDOM) {
             cartItemDOM.remove();
             cart = cart.filter(cartItem => cartItem.article_number !== product.article_number);
             localStorage.setItem('cart', JSON.stringify(cart));
+            calculateBilling();
         }
-    })
-    showCart()
+    });
 }
 
 function calculateTotal(count, price) {
@@ -156,15 +154,11 @@ function calculateBilling() {
         let itemTotal = calculateTotal(cartItem.count, cartItem.price)
         totalItems = (parseFloat(totalItems) + parseFloat(itemTotal)).toFixed(2);
     })
+    document.getElementById('totalItem').innerText = totalItems.replace(".", ",");
+    document.getElementById('delivery').innerText = "4,99";
     let mwst = (totalItems * 0.19).toFixed(2);
-    totalCalcDOM.insertAdjacentHTML('beforeend', `
-        <h3 class="product-price">${totalItems.replace(".", ",")}</h3>
-        <h3 class="product-price">4,99</h3>
-        <h3 class="product-price">${mwst.replace(".", ",")}</h3>
-    `);
-    console.log(totalItems, 4.99, mwst, parseFloat(totalItems) + 4.99 + parseFloat(mwst))
+    document.getElementById('mwst').innerText = mwst.replace(".", ",");
+
     let totalBilling = (parseFloat(totalItems) + 4.99 + parseFloat(mwst)).toFixed(2);
-    totalDOM.insertAdjacentHTML('beforeend', `
-        <h3 class="product-price">${totalBilling.replace(".", ",")}</h3>
-    `);
+    document.getElementById('totalBilling').innerText = totalBilling.replace(".", ",");
 }
