@@ -22,7 +22,6 @@
     <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/berg-shop/Basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Basket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/berg-shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/berg-shop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +121,7 @@
       <workItem from="1606223684656" duration="92000" />
       <workItem from="1606232121277" duration="9647000" />
       <workItem from="1606333661178" duration="468000" />
-      <workItem from="1606732208478" duration="16559000" />
+      <workItem from="1606732208478" duration="20917000" />
     </task>
     <task id="LOCAL-00001" summary="change: Edit Layout of the Sites like expected">
       <created>1596657359783</created>

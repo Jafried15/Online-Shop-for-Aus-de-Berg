@@ -49,6 +49,18 @@ function increaseItemCountAdd(product, count) {
 
 function showCart() {
     if (cart.length === 0) {
+        showElements(true);
+    } else {
+        showElements(false);
+        cart.forEach(cartItem => {
+            addToDOM(cartItem);
+        });
+        calculateBilling();
+    }
+}
+
+function showElements(isEmpty) {
+    if (Boolean(isEmpty)) {
         document.getElementById("empty").style.display = "block";
         document.getElementById("basket-icon").style.display = "none";
         document.getElementById("filled").style.display = "none";
@@ -59,10 +71,6 @@ function showCart() {
         document.getElementById("basket-icon").style.display = "block";
         document.getElementById("filled").style.display = "block";
         document.getElementById("step-one").style.display = "block";
-        cart.forEach(cartItem => {
-            addToDOM(cartItem);
-        });
-        calculateBilling();
     }
 }
 
@@ -98,6 +106,8 @@ function addActionsToButtons(product) {
             cartItemDOM.querySelector('[data-action="REMOVE_ITEM"]').addEventListener('click', () => removeItem(product, cartItemDOM));
         }
     })
+    document.querySelector('[data-action="CLEAR_CART"]').addEventListener('click', () => clearCart(cartItemsDOM));
+    document.querySelector('[data-action="CHECKOUT"]').addEventListener('click', () => checkout());
 }
 
 function increaseItemCountCart(product, cartItemDOM) {
@@ -139,9 +149,25 @@ function removeItem(product, cartItemDOM) {
             cartItemDOM.remove();
             cart = cart.filter(cartItem => cartItem.article_number !== product.article_number);
             localStorage.setItem('cart', JSON.stringify(cart));
-            calculateBilling();
         }
     });
+
+    if (cart.length < 1) {
+        showElements(true)
+    } else {
+        calculateBilling();
+    }
+}
+
+function clearCart(cartItemsDOM) {
+    cartItemsDOM.forEach(cartItemDOM => {
+        cartItemDOM.remove();
+    });
+
+    showElements(true)
+
+    cart = [];
+    localStorage.removeItem('cart');
 }
 
 function calculateTotal(count, price) {
@@ -161,4 +187,31 @@ function calculateBilling() {
 
     let totalBilling = (parseFloat(totalItems) + 4.99 + parseFloat(mwst)).toFixed(2);
     document.getElementById('totalBilling').innerText = totalBilling.replace(".", ",");
+}
+
+function checkout() {
+    let paypalFormHTML = `
+    <form id="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_cart">
+      <input type="hidden" name="upload" value="1">
+      <input type="hidden" name="business" value="banken@jfriedrich.net">
+  `;
+
+    cart.forEach((cartItem, index) => {
+        ++index;
+        paypalFormHTML += `
+      <input type="hidden" name="item_name_${index}" value="${cartItem.name}">
+      <input type="hidden" name="amount_${index}" value="${cartItem.price}">
+      <input type="hidden" name="quantity_${index}" value="${cartItem.count}">
+    `;
+    });
+
+    paypalFormHTML += `
+      <input type="submit" value="PayPal">
+    </form>
+    <div class="overlay"></div>
+  `;
+
+    document.querySelector('body').insertAdjacentHTML('beforeend', paypalFormHTML);
+    document.getElementById('paypal-form').submit();
 }

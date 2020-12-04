@@ -60,7 +60,7 @@
 
     <center>
         <main>
-            <section class="basket intro" id="empty" style="padding-bottom: 5%">
+            <section class="basket intro" id="empty">
                 <i class="fa fa-shopping-cart shopping-cart"></i><br>
                 <p class="headline">Warenkorb</p>
                 <br>
@@ -122,6 +122,9 @@
                     </table>
                 </div>
                 <div class="row total">
+                    <div class="column-50">
+                        <button class="quantity-btn" data-action="CLEAR_CART">Alle Artikel aus Einkaufswagen entfernen</button>
+                    </div>
                     <div class="column-50">
                         <hr>
                         <div class="row">
@@ -305,7 +308,7 @@
                             <button class="button" onclick="backStep('step-three')">
                                 Zurück
                             </button>
-                            <button class="button" onclick="nextStep('step-three')">
+                            <button class="button" onclick="nextStep('step-three')" data-action="CHECKOUT">
                                 Weiter
                             </button>
                         </div>
