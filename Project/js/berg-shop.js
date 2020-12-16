@@ -103,7 +103,76 @@ function showShippingAddress(checkbox) {
     const checked = checkbox.checked;
     if (checked) {
         document.getElementById("lieferadresse").style.display = "block";
+        document.getElementById("surnameLief").required = true;
+        document.getElementById("lastnameLief").required = true;
+        document.getElementById("streetLief").required = true;
+        document.getElementById("numberLief").required = true;
+        document.getElementById("plzLief").required = true;
+        document.getElementById("ortLief").required = true;
     } else {
         document.getElementById("lieferadresse").style.display = "none";
+        document.getElementById("surnameLief").required = false;
+        document.getElementById("lastnameLief").required = false;
+        document.getElementById("streetLief").required = false;
+        document.getElementById("numberLief").required = false;
+        document.getElementById("plzLief").required = false;
+        document.getElementById("ortLief").required = false;
+    }
+}
+
+function addActionsToButtons(product) {
+    const cartItemsDOM = document.querySelectorAll('.cart-item');
+    cartItemsDOM.forEach(cartItemDOM => {
+        if (cartItemDOM.getAttribute('data-article_number') === product.article_number) {
+            cartItemDOM.querySelector('[data-action="INCREASE_ITEM"]').addEventListener('click', () => increaseItemCountCart(product, cartItemDOM));
+            cartItemDOM.querySelector('[data-action="DECREASE_ITEM"]').addEventListener('click', () => decreaseItemCount(product, cartItemDOM));
+            cartItemDOM.querySelector('[data-action="REMOVE_ITEM"]').addEventListener('click', () => removeItem(product, cartItemDOM));
+        }
+    })
+    document.querySelector('[data-action="CLEAR_CART"]').addEventListener('click', () => clearCart(cartItemsDOM));
+
+    document.querySelector('[data-action="CLEAR_ADDRESSES"]').addEventListener('click', () => {
+        localStorage.removeItem('billingAddress');
+        localStorage.removeItem('deliveryAddress');
+    });
+
+    document.querySelector('[data-action="DELIVERY_ADDRESS"]').addEventListener('click', () => checkAddress());
+}
+
+function checkAddress() {
+    if (document.getElementById("surname").checkValidity()
+        && document.getElementById("lastname").checkValidity()
+        && document.getElementById("street").checkValidity()
+        && document.getElementById("number").checkValidity()
+        && document.getElementById("plz").checkValidity()
+        && document.getElementById("ort").checkValidity()
+        && document.getElementById("mail").checkValidity()) {
+        localStorage.setItem('billingAddress', JSON.stringify({
+            gender: document.getElementById("gender").value,
+            surname: document.getElementById("surname").value,
+            lastname: document.getElementById("lastname").value,
+            organisation: document.getElementById("organisation").value,
+            street: document.getElementById("street").value,
+            number: document.getElementById("number").value,
+            plz: document.getElementById("plz").value,
+            ort: document.getElementById("ort").value,
+            mail: document.getElementById("mail").value,
+            phone: document.getElementById("tel").value,
+        }));
+        if (document.getElementById("lieferadresse").style.display === "block") {
+            localStorage.setItem('deliveryAddress', JSON.stringify({
+                gender: document.getElementById("genderLief").value,
+                surname: document.getElementById("surnameLief").value,
+                lastname: document.getElementById("lastnameLief").value,
+                organisation: document.getElementById("organisationLief").value,
+                street: document.getElementById("streetLief").value,
+                number: document.getElementById("numberLief").value,
+                plz: document.getElementById("plzLief").value,
+                ort: document.getElementById("ortLief").value,
+            }));
+        }
+        nextStep('step-two')
+    } else {
+        alert("Bitte überprüf deine Eingaben!")
     }
 }

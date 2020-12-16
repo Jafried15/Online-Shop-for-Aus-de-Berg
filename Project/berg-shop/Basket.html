@@ -154,7 +154,7 @@
                 <div class="row">
                     <div class="column-100" style="text-align: right">
                         <div class="button-field">
-                            <button class="button" onclick="nextStep('step-one')">
+                            <button class="button" onclick="nextStep('step-one')" data-action="CLEAR_ADDRESSES">
                                 Weiter
                             </button>
                         </div>
@@ -169,54 +169,52 @@
                         <div class="column flex-columns column-20">
                             <label for="gender">Geschlecht:</label>
                             <select class="half" id="gender" name="gender">
-                                <option selected value="mrs">Frau</option>
-                                <option value="mr">Herr</option>
-                                <option value="mx">Divers</option>
+                                <option selected value="Frau">Frau</option>
+                                <option value="Herr">Herr</option>
+                                <option value="Divers">Divers</option>
                             </select>
                         </div>
                         <div class="column flex-columns column-40">
                             <label class="half" for="surname">Vorname:</label>
-                            <input class="half" id="surname" name="surname" placeholder="Vorname" type="text">
+                            <input class="half" id="surname" name="surname" placeholder="Vorname" type="text" required>
                         </div>
                         <div class="column flex-columns column-40">
                             <label for="lastname">Nachname:</label>
-                            <input class="half" id="lastname" name="lastname" placeholder="Nachname" type="text">
+                            <input class="half" id="lastname" name="lastname" placeholder="Nachname" type="text" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="column flex-columns column-100">
-                            <label for="firma">Firma (optional):</label>
-                            <input id="firma" name="firma" placeholder="Firma (optional)" type="text">
+                            <label for="organisation">Firma (optional):</label>
+                            <input id="organisation" name="organisation" placeholder="Firma (optional)" type="text">
                         </div>
                     </div>
                     <div class="row">
                         <div class="column flex-columns column-75">
                             <label for="street">Strasse:</label>
-                            <input class="long" id="street" name="street" placeholder="Strasse" type="text">
+                            <input class="long" id="street" name="street" placeholder="Strasse" type="text" required>
                         </div>
                         <div class="column flex-columns column-25">
                             <label for="number">Hausnummer:</label>
-                            <input class="long" id="number" name="number" placeholder="Hausnummer" type="text">
+                            <input class="long" id="number" name="number" placeholder="Hausnummer" type="number" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="column flex-columns column-25">
                             <label for="plz">PLZ:</label>
-                            <input class="short" id="plz" name="plz" placeholder="PLZ" type="text">
+                            <input class="short" id="plz" name="plz" placeholder="PLZ" type="number" pattern="^[0-9]{5}$" required>
                         </div>
                         <div class="column flex-columns column-75">
                             <label for="ort">Ort:</label>
-                            <input class="long" id="ort" name="ort" placeholder="Ort" type="text">
+                            <input class="long" id="ort" name="ort" placeholder="Ort" type="text" required>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="column flex-columns column-100">
+                        <div class="column flex-columns column-50">
                             <label for="mail">E-Mail:</label>
-                            <input id="mail" name="mail" placeholder="E-Mail" type="email">
+                            <input id="mail" name="mail" placeholder="E-Mail" type="email" required>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="column flex-columns column-100">
+                        <div class="column flex-columns column-50">
                             <label for="tel">Telefon (optional):</label>
                             <input id="tel" name="tel" placeholder="Telefon (optional)" type="tel">
                         </div>
@@ -237,9 +235,9 @@
                         <div class="column flex-columns column-20">
                             <label for="genderLief">Geschlecht:</label>
                             <select class="half" id="genderLief" name="genderLief">
-                                <option selected value="mrs">Frau</option>
-                                <option value="mr">Herr</option>
-                                <option value="mx">Divers</option>
+                                <option selected value="Frau">Frau</option>
+                                <option value="Herr">Herr</option>
+                                <option value="Divers">Divers</option>
                             </select>
                         </div>
                         <div class="column flex-columns column-40">
@@ -253,8 +251,8 @@
                     </div>
                     <div class="row">
                         <div class="column flex-columns column-100">
-                            <label for="firmaLief">Firma (optional):</label>
-                            <input id="firmaLief" name="firmaLief" placeholder="Firma (optional)" type="text">
+                            <label for="organisationLief">Firma (optional):</label>
+                            <input id="organisationLief" name="organisationLief" placeholder="Firma (optional)" type="text">
                         </div>
                     </div>
                     <div class="row">
@@ -264,13 +262,13 @@
                         </div>
                         <div class="column flex-columns column-25">
                             <label for="numberLief">Hausnummer:</label>
-                            <input class="long" id="numberLief" name="numberLief" placeholder="Hausnummer" type="text">
+                            <input class="long" id="numberLief" name="numberLief" placeholder="Hausnummer" type="number">
                         </div>
                     </div>
                     <div class="row">
                         <div class="column flex-columns column-25">
                             <label for="plzLief">PLZ:</label>
-                            <input class="short" id="plzLief" name="plzLief" placeholder="PLZ" type="text">
+                            <input class="short" id="plzLief" name="plzLief" placeholder="PLZ" type="number" pattern="^[0-9]{5}$">
                         </div>
                         <div class="column flex-columns column-75">
                             <label for="ortLief">Ort:</label>
@@ -285,7 +283,7 @@
                             <button class="button" onclick="backStep('step-two')">
                                 Zurück
                             </button>
-                            <button class="button" onclick="nextStep('step-two')">
+                            <button class="button" data-action="DELIVERY_ADDRESS">
                                 Weiter
                             </button>
                         </div>

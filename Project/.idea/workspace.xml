@@ -22,6 +22,8 @@
     <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/berg-shop/Basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Basket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/berg-shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/berg-shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/berg-shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/berg-shop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +72,7 @@
     <property name="ToolWindowDuplicates.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/includes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sta/sta-homepage" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -79,14 +81,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Entwicklung\Projekte\Online-Shop-for-Aus-de-Berg\Project\berg-shop" />
-      <recent name="C:\Users\User\Entwicklung\Projekte\Online-Shop-for-Aus-de-Berg\Project\" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Entwicklung\Projekte\Online-Shop-for-Aus-de-Berg\Project\includes" />
       <recent name="C:\Users\User\Entwicklung\Projekte\Online-Shop-for-Aus-de-Berg\Project\js" />
       <recent name="C:\Users\User\Entwicklung\Projekte\Online-Shop-for-Aus-de-Berg\Project\scss" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Entwicklung\Projekte\Online-Shop-for-Aus-de-Berg\Project\berg-shop" />
+      <recent name="C:\Users\User\Entwicklung\Projekte\Online-Shop-for-Aus-de-Berg\Project\" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -122,6 +124,10 @@
       <workItem from="1606232121277" duration="9647000" />
       <workItem from="1606333661178" duration="468000" />
       <workItem from="1606732208478" duration="20917000" />
+      <workItem from="1607689885968" duration="423000" />
+      <workItem from="1607690331505" duration="662000" />
+      <workItem from="1608022515091" duration="1822000" />
+      <workItem from="1608035491751" duration="7249000" />
     </task>
     <task id="LOCAL-00001" summary="change: Edit Layout of the Sites like expected">
       <created>1596657359783</created>
@@ -230,52 +236,5 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="552" y="161" key="#Plugins" timestamp="1600848121108">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="161" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1600848121108" />
-    <state x="640" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600844229497">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="640" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600844229497" />
-    <state x="530" y="8" key="CommitChangelistDialog2" timestamp="1606058366148">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="530" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1606058366148" />
-    <state x="794" y="440" key="NewPhpFileDialog" timestamp="1599231702864">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="794" y="440" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599231702864" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1606210910386">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606210910386" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606068611854">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606068611854" />
-    <state x="762" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606752684959">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="762" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606752684959" />
-    <state x="793" y="216" width="784" height="740" key="find.popup" timestamp="1606818959110">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="793" y="216" width="784" height="740" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606818959110" />
-    <state x="601" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1605961309812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="601" y="246" width="700" height="530" key="recent.locations.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605961309812" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1600872973023">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600872973023" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606303557982">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2751" y="-57" width="896" height="913" key="search.everywhere.popup/0.0.1920.1040/1920.-360.2560.1400@1920.-360.2560.1400" timestamp="1602931451204" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606303557982" />
   </component>
 </project>

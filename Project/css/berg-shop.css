@@ -519,7 +519,8 @@ button.close {
 .serie input[type=text],
 .product input[type=text],
 .cart-table select,
-.step-two input[type=text], .step-two input[type=email], .step-two input[type=tel], .step-two input[type=submit], .step-two select, .step-two input[type=checkbox] {
+.step-two input,
+.step-two select {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -531,6 +532,24 @@ button.close {
 
 .step-two input[type=checkbox] {
     width: 10%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.step-two input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:required:invalid {
+    font-weight: bold;
+}
+
+input:required:invalid:focus {
+    outline: none;
 }
 
 .serien a,

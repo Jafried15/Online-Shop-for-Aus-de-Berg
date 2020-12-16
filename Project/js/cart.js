@@ -12,6 +12,8 @@
 
 let cart = (JSON.parse(localStorage.getItem('cart')) || []);
 
+let total = (JSON.parse(localStorage.getItem('total')) || 0.0);
+
 const cartDOM = document.querySelector('.cart-table');
 
 const addToCartButtonsDOM = document.querySelectorAll('[data-action="ADD_TO_CART"]');
@@ -97,19 +99,6 @@ function addToDOM(product) {
     addActionsToButtons(product);
 }
 
-function addActionsToButtons(product) {
-    const cartItemsDOM = document.querySelectorAll('.cart-item');
-    cartItemsDOM.forEach(cartItemDOM => {
-        if (cartItemDOM.getAttribute('data-article_number') === product.article_number) {
-            cartItemDOM.querySelector('[data-action="INCREASE_ITEM"]').addEventListener('click', () => increaseItemCountCart(product, cartItemDOM));
-            cartItemDOM.querySelector('[data-action="DECREASE_ITEM"]').addEventListener('click', () => decreaseItemCount(product, cartItemDOM));
-            cartItemDOM.querySelector('[data-action="REMOVE_ITEM"]').addEventListener('click', () => removeItem(product, cartItemDOM));
-        }
-    })
-    document.querySelector('[data-action="CLEAR_CART"]').addEventListener('click', () => clearCart(cartItemsDOM));
-    document.querySelector('[data-action="CHECKOUT"]').addEventListener('click', () => checkout());
-}
-
 function increaseItemCountCart(product, cartItemDOM) {
     cart.forEach(cartItem => {
         if (cartItem.article_number === product.article_number) {
@@ -187,31 +176,6 @@ function calculateBilling() {
 
     let totalBilling = (parseFloat(totalItems) + 4.99 + parseFloat(mwst)).toFixed(2);
     document.getElementById('totalBilling').innerText = totalBilling.replace(".", ",");
-}
 
-function checkout() {
-    let paypalFormHTML = `
-    <form id="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-      <input type="hidden" name="cmd" value="_cart">
-      <input type="hidden" name="upload" value="1">
-      <input type="hidden" name="business" value="banken@jfriedrich.net">
-  `;
-
-    cart.forEach((cartItem, index) => {
-        ++index;
-        paypalFormHTML += `
-      <input type="hidden" name="item_name_${index}" value="${cartItem.name}">
-      <input type="hidden" name="amount_${index}" value="${cartItem.price}">
-      <input type="hidden" name="quantity_${index}" value="${cartItem.count}">
-    `;
-    });
-
-    paypalFormHTML += `
-      <input type="submit" value="PayPal">
-    </form>
-    <div class="overlay"></div>
-  `;
-
-    document.querySelector('body').insertAdjacentHTML('beforeend', paypalFormHTML);
-    document.getElementById('paypal-form').submit();
+    localStorage.setItem('total', totalBilling);
 }
