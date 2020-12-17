@@ -1,11 +1,17 @@
 <!doctype html>
 <html lang="de">
 <head>
+    <title>Kontakt</title>
+
+    <link href="../img/Aus-de-Berg_Favicon.png"
+          rel="shortcut icon" type="image/x-icon">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="../css/all.css" rel="stylesheet" type="text/css">
     <link href="../css/Stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="../css/berg-shop.css" rel="stylesheet" type="text/css">
 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
 </head>
