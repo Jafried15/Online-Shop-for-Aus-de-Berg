@@ -20,9 +20,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/icons/paypal-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/step-1-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/step-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/step-2-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/step-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/step-3-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/step-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/step-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/step-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/step-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/step-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/step-8.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/berg-shop/Basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Basket.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/berg-shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/berg-shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/step-1-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/step-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/step-2-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/step-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/step-3-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/step-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/step-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/step-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/step-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/step-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/step-8.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/berg-shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/berg-shop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cart.js" afterDir="false" />
     </list>
@@ -128,6 +151,7 @@
       <workItem from="1607690331505" duration="662000" />
       <workItem from="1608022515091" duration="1822000" />
       <workItem from="1608035491751" duration="7249000" />
+      <workItem from="1608117764997" duration="12668000" />
     </task>
     <task id="LOCAL-00001" summary="change: Edit Layout of the Sites like expected">
       <created>1596657359783</created>

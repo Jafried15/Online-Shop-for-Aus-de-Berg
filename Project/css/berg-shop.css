@@ -450,6 +450,16 @@ button.close {
     padding-left: 0;
 }
 
+.serien a,
+.products a {
+    text-decoration: none;
+    color: #000;
+}
+
+.ablauf strong {
+    text-transform: uppercase;
+}
+
 .ablauf .box,
 .serie .box,
 .product .box,
@@ -488,132 +498,7 @@ button.close {
     display: block;
 }
 
-/*Inputs */
-.step-two form {
-    text-align: left;
-}
-
-.step-two form h2 {
-    padding-bottom: 5vh;
-    text-align: center;
-}
-
-.step-two .row {
-    justify-content: left;
-    margin-bottom: 0;
-}
-
-.step-two .column {
-    padding-top: 0;
-}
-
-.step-two .column-50 {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.step-two label {
-    font-weight: bold;
-}
-
-.serie input[type=text],
-.product input[type=text],
-.cart-table select,
-.step-two input,
-.step-two select {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 4px;
-    margin-bottom: 8px;
-    width: 100%;
-}
-
-.step-two input[type=checkbox] {
-    width: 10%;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-.step-two input[type=number] {
-    -moz-appearance: textfield;
-}
-
-input:required:invalid {
-    font-weight: bold;
-}
-
-input:required:invalid:focus {
-    outline: none;
-}
-
-.serien a,
-.products a {
-    text-decoration: none;
-    color: #000;
-}
-
-.ablauf strong {
-    text-transform: uppercase;
-}
-
-/* Icons */
-.icon {
-    display: inline-block;
-    line-height: 1.8;
-    height: 40px;
-}
-
-.step-1 {
-    content: url(../img/step-1.png);
-}
-
-.step-1-white {
-    content: url(../img/step-1-white.png);
-}
-
-.step-2 {
-    content: url(../img/step-2.png);
-}
-
-.step-2-white {
-    content: url(../img/step-2-white.png);
-}
-
-.step-3 {
-    content: url(../img/step-3.png);
-}
-
-.step-3-white {
-    content: url(../img/step-3-white.png);
-}
-
-.step-4 {
-    content: url(../img/step-4.png);
-}
-
-.step-5 {
-    content: url(../img/step-5.png);
-}
-
-.step-6 {
-    content: url(../img/step-6.png);
-}
-
-.step-7 {
-    content: url(../img/step-7.png);
-}
-
-.step-8 {
-    content: url(../img/step-8.png);
-}
-
-/* Cart Table */
+/* Cart Table (Step One) */
 .cart-table {
     width: 100%;
     text-align: center;
@@ -671,7 +556,8 @@ input:required:invalid:focus {
     text-decoration: underline;
 }
 
-.total {
+.total,
+.agreements {
     justify-content: flex-end;
     text-align: left;
 }
@@ -682,4 +568,141 @@ input:required:invalid:focus {
 
 .total p {
     text-transform: uppercase;
+}
+
+/* Inputs */
+.step-two form {
+    text-align: left;
+}
+
+.step-two form h2 {
+    padding-bottom: 5vh;
+    text-align: center;
+}
+
+.step-two .row {
+    justify-content: left;
+    margin-bottom: 0;
+}
+
+.step-two .column {
+    padding-top: 0;
+}
+
+.step-two .column-50 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.step-three .column-100 {
+    text-align: left;
+}
+
+.serie input[type=text],
+.product input[type=text],
+.cart-table select,
+.step-two input,
+.step-two select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.step-two input[type=checkbox] {
+    width: 10%;
+}
+
+.step-two label {
+    font-weight: bold;
+}
+
+.step-three label {
+    text-transform: uppercase;
+}
+
+input[type=radio] {
+    width: 5%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.step-two input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:required:invalid {
+    font-weight: bold;
+    background-color: #D7F0F1;
+}
+
+input:required:invalid:focus {
+    outline: none;
+}
+
+/* Payment (Step Three) */
+.payment-radio-text {
+    margin-left: 5.5%;
+}
+
+/* Icons */
+.icon {
+    display: inline-block;
+    line-height: 1.8;
+    height: 40px;
+}
+
+.step-1 {
+    content: url(../img/icons/step-1.png);
+}
+
+.step-1-white {
+    content: url(../img/icons/step-1-white.png);
+}
+
+.step-2 {
+    content: url(../img/icons/step-2.png);
+}
+
+.step-2-white {
+    content: url(../img/icons/step-2-white.png);
+}
+
+.step-3 {
+    content: url(../img/icons/step-3.png);
+}
+
+.step-3-white {
+    content: url(../img/icons/step-3-white.png);
+}
+
+.step-4 {
+    content: url(../img/icons/step-4.png);
+}
+
+.step-5 {
+    content: url(../img/icons/step-5.png);
+}
+
+.step-6 {
+    content: url(../img/icons/step-6.png);
+}
+
+.step-7 {
+    content: url(../img/icons/step-7.png);
+}
+
+.step-8 {
+    content: url(../img/icons/step-8.png);
+}
+
+.icon-paypal {
+    content: url(../img/icons/paypal-icon.png);
 }

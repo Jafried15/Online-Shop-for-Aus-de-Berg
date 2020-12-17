@@ -176,11 +176,12 @@
                         </div>
                         <div class="column flex-columns column-40">
                             <label class="half" for="surname">Vorname:</label>
-                            <input class="half" id="surname" name="surname" placeholder="Vorname" type="text" required>
+                            <input class="half" id="surname" name="surname" placeholder="Gib deinen Vornamen ein" type="text" required oninvalid="this.setCustomValidity('Bitte einen gültigen Vornamen eingeben!')" oninput="this.setCustomValidity('')">
                         </div>
                         <div class="column flex-columns column-40">
                             <label for="lastname">Nachname:</label>
-                            <input class="half" id="lastname" name="lastname" placeholder="Nachname" type="text" required>
+                            <input class="half" id="lastname" name="lastname" placeholder="Gib deinen Nachnamen ein" type="text" required oninvalid="this.setCustomValidity('Bitte einen gültigen Nachnamen eingeben!')"
+                                   oninput="this.setCustomValidity('')">
                         </div>
                     </div>
                     <div class="row">
@@ -191,28 +192,33 @@
                     </div>
                     <div class="row">
                         <div class="column flex-columns column-75">
-                            <label for="street">Strasse:</label>
-                            <input class="long" id="street" name="street" placeholder="Strasse" type="text" required>
+                            <label for="street">Straße:</label>
+                            <input class="long" id="street" name="street" placeholder="Gib deine Straße ein" type="text" required oninvalid="this.setCustomValidity('Bitte eine gültige Straße eingeben!')"
+                                   oninput="this.setCustomValidity('')">
                         </div>
                         <div class="column flex-columns column-25">
                             <label for="number">Hausnummer:</label>
-                            <input class="long" id="number" name="number" placeholder="Hausnummer" type="number" required>
+                            <input class="long" id="number" name="text" placeholder="Gib deine Hasunummer ein" type="text" required oninvalid="this.setCustomValidity('Bitte eine gültige Hausnummer eingeben!')"
+                                   oninput="this.setCustomValidity('')">
                         </div>
                     </div>
                     <div class="row">
                         <div class="column flex-columns column-25">
-                            <label for="plz">PLZ:</label>
-                            <input class="short" id="plz" name="plz" placeholder="PLZ" type="number" pattern="^[0-9]{5}$" required>
+                            <label for="plz">Postleitzahl:</label>
+                            <input class="short" id="plz" name="plz" placeholder="Gib deine PLZ ein" type="number" pattern="^[0-9]{5}$" required oninvalid="this.setCustomValidity('Bitte eine gültige Postleitzahl eingeben!')"
+                                   oninput="this.setCustomValidity('')">
                         </div>
                         <div class="column flex-columns column-75">
                             <label for="ort">Ort:</label>
-                            <input class="long" id="ort" name="ort" placeholder="Ort" type="text" required>
+                            <input class="long" id="ort" name="ort" placeholder="Gib deinen Wohnort ein" type="text" required oninvalid="this.setCustomValidity('Bitte einen gültigen Wohnort eingeben!')"
+                                   oninput="this.setCustomValidity('')">
                         </div>
                     </div>
                     <div class="row">
                         <div class="column flex-columns column-50">
                             <label for="mail">E-Mail:</label>
-                            <input id="mail" name="mail" placeholder="E-Mail" type="email" required>
+                            <input id="mail" name="mail" placeholder="Gib deine e-Mail Adresse ein" type="email" required oninvalid="this.setCustomValidity('Bitte eine gültige e-Mail Adresse eingeben!')"
+                                   oninput="this.setCustomValidity('')">
                         </div>
                         <div class="column flex-columns column-50">
                             <label for="tel">Telefon (optional):</label>
@@ -242,11 +248,12 @@
                         </div>
                         <div class="column flex-columns column-40">
                             <label class="half" for="surnameLief">Vorname:</label>
-                            <input class="half" id="surnameLief" name="surnameLief" placeholder="Vorname" type="text">
+                            <input class="half" id="surnameLief" name="surnameLief" placeholder="Gib deinen Vornamen ein" type="text" oninvalid="this.setCustomValidity('Bitte einen gültigen Vornamen eingeben!')" oninput="this.setCustomValidity('')">
                         </div>
                         <div class="column flex-columns column-40">
                             <label for="lastnameLief">Nachname:</label>
-                            <input class="half" id="lastnameLief" name="lastnameLief" placeholder="Nachname" type="text">
+                            <input class="half" id="lastnameLief" name="lastnameLief" placeholder="Gib deinen Nachnamen ein" type="text" oninvalid="this.setCustomValidity('Bitte einen gültigen Nachnamen eingeben!')"
+                                   oninput="this.setCustomValidity('')">
                         </div>
                     </div>
                     <div class="row">
@@ -257,22 +264,26 @@
                     </div>
                     <div class="row">
                         <div class="column flex-columns column-75">
-                            <label for="streetLief">Strasse:</label>
-                            <input class="long" id="streetLief" name="streetLief" placeholder="Strasse" type="text">
+                            <label for="streetLief">Straße:</label>
+                            <input class="long" id="streetLief" name="streetLief" placeholder="Gib deine Straße ein" type="text" oninvalid="this.setCustomValidity('Bitte eine gültige Straße eingeben!')"
+                                   oninput="this.setCustomValidity('')">
                         </div>
                         <div class="column flex-columns column-25">
                             <label for="numberLief">Hausnummer:</label>
-                            <input class="long" id="numberLief" name="numberLief" placeholder="Hausnummer" type="number">
+                            <input class="long" id="numberLief" name="numberLief" placeholder="Gib deine Hausnummer ein" type="text" oninvalid="this.setCustomValidity('Bitte eine gültige Hausnummer eingeben!')"
+                                   oninput="this.setCustomValidity('')">
                         </div>
                     </div>
                     <div class="row">
                         <div class="column flex-columns column-25">
-                            <label for="plzLief">PLZ:</label>
-                            <input class="short" id="plzLief" name="plzLief" placeholder="PLZ" type="number" pattern="^[0-9]{5}$">
+                            <label for="plzLief">Postleitzahl:</label>
+                            <input class="short" id="plzLief" name="plzLief" placeholder="Gib deine PLZ ein" type="number" pattern="^[0-9]{5}$" required oninvalid="this.setCustomValidity('Bitte eine gültige Postleitzahl eingeben!')"
+                                   oninput="this.setCustomValidity('')">
                         </div>
                         <div class="column flex-columns column-75">
                             <label for="ortLief">Ort:</label>
-                            <input class="long" id="ortLief" name="ortLief" placeholder="Ort" type="text">
+                            <input class="long" id="ortLief" name="ortLief" placeholder="Gib deinen Wohnort ein" type="text" oninvalid="this.setCustomValidity('Bitte einen gültigen Wohnort eingeben!')"
+                                   oninput="this.setCustomValidity('')">
                         </div>
                     </div>
                 </form>
@@ -292,13 +303,41 @@
             </section>
 
             <section class="step step-three" id="step-three">
-
-                <div class="row">
-                    <div class="column-100" id="paypal-container"></div>
-                </div>
-                <div class="row">
-                    <div class="column-100" id="vorkasse-container"></div>
-                </div>
+                <form>
+                    <div class="row">
+                        <div class="column-100" id="paypal-container">
+                            <input type="radio" id="paypal" name="paypal" value="paypal" onchange="switchBilling(this)" checked>
+                            <label for="paypal">
+                                <i class="icon icon-paypal"></i>
+                            </label>
+                            <p class="payment-radio-text">
+                                Bei Auswahl dieser Zahlungsart erfolgt im nächsten Schritt die Weiterleitung zu PayPal. Wenn dort die erforderlichen Daten eingetragen worden sind, geht es automatisch zurück zum Shop, um die Bestellung
+                                abzuschließen.<br><br>
+                                Aus de Berg Grafikdesign<br>
+                                Veronika Fischer<br>
+                                Pfifferloh 6 | 83112 Frasdorf<br>
+                                E-Mail: info@ausdeberg.de<br>
+                                USt-IdNr.: DE328297560
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column-100" id="vorkasse-container">
+                            <input type="radio" id="prepayment" name="prepayment" value="prepayment" onchange="switchBilling(this)">
+                            <label for="prepayment">
+                                Gegen Vorkasse
+                            </label>
+                            <p class="payment-radio-text">
+                                Bitte überweise den Betrag innerhalb von 7 Tagen auf die unten genannte Bankverbindung. Bei nicht Zahlung im o.g. Zeitraum gilt die Bestellung automatisch als storniert! Versand erfolgt nach
+                                Zahlungseingang.<br><br>
+                                Veronika Fischer<br>
+                                Sparkasse Rosenheim-Bad-Aibling<br>
+                                IBAN: DE 96 7115 0000 0024 5577 12<br>
+                                BIC: BYLADEM1ROS
+                            </p>
+                        </div>
+                    </div>
+                </form>
 
                 <div class="row">
                     <div class="column-100" style="text-align: right">
@@ -306,7 +345,7 @@
                             <button class="button" onclick="backStep('step-three')">
                                 Zurück
                             </button>
-                            <button class="button" onclick="nextStep('step-three')" data-action="CHECKOUT">
+                            <button class="button" onclick="nextStep('step-three')" data-action="BILLING_OPTION">
                                 Weiter
                             </button>
                         </div>
@@ -316,9 +355,26 @@
 
             <section class="step step-summary" id="step-summary">
                 <div class="row" style="padding-top: 3%">
+                    <div class="column-33 billingAddress">
+                        <h2>Rechnungsadresse</h2>
+                    </div>
+                    <div class="column-33 deliveryAddress">
+                        <h2>Lieferadresse</h2>
+                    </div>
+                    <div class="column-33 paymentOption">
+                        <h2>Zahlungsart</h2>
+                    </div>
                 </div>
 
                 <div class="row">
+                    <table class="cart-table cart-summary">
+                        <tr>
+                            <th><p>Produkt</p></th>
+                            <th><p>Einzelpreis</p></th>
+                            <th><p>Stückzahl</p></th>
+                            <th><p>Gesamtpreis</p></th>
+                        </tr>
+                    </table>
                 </div>
                 <div class="row total">
                     <div class="column-50">
@@ -329,7 +385,10 @@
                                 <p>Versandkosten</p>
                                 <p>inkl. MWST 19%</p>
                             </div>
-                            <div class="column-50" style="text-align: right">
+                            <div class="column-50 calculated-billing" style="text-align: right">
+                                <p id="totalItemSummary" class="amount"></p>
+                                <p id="deliverySummary" class="amount"></p>
+                                <p id="mwstSummary" class="amount"></p>
                             </div>
                         </div>
                         <hr>
@@ -337,9 +396,24 @@
                             <div class="column-50">
                                 <p style="font-weight: bold">Rechnungsbetrag</p>
                             </div>
-                            <div class=" column-50" style="text-align: right">
+                            <div class=" column-50 total-billing" style="text-align: right">
+                                <p id="totalBillingSummary" style="font-weight: bold" class="amount"></p>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="row agreements">
+                    <div class="column-50">
+                        <form>
+                            <input type="radio" id="cancellation_policy" name="cancellation_policy" value="cancellation_policy">
+                            <label for="cancellation_policy">Ich habe die
+                                <a href="">Widerrufsbelehrung</a>
+                                                             gelesen und bin mit deren Geltung einverstanden. </label>
+                            <br>
+                            <input type="radio" id="dhl" name="dhl" value="dhl">
+                            <label for="dhl">Ich willige ein, dass die zur Vertragsdurchführung notwendigen Daten an den Paketdienst DHL (DHL Express Germany GmbH, Heinrich-Brüning-Straße 5, 53113 Bonn) weitergeleitet werden.</label>
+                        </form>
                     </div>
                 </div>
 
@@ -354,6 +428,7 @@
                             </button>
                         </div>
                     </div>
+                </div>
                 </div>
             </section>
         </main>

@@ -16,6 +16,8 @@ let total = (JSON.parse(localStorage.getItem('total')) || 0.0);
 
 const cartDOM = document.querySelector('.cart-table');
 
+const cartSummaryDOM = document.querySelector('.cart-summary');
+
 const addToCartButtonsDOM = document.querySelectorAll('[data-action="ADD_TO_CART"]');
 
 addToCartButtonsDOM.forEach(addItemToCart => {
@@ -49,15 +51,22 @@ function increaseItemCountAdd(product, count) {
     })
 }
 
-function showCart() {
-    if (cart.length === 0) {
-        showElements(true);
-    } else {
-        showElements(false);
+function showCart(summary) {
+    if (summary) {
         cart.forEach(cartItem => {
-            addToDOM(cartItem);
+            addToSummaryDOM(cartItem);
         });
         calculateBilling();
+    } else {
+        if (cart.length === 0) {
+            showElements(true);
+        } else {
+            showElements(false);
+            cart.forEach(cartItem => {
+                addToDOM(cartItem);
+            });
+            calculateBilling();
+        }
     }
 }
 
@@ -97,6 +106,25 @@ function addToDOM(product) {
             </tr>
         `);
     addActionsToButtons(product);
+}
+
+function addToSummaryDOM(product) {
+    const total = calculateTotal(product.count, product.price).replace(".", ",");
+    cartSummaryDOM.insertAdjacentHTML('beforeend', `
+            <tr class="cart-item" data-article_number="${product.article_number}">
+                <td><img class="cart-item-image" src="${product.image}" alt="${product.name}">
+                     <p class="cart-item-name">${product.name}</p></td>
+                <td><p class="cart-item-price product-price">${product.price}</p></td>
+                <td>
+                <div>
+                    <p class="cart-item-count">${product.count}</p>
+                    </div>
+                </td>
+                <td>
+                    <p class="cart-item-total amount">${total}</p>
+                </td>
+            </tr>
+        `);
 }
 
 function increaseItemCountCart(product, cartItemDOM) {
@@ -170,12 +198,16 @@ function calculateBilling() {
         totalItems = (parseFloat(totalItems) + parseFloat(itemTotal)).toFixed(2);
     })
     document.getElementById('totalItem').innerText = totalItems.replace(".", ",");
+    document.getElementById('totalItemSummary').innerText = totalItems.replace(".", ",");
     document.getElementById('delivery').innerText = "4,99";
+    document.getElementById('deliverySummary').innerText = "4,99";
     let mwst = (totalItems * 0.19).toFixed(2);
     document.getElementById('mwst').innerText = mwst.replace(".", ",");
+    document.getElementById('mwstSummary').innerText = mwst.replace(".", ",");
 
     let totalBilling = (parseFloat(totalItems) + 4.99 + parseFloat(mwst)).toFixed(2);
     document.getElementById('totalBilling').innerText = totalBilling.replace(".", ",");
+    document.getElementById('totalBillingSummary').innerText = totalBilling.replace(".", ",");
 
     localStorage.setItem('total', totalBilling);
 }

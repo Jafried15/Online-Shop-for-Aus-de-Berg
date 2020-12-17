@@ -63,6 +63,7 @@ function nextStep(current_step) {
         document.getElementById("step-3-icon").classList.add("step-3");
         document.getElementById("filled").style.display = "none";
         document.getElementById("headline_basket").innerHTML = "Zusammenfassung";
+        showCart(true);
     }
 }
 
@@ -132,11 +133,13 @@ function addActionsToButtons(product) {
     document.querySelector('[data-action="CLEAR_CART"]').addEventListener('click', () => clearCart(cartItemsDOM));
 
     document.querySelector('[data-action="CLEAR_ADDRESSES"]').addEventListener('click', () => {
-        localStorage.removeItem('billingAddress');
-        localStorage.removeItem('deliveryAddress');
+        sessionStorage.removeItem('billingAddress');
+        sessionStorage.removeItem('deliveryAddress');
     });
 
     document.querySelector('[data-action="DELIVERY_ADDRESS"]').addEventListener('click', () => checkAddress());
+
+    document.querySelector('[data-action="BILLING_OPTION"]').addEventListener('click', () => saveBilling());
 }
 
 function checkAddress() {
@@ -147,7 +150,7 @@ function checkAddress() {
         && document.getElementById("plz").checkValidity()
         && document.getElementById("ort").checkValidity()
         && document.getElementById("mail").checkValidity()) {
-        localStorage.setItem('billingAddress', JSON.stringify({
+        sessionStorage.setItem('billingAddress', JSON.stringify({
             gender: document.getElementById("gender").value,
             surname: document.getElementById("surname").value,
             lastname: document.getElementById("lastname").value,
@@ -160,7 +163,7 @@ function checkAddress() {
             phone: document.getElementById("tel").value,
         }));
         if (document.getElementById("lieferadresse").style.display === "block") {
-            localStorage.setItem('deliveryAddress', JSON.stringify({
+            sessionStorage.setItem('deliveryAddress', JSON.stringify({
                 gender: document.getElementById("genderLief").value,
                 surname: document.getElementById("surnameLief").value,
                 lastname: document.getElementById("lastnameLief").value,
@@ -170,9 +173,68 @@ function checkAddress() {
                 plz: document.getElementById("plzLief").value,
                 ort: document.getElementById("ortLief").value,
             }));
+        } else {
+            sessionStorage.setItem('deliveryAddress', JSON.stringify({
+                gender: document.getElementById("gender").value,
+                surname: document.getElementById("surname").value,
+                lastname: document.getElementById("lastname").value,
+                organisation: document.getElementById("organisation").value,
+                street: document.getElementById("street").value,
+                number: document.getElementById("number").value,
+                plz: document.getElementById("plz").value,
+                ort: document.getElementById("ort").value,
+                mail: document.getElementById("mail").value,
+            }));
         }
         nextStep('step-two')
     } else {
-        alert("Bitte überprüf deine Eingaben!")
+        if (document.getElementById("mail").checkValidity()) {
+            alert("Keine gültige E-Mail Adresse!")
+        } else {
+            alert("Bitte überprüfe deine Eingaben!")
+        }
     }
+}
+
+function saveBilling() {
+    let paypal = document.getElementById("paypal");
+    if (paypal.checked) {
+        sessionStorage.setItem('billingOption', 'paypal');
+    } else {
+        sessionStorage.setItem('billingOption', 'prepayment');
+    }
+    summaryAddressesAndBilling();
+}
+
+function switchBilling(method) {
+    if (method.id === "paypal" && method.checked) {
+        document.getElementById("prepayment").checked = false;
+    } else if (method.id === "prepayment" && method.checked) {
+        document.getElementById("paypal").checked = false;
+    }
+}
+
+
+function summaryAddressesAndBilling() {
+    const billingAddressDOM = document.querySelector('.billingAddress');
+    let billingAddress = JSON.parse(sessionStorage.getItem('billingAddress'));
+    billingAddressDOM.insertAdjacentHTML('beforeend', `
+        <p>${billingAddress.gender} ${billingAddress.surname} ${billingAddress.lastname}</p>
+        <p>${billingAddress.street} ${billingAddress.number}</p>
+        <p>${billingAddress.plz} ${billingAddress.ort}</p>
+        `);
+
+    const deliveryAddressDOM = document.querySelector('.deliveryAddress');
+    let deliveryAddress = JSON.parse(sessionStorage.getItem('deliveryAddress'));
+    deliveryAddressDOM.insertAdjacentHTML('beforeend', `
+        <p>${deliveryAddress.gender} ${deliveryAddress.surname} ${deliveryAddress.lastname}</p>
+        <p>${deliveryAddress.street} ${deliveryAddress.number}</p>
+        <p>${deliveryAddress.plz} ${deliveryAddress.ort}</p>
+        `);
+
+    const billingOptionDOM = document.querySelector('.paymentOption');
+    let billingOption = sessionStorage.getItem('billingOption');
+    billingOptionDOM.insertAdjacentHTML('beforeend', `
+        <p>${billingOption}</p>
+        `);
 }
