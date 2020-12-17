@@ -199,9 +199,9 @@ function checkAddress() {
 function saveBilling() {
     let paypal = document.getElementById("paypal");
     if (paypal.checked) {
-        sessionStorage.setItem('billingOption', 'paypal');
+        sessionStorage.setItem('billingOption', 'PayPal');
     } else {
-        sessionStorage.setItem('billingOption', 'prepayment');
+        sessionStorage.setItem('billingOption', 'Gegen Vorkasse');
     }
     summaryAddressesAndBilling();
 }

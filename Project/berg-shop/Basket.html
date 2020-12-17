@@ -291,7 +291,7 @@
                 <div class="row">
                     <div class="column-100" style="text-align: right">
                         <div class="button-field">
-                            <button class="button" onclick="backStep('step-two')">
+                            <button class="button back" onclick="backStep('step-two')">
                                 Zurück
                             </button>
                             <button class="button" data-action="DELIVERY_ADDRESS">
@@ -342,7 +342,7 @@
                 <div class="row">
                     <div class="column-100" style="text-align: right">
                         <div class="button-field">
-                            <button class="button" onclick="backStep('step-three')">
+                            <button class="button back" onclick="backStep('step-three')">
                                 Zurück
                             </button>
                             <button class="button" onclick="nextStep('step-three')" data-action="BILLING_OPTION">
@@ -354,7 +354,7 @@
             </section>
 
             <section class="step step-summary" id="step-summary">
-                <div class="row" style="padding-top: 3%">
+                <div class="row" style="padding-top: 5%">
                     <div class="column-33 billingAddress">
                         <h2>Rechnungsadresse</h2>
                     </div>
@@ -366,7 +366,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" style="padding-top: 3%">
                     <table class="cart-table cart-summary">
                         <tr>
                             <th><p>Produkt</p></th>
@@ -403,7 +403,7 @@
                     </div>
                 </div>
 
-                <div class="row agreements">
+                <div class="row agreements" style="padding-top: 3%">
                     <div class="column-50">
                         <form>
                             <input type="radio" id="cancellation_policy" name="cancellation_policy" value="cancellation_policy">
@@ -420,15 +420,14 @@
                 <div class="row">
                     <div class="column-100" style="text-align: right">
                         <div class="button-field">
-                            <button class="button" onclick="backStep('step-summary')">
+                            <button class="button back" onclick="backStep('step-summary')">
                                 Zurück
                             </button>
-                            <button class="button" onclick="">
+                            <button class="button" onclick="submit()">
                                 Bestellung absenden
                             </button>
                         </div>
                     </div>
-                </div>
                 </div>
             </section>
         </main>

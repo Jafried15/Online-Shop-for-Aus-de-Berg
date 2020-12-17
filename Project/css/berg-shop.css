@@ -258,11 +258,10 @@ hr {
     color: #ffffff;
     background: #000;
     text-decoration: none;
-    border: none;
-    border-radius: 0;
     box-shadow: none;
     line-height: 1em;
     font-weight: normal;
+    border: 2px solid #000;
 }
 
 .serie .button,
@@ -275,8 +274,8 @@ hr {
 }
 
 .button:hover {
-    background: #767676;
-    color: #ffffff;
+    background-color: #fff;
+    color: #000;
     text-decoration: none;
     cursor: pointer;
 }
@@ -289,6 +288,19 @@ hr {
     padding: 15px 5%;
 }
 
+.step .button {
+    margin: 2%;
+}
+
+.step .back {
+    background-color: #fff;
+    color: #000;
+}
+
+.step .back:hover {
+    background-color: #000;
+    color: #fff;
+}
 
 /* Overviews */
 .categories h2,
@@ -488,10 +500,6 @@ button.close {
 .basket,
 .step {
     display: none;
-}
-
-.step .button {
-    margin: 2%;
 }
 
 .active {
