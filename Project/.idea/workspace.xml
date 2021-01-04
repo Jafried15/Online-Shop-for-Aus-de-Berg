@@ -20,15 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54effe4a-23d3-4cbe-846c-33dea6d841ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/jquery-3.5.1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Datenschutz.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Datenschutz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/ExLibris.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/ExLibris.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Impressum.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Impressum.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/Kontakt.php" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/Kontakt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/baware.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/baware.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scribt/designvorschlaege.html" beforeDir="false" afterPath="$PROJECT_DIR$/scribt/designvorschlaege.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/berg-shop/Basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/berg-shop/Basket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/berg-shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/berg-shop.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +37,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -81,7 +76,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="copyright.profiles" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -132,7 +127,7 @@
       <workItem from="1607690331505" duration="662000" />
       <workItem from="1608022515091" duration="1822000" />
       <workItem from="1608035491751" duration="7249000" />
-      <workItem from="1608117764997" duration="14081000" />
+      <workItem from="1608117764997" duration="17501000" />
     </task>
     <task id="LOCAL-00001" summary="change: Edit Layout of the Sites like expected">
       <created>1596657359783</created>

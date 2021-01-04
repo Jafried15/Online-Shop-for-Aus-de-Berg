@@ -238,3 +238,18 @@ function summaryAddressesAndBilling() {
         <p>${billingOption}</p>
         `);
 }
+
+$(function () {
+    $('#submit').on("click", function (event) {
+        event.preventDefault();
+
+        $.ajax({
+            type: "POST",
+            url: 'handler.php',
+            data: $form.serialize(),
+            success: after_form_submitted,
+            dataType: 'json'
+        });
+
+    });
+});
