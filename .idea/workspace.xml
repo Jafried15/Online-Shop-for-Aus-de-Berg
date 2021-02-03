@@ -20,9 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d2cd333-01ee-490d-923a-987eace00547" name="Default Changelist" comment="Add to Cart now adds up items">
-      <change afterPath="$PROJECT_DIR$/Project/js/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/berg-shop/Address.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/berg-shop/Finish.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/berg-shop/Payment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/berg-shop/Summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/berg-shop/php/address.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/berg-shop/php/payment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/img/icons/finish.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/scribt/Serie-Rosen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/Serie-Rosen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Basket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Berg-Produkte.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Bestellablauf.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/OrderProcess.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/In-da-Not.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/In-da-Not.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Leck-o-Mio.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Leck-o-Mio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Papeterie.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Papeterie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/SchaustDuGuadAus.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/SchaustDuGuadAus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Serie-Farbe.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Serie-Farbe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Serie-Kornblumen.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Serie-Kornblumen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Serie-Rosen.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Serie-Rosen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/css/Stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project/css/Stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/css/berg-shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project/css/berg-shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/js/berg-shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/js/berg-shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/js/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scribt/Bergshop.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/Bergshop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +56,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1jT1IlOveldGC8ysIsOTkIaUKaX" />
@@ -53,11 +82,34 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/programs/php-7.4.12-Win32-vc15-x64/php.exe" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/php/php.exe" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.splitter.proportion" value="0.18428373" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -71,6 +123,17 @@
       <workItem from="1603813235845" duration="21885000" />
       <workItem from="1603977740996" duration="4563000" />
       <workItem from="1604041365954" duration="686000" />
+      <workItem from="1610463106163" duration="664000" />
+      <workItem from="1611676362578" duration="1991000" />
+      <workItem from="1611738356079" duration="194000" />
+      <workItem from="1611738563464" duration="69000" />
+      <workItem from="1611738646350" duration="54000" />
+      <workItem from="1611739010714" duration="734000" />
+      <workItem from="1611743480663" duration="11758000" />
+      <workItem from="1611998484231" duration="2084000" />
+      <workItem from="1612170007123" duration="3414000" />
+      <workItem from="1612355109626" duration="521000" />
+      <workItem from="1612355640129" duration="5383000" />
     </task>
     <task id="LOCAL-00001" summary="Add to Cart now adds up items">
       <created>1603893637554</created>
@@ -100,36 +163,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add to Cart now adds up items" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add to Cart now adds up items" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="860" y="354" key="#CLI_Interpreters" timestamp="1603871320624">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="860" y="354" key="#CLI_Interpreters/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603871320624" />
-    <state x="906" y="378" width="1049" height="680" key="#Inspections" timestamp="1603979840356">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="906" y="378" width="1049" height="680" key="#Inspections/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603979840356" />
-    <state x="923" y="251" key="#PHP" timestamp="1603871323305">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="923" y="251" key="#PHP/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603871323305" />
-    <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1603876370687">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1060" y="454" key="FileChooserDialogImpl/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603876370687" />
-    <state x="781" y="345" key="SettingsEditor" timestamp="1603813471353">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="781" y="345" key="SettingsEditor/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603813471353" />
-    <state x="964" y="286" width="632" height="828" key="find.popup" timestamp="1603814295281">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="964" y="286" width="632" height="828" key="find.popup/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603814295281" />
-    <state x="994" y="465" key="refactoring.ChangeSignatureDialog" timestamp="1603889139167">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="994" y="465" key="refactoring.ChangeSignatureDialog/-1920.190.1536.832/2560.193.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1603889139167" />
+    <MESSAGE value="Change handling of Basket" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change handling of Basket" />
   </component>
 </project>

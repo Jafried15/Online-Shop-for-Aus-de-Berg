@@ -8,7 +8,7 @@
 <!doctype html>
 <html lang="de">
 <head>
-    <title>Warenkorb</title>
+    <title>Zusammenfassung</title>
 
     <link href="../img/Aus-de-Berg_Favicon.png"
           rel="shortcut icon" type="image/x-icon">
@@ -23,13 +23,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
-<body onload="showCart()">
+<body>
 <header>
     <div class="site-nav_Logo">
         <img alt="" src="../img/Aus de Berg Logo_ohne Text.png" width="50px">
         <p class="site-nav_Logo">Grafikdesign<br>Veronika Fischer</p>
     </div>
-
     <nav class="site-nav">
         <i class="fas fa-bars"></i>
         <ul>
@@ -50,7 +49,6 @@
             </a>
         </ul>
     </nav>
-
     <div class="basket-icon">
         <a href="Basket.html"><i class="fa fa-shopping-cart button"></i>
         </a>
@@ -59,59 +57,25 @@
 
 <center>
     <main>
-        <section class="basket intro" id="empty" style="padding: 23vh 0">
-            <i class="fa fa-shopping-cart shopping-cart"></i><br>
-            <p class="headline">Warenkorb</p>
-            <br>
-            <p>
-                Huch, was ist denn hier passiert?<br>
-                Ich schätze mal dein Warenkorb ist leer...
-            </p>
-            <br>
-            <p>
-                Damit das nicht so bleibt, besuche einfach den
-                <a href="../scribt/Bergshop.html">Berg-Shop</a>
-                - dort findest du alle Papeterie-Artikel und Berg-Produkte.<br>
-                Viel Spaß beim Shoppen und bis später!
-            </p>
-        </section>
-
         <section class="basket intro" id="basket-icon" style="padding-bottom: 0;">
-            <p class="headline" id="headline_basket">Warenkorb</p>
+            <p class="headline" id="headline_basket">Zusammenfassung</p>
         </section>
 
-        <section class="basket" id="filled" style="padding-bottom: 5%">
-            <div class="row">
-                <div class="column column-33 flex-columns">
-                    <div class="box active" id="step-1">
-                        <div class="box-title">
-                            <i class="icon step-1-white" id="step-1-icon"></i>
-                            Warenkorb
-                        </div>
-                    </div>
+        <section class="step step-summary" id="step-summary">
+            <div class="row" style="padding-top: 5%">
+                <div class="column-33 billingAddress">
+                    <h2>Rechnungsadresse</h2>
                 </div>
-                <div class="column column-33 flex-columns">
-                    <div class="box" id="step-2">
-                        <div class="box-title">
-                            <i class="icon step-2" id="step-2-icon"></i>
-                            Adresse
-                        </div>
-                    </div>
+                <div class="column-33 deliveryAddress">
+                    <h2>Lieferadresse</h2>
                 </div>
-                <div class="column column-33 flex-columns">
-                    <div class="box" id="step-3">
-                        <div class="box-title">
-                            <i class="icon step-3" id="step-3-icon"></i>
-                            Kasse
-                        </div>
-                    </div>
+                <div class="column-33 paymentOption">
+                    <h2>Zahlungsart</h2>
                 </div>
             </div>
-        </section>
 
-        <section class="step step-one" id="step-one">
-            <div class="row">
-                <table class="cart-table">
+            <div class="row" style="padding-top: 3%">
+                <table class="cart-table cart-summary">
                     <tr>
                         <th><p>Produkt</p></th>
                         <th><p>Einzelpreis</p></th>
@@ -122,10 +86,6 @@
             </div>
             <div class="row total">
                 <div class="column-50">
-                    <button class="quantity-btn" data-action="CLEAR_CART"> Alle Artikel aus Einkaufswagen entfernen
-                    </button>
-                </div>
-                <div class="column-50">
                     <hr>
                     <div class="row">
                         <div class="column-50">
@@ -134,9 +94,9 @@
                             <p>inkl. MWST 19%</p>
                         </div>
                         <div class="column-50 calculated-billing" style="text-align: right">
-                            <p class="amount" id="totalItem"></p>
-                            <p class="amount" id="delivery"></p>
-                            <p class="amount" id="mwst"></p>
+                            <p class="amount" id="totalItemSummary"></p>
+                            <p class="amount" id="deliverySummary"></p>
+                            <p class="amount" id="mwstSummary"></p>
                         </div>
                     </div>
                     <hr>
@@ -145,20 +105,41 @@
                             <p style="font-weight: bold">Rechnungsbetrag</p>
                         </div>
                         <div class=" column-50 total-billing" style="text-align: right">
-                            <p class="amount" id="totalBilling" style="font-weight: bold"></p>
+                            <p class="amount" id="totalBillingSummary" style="font-weight: bold"></p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="column-100" style="text-align: right">
-                    <div class="button-field">
-                        <button class="button" data-action="CLEAR_ADDRESSES" onclick="nextStep('step-one')"> Weiter
-                        </button>
+            <form action="Basket.html" method="post">
+                <div class="row agreements" style="padding-top: 3%">
+                    <div class="column-50">
+                        <input id="cancellation_policy" name="cancellation_policy" type="radio"
+                               value="cancellation_policy">
+                        <label for="cancellation_policy">Ich habe die
+                            <a href="">Widerrufsbelehrung</a>
+                            gelesen und bin mit deren Geltung einverstanden. </label>
+                        <br>
+                        <input id="dhl" name="dhl" type="radio" value="dhl">
+                        <label for="dhl">Ich willige ein, dass die zur Vertragsdurchführung notwendigen Daten an den
+                            Paketdienst DHL (DHL Express Germany GmbH, Heinrich-Brüning-Straße 5, 53113 Bonn)
+                            weitergeleitet werden.</label>
                     </div>
                 </div>
-            </div>
+
+                <div class="row">
+                    <div class="column-100" style="text-align: right">
+                        <div class="button-field">
+                            <button class="button back" onclick="backStep('step-summary')">
+                                Zurück
+                            </button>
+                            <button class="button" name="submit" type="submit">
+                                Bestellung absenden
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </section>
     </main>
 

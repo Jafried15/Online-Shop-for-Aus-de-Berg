@@ -1,0 +1,304 @@
+<!--
+  ~
+  ~ Copyright (c) 2020, 2021 Veronika Fischer
+  ~ All Rights Reserved
+  ~
+  -->
+
+<!doctype html>
+<html lang="de">
+<head>
+    <title>Adresse</title>
+
+    <link href="../img/Aus-de-Berg_Favicon.png"
+          rel="shortcut icon" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <link href="../css/all.css" rel="stylesheet" type="text/css">
+    <link href="../css/Stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="../css/berg-shop.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <div class="site-nav_Logo">
+        <img alt="" src="../img/Aus de Berg Logo_ohne Text.png" width="50px">
+        <p class="site-nav_Logo">Grafikdesign<br>Veronika Fischer</p>
+    </div>
+    <nav class="site-nav">
+        <i class="fas fa-bars"></i>
+        <ul>
+            <a href="../index.html">
+                <li>Home</li>
+            </a>
+            <a href="../scribt/designvorschlaege.html">
+                <li>Designmuster</li>
+            </a>
+            <a href="../scribt/Blog.html">
+                <li>Portfolio</li>
+            </a>
+            <a href="../scribt/Bergshop.html">
+                <li>Berg-Shop</li>
+            </a>
+            <a href="../scribt/Kontakt.php">
+                <li>Kontakt</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="basket-icon">
+        <a href="Basket.html"><i class="fa fa-shopping-cart button"></i>
+        </a>
+    </div>
+</header>
+
+<center>
+    <main>
+        <section class="basket intro" id="basket-icon" style="padding-bottom: 0;">
+            <p class="headline" id="headline_basket">Adresse</p>
+        </section>
+
+        <section class="basket" id="filled" style="padding-bottom: 5%">
+            <div class="row">
+                <div class="column column-33 flex-columns">
+                    <div class="box" id="step-1">
+                        <div class="box-title">
+                            <i class="icon step-1" id="step-1-icon"></i>
+                            Warenkorb
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-33 flex-columns">
+                    <div class="box active" id="step-2">
+                        <div class="box-title">
+                            <i class="icon step-2-white" id="step-2-icon"></i>
+                            Adresse
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-33 flex-columns">
+                    <div class="box" id="step-3">
+                        <div class="box-title">
+                            <i class="icon step-3" id="step-3-icon"></i>
+                            Kasse
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="step step-two" id="step-two">
+            <form action="php/address.php" method="post">
+                <h2>Rechnungsadresse</h2>
+                <div class="row">
+                    <div class="column flex-columns column-20">
+                        <label for="gender">Geschlecht:</label>
+                        <select class="half" id="gender" name="gender">
+                            <option selected value="Frau">Frau</option>
+                            <option value="Herr">Herr</option>
+                            <option value="Divers">Divers</option>
+                        </select>
+                    </div>
+                    <div class="column flex-columns column-40">
+                        <label class="half" for="surname">Vorname:</label>
+                        <input class="half" id="surname" name="surname"
+                               oninput="this.setCustomValidity('')"
+                               oninvalid="this.setCustomValidity('Bitte einen gültigen Vornamen eingeben!')"
+                               placeholder="Gib deinen Vornamen ein"
+                               required
+                               type="text">
+                    </div>
+                    <div class="column flex-columns column-40">
+                        <label for="lastname">Nachname:</label>
+                        <input class="half" id="lastname" name="lastname"
+                               oninput="this.setCustomValidity('')"
+                               oninvalid="this.setCustomValidity('Bitte einen gültigen Nachnamen eingeben!')"
+                               placeholder="Gib deinen Nachnamen ein"
+                               required
+                               type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column flex-columns column-100">
+                        <label for="organisation">Firma (optional):</label>
+                        <input id="organisation" name="organisation" placeholder="Firma (optional)" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column flex-columns column-75">
+                        <label for="street">Straße:</label>
+                        <input class="long" id="street" name="street"
+                               oninput="this.setCustomValidity('')"
+                               oninvalid="this.setCustomValidity('Bitte eine gültige Straße eingeben!')"
+                               placeholder="Gib deine Straße ein" required
+                               type="text">
+                    </div>
+                    <div class="column flex-columns column-25">
+                        <label for="number">Hausnummer:</label>
+                        <input class="long" id="number" name="number"
+                               oninput="this.setCustomValidity('')"
+                               oninvalid="this.setCustomValidity('Bitte eine gültige Hausnummer eingeben!')"
+                               placeholder="Gib deine Hasunummer ein" required
+                               type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column flex-columns column-25">
+                        <label for="plz">Postleitzahl:</label>
+                        <input class="short" id="plz" name="plz"
+                               oninput="this.setCustomValidity('')"
+                               oninvalid="this.setCustomValidity('Bitte eine gültige Postleitzahl eingeben!')"
+                               pattern="^[0-9]{5}$" placeholder="Gib deine PLZ ein"
+                               required
+                               type="number">
+                    </div>
+                    <div class="column flex-columns column-75">
+                        <label for="ort">Ort:</label>
+                        <input class="long" id="ort" name="ort"
+                               oninput="this.setCustomValidity('')"
+                               oninvalid="this.setCustomValidity('Bitte einen gültigen Wohnort eingeben!')"
+                               placeholder="Gib deinen Wohnort ein" required
+                               type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column flex-columns column-50">
+                        <label for="mail">E-Mail:</label>
+                        <input id="mail" name="mail"
+                               oninput="this.setCustomValidity('')"
+                               oninvalid="this.setCustomValidity('Bitte eine gültige e-Mail Adresse eingeben!')"
+                               placeholder="Gib deine e-Mail Adresse ein"
+                               required
+                               type="email">
+                    </div>
+                    <div class="column flex-columns column-50">
+                        <label for="tel">Telefon (optional):</label>
+                        <input id="tel" name="tel" placeholder="Telefon (optional)" type="tel">
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top: 3vh; padding-bottom: 5vh">
+                    <div class="column column-100">
+                        <input id="different" name="different" onclick="showShippingAddress(this)" type="checkbox"
+                               value="different">
+                        <label for="different">Die Lieferadresse weicht von der Rechnungsadresse ab</label>
+                    </div>
+                </div>
+
+                <div id="lieferadresse" style="display: none">
+                    <h2>Lieferadresse</h2>
+                    <div class="row">
+                        <div class="column flex-columns column-20">
+                            <label for="genderLief">Geschlecht:</label>
+                            <select class="half" id="genderLief" name="genderLief">
+                                <option selected value="Frau">Frau</option>
+                                <option value="Herr">Herr</option>
+                                <option value="Divers">Divers</option>
+                            </select>
+                        </div>
+                        <div class="column flex-columns column-40">
+                            <label class="half" for="surnameLief">Vorname:</label>
+                            <input class="half" id="surnameLief" name="surnameLief"
+                                   oninput="this.setCustomValidity('')"
+                                   oninvalid="this.setCustomValidity('Bitte einen gültigen Vornamen eingeben!')"
+                                   placeholder="Gib deinen Vornamen ein"
+                                   type="text">
+                        </div>
+                        <div class="column flex-columns column-40">
+                            <label for="lastnameLief">Nachname:</label>
+                            <input class="half" id="lastnameLief" name="lastnameLief"
+                                   oninput="this.setCustomValidity('')"
+                                   oninvalid="this.setCustomValidity('Bitte einen gültigen Nachnamen eingeben!')"
+                                   placeholder="Gib deinen Nachnamen ein"
+                                   type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column flex-columns column-100">
+                            <label for="organisationLief">Firma (optional):</label>
+                            <input id="organisationLief" name="organisationLief" placeholder="Firma (optional)"
+                                   type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column flex-columns column-75">
+                            <label for="streetLief">Straße:</label>
+                            <input class="long" id="streetLief" name="streetLief"
+                                   oninput="this.setCustomValidity('')"
+                                   oninvalid="this.setCustomValidity('Bitte eine gültige Straße eingeben!')"
+                                   placeholder="Gib deine Straße ein"
+                                   type="text">
+                        </div>
+                        <div class="column flex-columns column-25">
+                            <label for="numberLief">Hausnummer:</label>
+                            <input class="long" id="numberLief" name="numberLief"
+                                   oninput="this.setCustomValidity('')"
+                                   oninvalid="this.setCustomValidity('Bitte eine gültige Hausnummer eingeben!')"
+                                   placeholder="Gib deine Hausnummer ein"
+                                   type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column flex-columns column-25">
+                            <label for="plzLief">Postleitzahl:</label>
+                            <input class="short" id="plzLief" name="plzLief"
+                                   oninput="this.setCustomValidity('')"
+                                   oninvalid="this.setCustomValidity('Bitte eine gültige Postleitzahl eingeben!')"
+                                   pattern="^[0-9]{5}$" placeholder="Gib deine PLZ ein"
+                                   type="number">
+                        </div>
+                        <div class="column flex-columns column-75">
+                            <label for="ortLief">Ort:</label>
+                            <input class="long" id="ortLief" name="ortLief"
+                                   oninput="this.setCustomValidity('')"
+                                   oninvalid="this.setCustomValidity('Bitte einen gültigen Wohnort eingeben!')"
+                                   placeholder="Gib deinen Wohnort ein"
+                                   type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-100" style="text-align: right">
+                        <div class="button-field">
+                            <button class="button back" onclick="backStep('step-two')">
+                                Zurück
+                            </button>
+                            <button class="button" type="submit">
+                                Weiter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_content">
+            <img alt="" height="150" src="../img/Aus de Berg Logo_Online.png" width="150">
+            <nav class="nav-ende">
+                <ul>
+                    <li>
+                        <a href="Impressum.html">Impressum</a>
+                    </li>
+                    <li>
+                        <a href="Datenschutz.html">Datenschutz</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</center>
+
+<script crossorigin="anonymous" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="../js/mobile-menu.js"></script>
+<script src="../js/berg-shop.js"></script>
+<script src="../js/cart.js"></script>
+
+</body>
+</html>

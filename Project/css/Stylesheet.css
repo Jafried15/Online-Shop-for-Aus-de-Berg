@@ -1,3 +1,10 @@
+/*
+ *
+ * Copyright (c) 2020, 2021 Veronika Fischer
+ * All Rights Reserved
+ *
+ */
+
 @charset "utf-8";
 
 /*
@@ -34,7 +41,6 @@ header {
     letter-spacing: 2px;
     z-index: 1090;
 }
-
 
 .fa-bars {
     display: none;

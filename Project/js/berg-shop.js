@@ -1,10 +1,7 @@
 /*
- * <!--
- *   ~ /**
- *   ~ * Copyright (c) 2020, 2021 Veronika Fischer
- *   ~ * All Rights Reserved
- *   ~ *
- *   -->
+ *
+ * Copyright (c) 2020, 2021 Veronika Fischer
+ * All Rights Reserved
  *
  */
 
@@ -36,68 +33,26 @@ function closeModal(close) {
 
 function nextStep(current_step) {
     if (current_step === "step-one") {
-        document.getElementById("step-one").style.display = "none";
-        document.getElementById("step-two").style.display = "block";
-        document.getElementById("step-1").classList.remove("active");
-        document.getElementById("step-2").classList.add("active");
-        document.getElementById("step-1-icon").classList.remove("step-1-white");
-        document.getElementById("step-1-icon").classList.add("step-1");
-        document.getElementById("step-2-icon").classList.remove("step-2");
-        document.getElementById("step-2-icon").classList.add("step-2-white");
-        document.getElementById("headline_basket").innerHTML = "Adresse eingeben";
+        window.location.href = "Address.html";
     } else if (current_step === "step-two") {
-        document.getElementById("step-two").style.display = "none";
-        document.getElementById("step-three").style.display = "block";
-        document.getElementById("step-2").classList.remove("active");
-        document.getElementById("step-3").classList.add("active");
-        document.getElementById("step-2-icon").classList.remove("step-2-white");
-        document.getElementById("step-2-icon").classList.add("step-2");
-        document.getElementById("step-3-icon").classList.remove("step-3");
-        document.getElementById("step-3-icon").classList.add("step-3-white");
-        document.getElementById("headline_basket").innerHTML = "Zahlungsart wählen";
+        window.location.href = "Payment.html";
     } else if (current_step === "step-three") {
-        document.getElementById("step-three").style.display = "none";
-        document.getElementById("step-summary").style.display = "block";
-        document.getElementById("step-3").classList.add("active");
-        document.getElementById("step-3-icon").classList.remove("step-3-white");
-        document.getElementById("step-3-icon").classList.add("step-3");
-        document.getElementById("filled").style.display = "none";
-        document.getElementById("headline_basket").innerHTML = "Zusammenfassung";
+        window.location.href = "Summary.html";
         showCart(true);
     }
+    window.scrollTo(0, 0);
 }
 
 
 function backStep(current_step) {
     if (current_step === "step-two") {
-        document.getElementById("step-one").style.display = "block";
-        document.getElementById("step-two").style.display = "none";
-        document.getElementById("step-2").classList.remove("active");
-        document.getElementById("step-1").classList.add("active");
-        document.getElementById("step-2-icon").classList.remove("step-2-white");
-        document.getElementById("step-2-icon").classList.add("step-2");
-        document.getElementById("step-1-icon").classList.remove("step-1");
-        document.getElementById("step-1-icon").classList.add("step-1-white");
-        document.getElementById("headline_basket").innerHTML = "Warenkorb";
+        window.location.href = "Basket.html";
     } else if (current_step === "step-three") {
-        document.getElementById("step-two").style.display = "block";
-        document.getElementById("step-three").style.display = "none";
-        document.getElementById("step-3").classList.remove("active");
-        document.getElementById("step-2").classList.add("active");
-        document.getElementById("step-3-icon").classList.remove("step-3-white");
-        document.getElementById("step-3-icon").classList.add("step-3");
-        document.getElementById("step-2-icon").classList.remove("step-2");
-        document.getElementById("step-2-icon").classList.add("step-2-white");
-        document.getElementById("headline_basket").innerHTML = "Adresse eingeben";
+        window.location.href = "Address.html";
     } else if (current_step === "step-summary") {
-        document.getElementById("step-three").style.display = "block";
-        document.getElementById("step-summary").style.display = "none";
-        document.getElementById("step-3").classList.add("active");
-        document.getElementById("step-3-icon").classList.remove("step-3");
-        document.getElementById("step-3-icon").classList.add("step-3-white");
-        document.getElementById("filled").style.display = "block";
-        document.getElementById("headline_basket").innerHTML = "Zahlungsart wählen";
+        window.location.href = "Payment.html";
     }
+    window.scrollTo(0, 0);
 }
 
 function showShippingAddress(checkbox) {
@@ -130,80 +85,12 @@ function addActionsToButtons(product) {
             cartItemDOM.querySelector('[data-action="REMOVE_ITEM"]').addEventListener('click', () => removeItem(product, cartItemDOM));
         }
     })
-    document.querySelector('[data-action="CLEAR_CART"]').addEventListener('click', () => clearCart(cartItemsDOM));
+    document.querySelector('[data-action="CLEAR_CART"]').addEventListener('click', () => clearCart());
 
     document.querySelector('[data-action="CLEAR_ADDRESSES"]').addEventListener('click', () => {
         sessionStorage.removeItem('billingAddress');
         sessionStorage.removeItem('deliveryAddress');
     });
-
-    document.querySelector('[data-action="DELIVERY_ADDRESS"]').addEventListener('click', () => checkAddress());
-
-    document.querySelector('[data-action="BILLING_OPTION"]').addEventListener('click', () => saveBilling());
-}
-
-function checkAddress() {
-    if (document.getElementById("surname").checkValidity()
-        && document.getElementById("lastname").checkValidity()
-        && document.getElementById("street").checkValidity()
-        && document.getElementById("number").checkValidity()
-        && document.getElementById("plz").checkValidity()
-        && document.getElementById("ort").checkValidity()
-        && document.getElementById("mail").checkValidity()) {
-        sessionStorage.setItem('billingAddress', JSON.stringify({
-            gender: document.getElementById("gender").value,
-            surname: document.getElementById("surname").value,
-            lastname: document.getElementById("lastname").value,
-            organisation: document.getElementById("organisation").value,
-            street: document.getElementById("street").value,
-            number: document.getElementById("number").value,
-            plz: document.getElementById("plz").value,
-            ort: document.getElementById("ort").value,
-            mail: document.getElementById("mail").value,
-            phone: document.getElementById("tel").value,
-        }));
-        if (document.getElementById("lieferadresse").style.display === "block") {
-            sessionStorage.setItem('deliveryAddress', JSON.stringify({
-                gender: document.getElementById("genderLief").value,
-                surname: document.getElementById("surnameLief").value,
-                lastname: document.getElementById("lastnameLief").value,
-                organisation: document.getElementById("organisationLief").value,
-                street: document.getElementById("streetLief").value,
-                number: document.getElementById("numberLief").value,
-                plz: document.getElementById("plzLief").value,
-                ort: document.getElementById("ortLief").value,
-            }));
-        } else {
-            sessionStorage.setItem('deliveryAddress', JSON.stringify({
-                gender: document.getElementById("gender").value,
-                surname: document.getElementById("surname").value,
-                lastname: document.getElementById("lastname").value,
-                organisation: document.getElementById("organisation").value,
-                street: document.getElementById("street").value,
-                number: document.getElementById("number").value,
-                plz: document.getElementById("plz").value,
-                ort: document.getElementById("ort").value,
-                mail: document.getElementById("mail").value,
-            }));
-        }
-        nextStep('step-two')
-    } else {
-        if (document.getElementById("mail").checkValidity()) {
-            alert("Keine gültige E-Mail Adresse!")
-        } else {
-            alert("Bitte überprüfe deine Eingaben!")
-        }
-    }
-}
-
-function saveBilling() {
-    let paypal = document.getElementById("paypal");
-    if (paypal.checked) {
-        sessionStorage.setItem('billingOption', 'PayPal');
-    } else {
-        sessionStorage.setItem('billingOption', 'Gegen Vorkasse');
-    }
-    summaryAddressesAndBilling();
 }
 
 function switchBilling(method) {
@@ -213,7 +100,6 @@ function switchBilling(method) {
         document.getElementById("paypal").checked = false;
     }
 }
-
 
 function summaryAddressesAndBilling() {
     const billingAddressDOM = document.querySelector('.billingAddress');
@@ -245,7 +131,7 @@ $(function () {
 
         $.ajax({
             type: "POST",
-            url: 'handler.php',
+            url: 'Finish.html',
             data: $form.serialize(),
             success: after_form_submitted,
             dataType: 'json'

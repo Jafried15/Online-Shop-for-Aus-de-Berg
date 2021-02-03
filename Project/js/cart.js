@@ -1,10 +1,7 @@
 /*
- * <!--
- *   ~ /**
- *   ~ * Copyright (c) 2020, 2021 Veronika Fischer
- *   ~ * All Rights Reserved
- *   ~ *
- *   -->
+ *
+ * Copyright (c) 2020, 2021 Veronika Fischer
+ * All Rights Reserved
  *
  */
 
@@ -176,11 +173,7 @@ function removeItem(product, cartItemDOM) {
     }
 }
 
-function clearCart(cartItemsDOM) {
-    cartItemsDOM.forEach(cartItemDOM => {
-        cartItemDOM.remove();
-    });
-
+function clearCart() {
     showElements(true)
 
     cart = [];
@@ -198,16 +191,12 @@ function calculateBilling() {
         totalItems = (parseFloat(totalItems) + parseFloat(itemTotal)).toFixed(2);
     })
     document.getElementById('totalItem').innerText = totalItems.replace(".", ",");
-    document.getElementById('totalItemSummary').innerText = totalItems.replace(".", ",");
     document.getElementById('delivery').innerText = "4,99";
-    document.getElementById('deliverySummary').innerText = "4,99";
     let mwst = (totalItems * 0.19).toFixed(2);
     document.getElementById('mwst').innerText = mwst.replace(".", ",");
-    document.getElementById('mwstSummary').innerText = mwst.replace(".", ",");
 
     let totalBilling = (parseFloat(totalItems) + 4.99 + parseFloat(mwst)).toFixed(2);
     document.getElementById('totalBilling').innerText = totalBilling.replace(".", ",");
-    document.getElementById('totalBillingSummary').innerText = totalBilling.replace(".", ",");
 
     localStorage.setItem('total', totalBilling);
 }

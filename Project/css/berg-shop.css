@@ -1,3 +1,10 @@
+/*
+ *
+ * Copyright (c) 2020, 2021 Veronika Fischer
+ * All Rights Reserved
+ *
+ */
+
 @charset "utf-8";
 /*
  * <!--
@@ -497,11 +504,6 @@ button.close {
     color: #fff;
 }
 
-.basket,
-.step {
-    display: none;
-}
-
 .active {
     display: block;
 }
@@ -713,4 +715,10 @@ input:required:invalid:focus {
 
 .icon-paypal {
     content: url(../img/icons/paypal-icon.png);
+}
+
+.icon-finish {
+    content: url(../img/icons/finish.png);
+    height: 35vh;
+    margin: 15px;
 }
