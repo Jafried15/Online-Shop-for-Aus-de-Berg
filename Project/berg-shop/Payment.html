@@ -7,169 +7,169 @@
 
 <!doctype html>
 <html lang="de">
-<head>
-    <title>Kasse</title>
+    <head>
+        <title>Kasse</title>
 
-    <link href="../img/Aus-de-Berg_Favicon.png"
-          rel="shortcut icon" type="image/x-icon">
+        <link href="../img/Aus-de-Berg_Favicon.png"
+              rel="shortcut icon" type="image/x-icon">
 
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <link href="../css/all.css" rel="stylesheet" type="text/css">
-    <link href="../css/Stylesheet.css" rel="stylesheet" type="text/css">
-    <link href="../css/berg-shop.css" rel="stylesheet" type="text/css">
+        <link href="../css/all.css" rel="stylesheet" type="text/css">
+        <link href="../css/Stylesheet.css" rel="stylesheet" type="text/css">
+        <link href="../css/berg-shop.css" rel="stylesheet" type="text/css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
-</head>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-<header>
-    <div class="site-nav_Logo">
-        <img alt="" src="../img/Aus de Berg Logo_ohne Text.png" width="50px">
-        <p class="site-nav_Logo">Grafikdesign<br>Veronika Fischer</p>
-    </div>
-    <nav class="site-nav">
-        <i class="fas fa-bars"></i>
-        <ul>
-            <a href="../index.html">
-                <li>Home</li>
-            </a>
-            <a href="../scribt/designvorschlaege.html">
-                <li>Designmuster</li>
-            </a>
-            <a href="../scribt/Blog.html">
-                <li>Portfolio</li>
-            </a>
-            <a href="../scribt/Bergshop.html">
-                <li>Berg-Shop</li>
-            </a>
-            <a href="../scribt/Kontakt.php">
-                <li>Kontakt</li>
-            </a>
-        </ul>
-    </nav>
-    <div class="basket-icon">
-        <a href="Basket.html"><i class="fa fa-shopping-cart button"></i>
-        </a>
-    </div>
-</header>
-
-<center>
-    <main>
-        <section class="basket intro" id="basket-icon" style="padding-bottom: 0;">
-            <p class="headline" id="headline_basket">Kasse</p>
-        </section>
-
-        <section class="basket" id="filled" style="padding-bottom: 5%">
-            <div class="row">
-                <div class="column column-33 flex-columns">
-                    <div class="box" id="step-1">
-                        <div class="box-title">
-                            <i class="icon step-1" id="step-1-icon"></i>
-                            Warenkorb
-                        </div>
-                    </div>
-                </div>
-                <div class="column column-33 flex-columns">
-                    <div class="box" id="step-2">
-                        <div class="box-title">
-                            <i class="icon step-2" id="step-2-icon"></i>
-                            Adresse
-                        </div>
-                    </div>
-                </div>
-                <div class="column column-33 flex-columns">
-                    <div class="box active" id="step-3">
-                        <div class="box-title">
-                            <i class="icon step-3-white" id="step-3-icon"></i>
-                            Kasse
-                        </div>
-                    </div>
-                </div>
+    <body>
+        <header>
+            <div class="site-nav_Logo">
+                <img alt="" src="../img/Aus de Berg Logo_ohne Text.png" width="50px">
+                <p class="site-nav_Logo">Grafikdesign<br>Veronika Fischer</p>
             </div>
-        </section>
-
-        <section class="step step-three" id="step-three">
-            <form action="php/payment.php" method="post">
-                <div class="row">
-                    <div class="column-100" id="paypal-container">
-                        <input checked id="paypal" name="payment" onchange="switchBilling(this)" type="radio"
-                               value="paypal">
-                        <label for="paypal">
-                            <i class="icon icon-paypal"></i>
-                        </label>
-                        <p class="payment-radio-text">
-                            Bei Auswahl dieser Zahlungsart erfolgt im nächsten Schritt die Weiterleitung zu PayPal. Wenn
-                            dort die erforderlichen Daten eingetragen worden sind, geht es automatisch zurück zum Shop,
-                            um die Bestellung
-                            abzuschließen.<br><br>
-                            Aus de Berg Grafikdesign<br>
-                            Veronika Fischer<br>
-                            Pfifferloh 6 | 83112 Frasdorf<br>
-                            E-Mail: info@ausdeberg.de<br>
-                            USt-IdNr.: DE328297560
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column-100" id="vorkasse-container">
-                        <input id="prepayment" name="payment" onchange="switchBilling(this)" type="radio"
-                               value="prepayment">
-                        <label for="prepayment">
-                            Gegen Vorkasse
-                        </label>
-                        <p class="payment-radio-text">
-                            Bitte überweise den Betrag innerhalb von 7 Tagen auf die unten genannte Bankverbindung. Bei
-                            nicht Zahlung im o.g. Zeitraum gilt die Bestellung automatisch als storniert! Versand
-                            erfolgt nach
-                            Zahlungseingang.<br><br>
-                            Veronika Fischer<br>
-                            Sparkasse Rosenheim-Bad-Aibling<br>
-                            IBAN: DE 96 7115 0000 0024 5577 12<br>
-                            BIC: BYLADEM1ROS
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="column-100" style="text-align: right">
-                        <div class="button-field">
-                            <button class="button back" onclick="backStep('step-three')">
-                                Zurück
-                            </button>
-                            <button class="button" type="submit">
-                                Weiter
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer_content">
-            <img alt="" height="150" src="../img/Aus de Berg Logo_Online.png" width="150">
-            <nav class="nav-ende">
+            <nav class="site-nav">
+                <i class="fas fa-bars"></i>
                 <ul>
-                    <li>
-                        <a href="Impressum.html">Impressum</a>
-                    </li>
-                    <li>
-                        <a href="Datenschutz.html">Datenschutz</a>
-                    </li>
+                    <a href="../index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="../scribt/designvorschlaege.html">
+                        <li>Designmuster</li>
+                    </a>
+                    <a href="../scribt/Blog.html">
+                        <li>Portfolio</li>
+                    </a>
+                    <a href="../scribt/Bergshop.html">
+                        <li>Berg-Shop</li>
+                    </a>
+                    <a href="../scribt/Kontakt.php">
+                        <li>Kontakt</li>
+                    </a>
                 </ul>
             </nav>
-        </div>
-    </footer>
-</center>
+            <div class="basket-icon">
+                <a href="Basket.html"><i class="fa fa-shopping-cart button"></i>
+                </a>
+            </div>
+        </header>
 
-<script crossorigin="anonymous" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-        src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="../js/mobile-menu.js"></script>
-<script src="../js/berg-shop.js"></script>
-<script src="../js/cart.js"></script>
+        <center>
+            <main>
+                <section class="basket intro" id="basket-icon" style="padding-bottom: 0;">
+                    <p class="headline" id="headline_basket">Kasse</p>
+                </section>
 
-</body>
+                <section class="basket" id="filled" style="padding-bottom: 5%">
+                    <div class="row">
+                        <div class="column column-33 flex-columns">
+                            <div class="box" id="step-1">
+                                <div class="box-title">
+                                    <i class="icon step-1" id="step-1-icon"></i>
+                                    Warenkorb
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column column-33 flex-columns">
+                            <div class="box" id="step-2">
+                                <div class="box-title">
+                                    <i class="icon step-2" id="step-2-icon"></i>
+                                    Adresse
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column column-33 flex-columns">
+                            <div class="box active" id="step-3">
+                                <div class="box-title">
+                                    <i class="icon step-3-white" id="step-3-icon"></i>
+                                    Kasse
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="step step-three" id="step-three">
+                    <form action="php/payment.php" method="post">
+                        <div class="row">
+                            <div class="column-100" id="paypal-container">
+                                <input checked id="paypal" name="payment" onchange="switchBilling(this)" type="radio"
+                                       value="paypal">
+                                <label for="paypal">
+                                    <i class="icon icon-paypal"></i>
+                                </label>
+                                <p class="payment-radio-text">
+                                    Bei Auswahl dieser Zahlungsart erfolgt im nächsten Schritt die Weiterleitung zu PayPal. Wenn
+                                    dort die erforderlichen Daten eingetragen worden sind, geht es automatisch zurück zum Shop,
+                                    um die Bestellung
+                                    abzuschließen.<br><br>
+                                    Aus de Berg Grafikdesign<br>
+                                    Veronika Fischer<br>
+                                    Pfifferloh 6 | 83112 Frasdorf<br>
+                                    E-Mail: info@ausdeberg.de<br>
+                                    USt-IdNr.: DE328297560
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column-100" id="vorkasse-container">
+                                <input id="prepayment" name="payment" onchange="switchBilling(this)" type="radio"
+                                       value="prepayment">
+                                <label for="prepayment">
+                                    Gegen Vorkasse
+                                </label>
+                                <p class="payment-radio-text">
+                                    Bitte überweise den Betrag innerhalb von 7 Tagen auf die unten genannte Bankverbindung. Bei
+                                    nicht Zahlung im o.g. Zeitraum gilt die Bestellung automatisch als storniert! Versand
+                                    erfolgt nach
+                                    Zahlungseingang.<br><br>
+                                    Veronika Fischer<br>
+                                    Sparkasse Rosenheim-Bad-Aibling<br>
+                                    IBAN: DE 96 7115 0000 0024 5577 12<br>
+                                    BIC: BYLADEM1ROS
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="column-100" style="text-align: right">
+                                <div class="button-field">
+                                    <button class="button back" onclick="backStep('step-three')">
+                                        Zurück
+                                    </button>
+                                    <button class="button" type="submit">
+                                        Weiter
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </main>
+
+            <footer>
+                <div class="footer_content">
+                    <img alt="" height="150" src="../img/Aus de Berg Logo_Online.png" width="150">
+                    <nav class="nav-ende">
+                        <ul>
+                            <li>
+                                <a href="Impressum.html">Impressum</a>
+                            </li>
+                            <li>
+                                <a href="Datenschutz.html">Datenschutz</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+        </center>
+
+        <script crossorigin="anonymous" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+                src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="../js/mobile-menu.js"></script>
+        <script src="../js/berg-shop.js"></script>
+        <script src="../js/cart.js"></script>
+
+    </body>
 </html>

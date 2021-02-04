@@ -20,29 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d2cd333-01ee-490d-923a-987eace00547" name="Default Changelist" comment="Add to Cart now adds up items">
-      <change afterPath="$PROJECT_DIR$/Project/berg-shop/Address.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/berg-shop/Finish.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/berg-shop/Payment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/berg-shop/Summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/berg-shop/php/address.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/berg-shop/php/payment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/img/icons/finish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/berg-shop/summary.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Address.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Address.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/berg-shop/Basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Basket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Berg-Produkte.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Bestellablauf.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/OrderProcess.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/In-da-Not.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/In-da-Not.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Leck-o-Mio.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Leck-o-Mio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Finish.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Finish.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/OrderProcess.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/OrderProcess.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/berg-shop/Papeterie.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Papeterie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/SchaustDuGuadAus.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/SchaustDuGuadAus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Products.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/berg-shop/Serie-Farbe.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Serie-Farbe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/berg-shop/Serie-Kornblumen.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Serie-Kornblumen.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/berg-shop/Serie-Rosen.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Serie-Rosen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/css/Stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project/css/Stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/css/berg-shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project/css/berg-shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/php/address.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/php/address.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/js/berg-shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/js/berg-shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/js/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/scribt/Bergshop.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scribt/Bergshop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +125,7 @@
       <workItem from="1611998484231" duration="2084000" />
       <workItem from="1612170007123" duration="3414000" />
       <workItem from="1612355109626" duration="521000" />
-      <workItem from="1612355640129" duration="5383000" />
+      <workItem from="1612355640129" duration="8476000" />
     </task>
     <task id="LOCAL-00001" summary="Add to Cart now adds up items">
       <created>1603893637554</created>
@@ -142,11 +134,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603893637554</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Change handling of Basket">
+      <created>1612367207584</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612367207584</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -165,5 +167,8 @@
     <MESSAGE value="Add to Cart now adds up items" />
     <MESSAGE value="Change handling of Basket" />
     <option name="LAST_COMMIT_MESSAGE" value="Change handling of Basket" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

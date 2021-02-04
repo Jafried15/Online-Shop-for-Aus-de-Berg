@@ -7,164 +7,165 @@
 
 <!doctype html>
 <html lang="de">
-<head>
-    <title>Zusammenfassung</title>
+    <head>
+        <title>Zusammenfassung</title>
 
-    <link href="../img/Aus-de-Berg_Favicon.png"
-          rel="shortcut icon" type="image/x-icon">
+        <link href="../img/Aus-de-Berg_Favicon.png"
+              rel="shortcut icon" type="image/x-icon">
 
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <link href="../css/all.css" rel="stylesheet" type="text/css">
-    <link href="../css/Stylesheet.css" rel="stylesheet" type="text/css">
-    <link href="../css/berg-shop.css" rel="stylesheet" type="text/css">
+        <link href="../css/all.css" rel="stylesheet" type="text/css">
+        <link href="../css/Stylesheet.css" rel="stylesheet" type="text/css">
+        <link href="../css/berg-shop.css" rel="stylesheet" type="text/css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
-</head>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-<header>
-    <div class="site-nav_Logo">
-        <img alt="" src="../img/Aus de Berg Logo_ohne Text.png" width="50px">
-        <p class="site-nav_Logo">Grafikdesign<br>Veronika Fischer</p>
-    </div>
-    <nav class="site-nav">
-        <i class="fas fa-bars"></i>
-        <ul>
-            <a href="../index.html">
-                <li>Home</li>
-            </a>
-            <a href="../scribt/designvorschlaege.html">
-                <li>Designmuster</li>
-            </a>
-            <a href="../scribt/Blog.html">
-                <li>Portfolio</li>
-            </a>
-            <a href="../scribt/Bergshop.html">
-                <li>Berg-Shop</li>
-            </a>
-            <a href="../scribt/Kontakt.php">
-                <li>Kontakt</li>
-            </a>
-        </ul>
-    </nav>
-    <div class="basket-icon">
-        <a href="Basket.html"><i class="fa fa-shopping-cart button"></i>
-        </a>
-    </div>
-</header>
-
-<center>
-    <main>
-        <section class="basket intro" id="basket-icon" style="padding-bottom: 0;">
-            <p class="headline" id="headline_basket">Zusammenfassung</p>
-        </section>
-
-        <section class="step step-summary" id="step-summary">
-            <div class="row" style="padding-top: 5%">
-                <div class="column-33 billingAddress">
-                    <h2>Rechnungsadresse</h2>
-                </div>
-                <div class="column-33 deliveryAddress">
-                    <h2>Lieferadresse</h2>
-                </div>
-                <div class="column-33 paymentOption">
-                    <h2>Zahlungsart</h2>
-                </div>
+    <body>
+        <header>
+            <div class="site-nav_Logo">
+                <img alt="" src="../img/Aus de Berg Logo_ohne Text.png" width="50px">
+                <p class="site-nav_Logo">Grafikdesign<br>Veronika Fischer</p>
             </div>
-
-            <div class="row" style="padding-top: 3%">
-                <table class="cart-table cart-summary">
-                    <tr>
-                        <th><p>Produkt</p></th>
-                        <th><p>Einzelpreis</p></th>
-                        <th><p>Stückzahl</p></th>
-                        <th><p>Gesamtpreis</p></th>
-                    </tr>
-                </table>
-            </div>
-            <div class="row total">
-                <div class="column-50">
-                    <hr>
-                    <div class="row">
-                        <div class="column-50">
-                            <p>Gesamtsumme</p>
-                            <p>Versandkosten</p>
-                            <p>inkl. MWST 19%</p>
-                        </div>
-                        <div class="column-50 calculated-billing" style="text-align: right">
-                            <p class="amount" id="totalItemSummary"></p>
-                            <p class="amount" id="deliverySummary"></p>
-                            <p class="amount" id="mwstSummary"></p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="column-50">
-                            <p style="font-weight: bold">Rechnungsbetrag</p>
-                        </div>
-                        <div class=" column-50 total-billing" style="text-align: right">
-                            <p class="amount" id="totalBillingSummary" style="font-weight: bold"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <form action="Basket.html" method="post">
-                <div class="row agreements" style="padding-top: 3%">
-                    <div class="column-50">
-                        <input id="cancellation_policy" name="cancellation_policy" type="radio"
-                               value="cancellation_policy">
-                        <label for="cancellation_policy">Ich habe die
-                            <a href="">Widerrufsbelehrung</a>
-                            gelesen und bin mit deren Geltung einverstanden. </label>
-                        <br>
-                        <input id="dhl" name="dhl" type="radio" value="dhl">
-                        <label for="dhl">Ich willige ein, dass die zur Vertragsdurchführung notwendigen Daten an den
-                            Paketdienst DHL (DHL Express Germany GmbH, Heinrich-Brüning-Straße 5, 53113 Bonn)
-                            weitergeleitet werden.</label>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="column-100" style="text-align: right">
-                        <div class="button-field">
-                            <button class="button back" onclick="backStep('step-summary')">
-                                Zurück
-                            </button>
-                            <button class="button" name="submit" type="submit">
-                                Bestellung absenden
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer_content">
-            <img alt="" height="150" src="../img/Aus de Berg Logo_Online.png" width="150">
-            <nav class="nav-ende">
+            <nav class="site-nav">
+                <i class="fas fa-bars"></i>
                 <ul>
-                    <li>
-                        <a href="Impressum.html">Impressum</a>
-                    </li>
-                    <li>
-                        <a href="Datenschutz.html">Datenschutz</a>
-                    </li>
+                    <a href="../index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="../scribt/designvorschlaege.html">
+                        <li>Designmuster</li>
+                    </a>
+                    <a href="../scribt/Blog.html">
+                        <li>Portfolio</li>
+                    </a>
+                    <a href="../scribt/Bergshop.html">
+                        <li>Berg-Shop</li>
+                    </a>
+                    <a href="../scribt/Kontakt.php">
+                        <li>Kontakt</li>
+                    </a>
                 </ul>
             </nav>
-        </div>
-    </footer>
-</center>
+            <div class="basket-icon">
+                <a href="Basket.html"><i class="fa fa-shopping-cart button"></i>
+                </a>
+            </div>
+        </header>
 
-<script crossorigin="anonymous" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-        src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="../js/mobile-menu.js"></script>
-<script src="../js/berg-shop.js"></script>
-<script src="../js/cart.js"></script>
+        <center>
+            <main>
+                <section class="basket intro" id="basket-icon" style="padding-bottom: 0;">
+                    <p class="headline" id="headline_basket">Zusammenfassung</p>
+                </section>
 
-</body>
+                <section class="step step-summary" id="step-summary">
+                    <div class="row" style="padding-top: 5%">
+                        <div class="column-33 billingAddress">
+                            <h2>Rechnungsadresse</h2>
+                        </div>
+                        <div class="column-33 deliveryAddress">
+                            <h2>Lieferadresse</h2>
+                        </div>
+                        <div class="column-33 paymentOption">
+                            <h2>Zahlungsart</h2>
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding-top: 3%">
+                        <table class="cart-table cart-summary">
+                            <tr>
+                                <th><p>Produkt</p></th>
+                                <th><p>Einzelpreis</p></th>
+                                <th><p>Stückzahl</p></th>
+                                <th><p>Gesamtpreis</p></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="row total">
+                        <div class="column-50">
+                            <hr>
+                            <div class="row">
+                                <div class="column-50">
+                                    <p>Gesamtsumme</p>
+                                    <p>Versandkosten</p>
+                                    <p>inkl. MWST 19%</p>
+                                </div>
+                                <div class="column-50 calculated-billing" style="text-align: right">
+                                    <p class="amount" id="totalItemSummary"></p>
+                                    <p class="amount" id="deliverySummary"></p>
+                                    <p class="amount" id="mwstSummary"></p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="column-50">
+                                    <p style="font-weight: bold">Rechnungsbetrag</p>
+                                </div>
+                                <div class=" column-50 total-billing" style="text-align: right">
+                                    <p class="amount" id="totalBillingSummary" style="font-weight: bold"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="php/summary.php" method="post">
+                        <div class="row agreements" style="padding-top: 3%">
+                            <div class="column-50">
+                                <input id="cancellation_policy" name="cancellation_policy" type="radio" value="cancellation_policy" required
+                                       oninvalid="this.setCustomValidity('Bitte stimm den Widerrufsbelehrungen zu!')">
+                                <label for="cancellation_policy">Ich habe die
+                                    <a href="">Widerrufsbelehrung</a>
+                                                                 gelesen und bin mit deren Geltung einverstanden. </label>
+                                <br>
+                                <input id="dhl" name="dhl" type="radio" value="dhl" required
+                                       oninvalid="this.setCustomValidity('Bitte stimm der Weiterleitung der nötigen Daten an den Paketdienst DHL zu!')">
+                                <label for="dhl">Ich willige ein, dass die zur Vertragsdurchführung notwendigen Daten an den
+                                                 Paketdienst DHL (DHL Express Germany GmbH, Heinrich-Brüning-Straße 5, 53113 Bonn)
+                                                 weitergeleitet werden.</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="column-100" style="text-align: right">
+                                <div class="button-field">
+                                    <button class="button back" onclick="backStep('step-summary')">
+                                        Zurück
+                                    </button>
+                                    <button class="button" name="submit" type="submit">
+                                        Bestellung absenden
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </main>
+
+            <footer>
+                <div class="footer_content">
+                    <img alt="" height="150" src="../img/Aus de Berg Logo_Online.png" width="150">
+                    <nav class="nav-ende">
+                        <ul>
+                            <li>
+                                <a href="Impressum.html">Impressum</a>
+                            </li>
+                            <li>
+                                <a href="Datenschutz.html">Datenschutz</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+        </center>
+
+        <script crossorigin="anonymous" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+                src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="../js/mobile-menu.js"></script>
+        <script src="../js/berg-shop.js"></script>
+        <script src="../js/cart.js"></script>
+
+    </body>
 </html>

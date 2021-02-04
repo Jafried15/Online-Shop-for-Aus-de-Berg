@@ -31,18 +31,9 @@ function closeModal(close) {
     modal.style.display = "none";
 }
 
-function nextStep(current_step) {
-    if (current_step === "step-one") {
-        window.location.href = "Address.html";
-    } else if (current_step === "step-two") {
-        window.location.href = "Payment.html";
-    } else if (current_step === "step-three") {
-        window.location.href = "Summary.html";
-        showCart(true);
-    }
-    window.scrollTo(0, 0);
+function nextStep() {
+    window.location.href = "Address.html";
 }
-
 
 function backStep(current_step) {
     if (current_step === "step-two") {
@@ -52,7 +43,6 @@ function backStep(current_step) {
     } else if (current_step === "step-summary") {
         window.location.href = "Payment.html";
     }
-    window.scrollTo(0, 0);
 }
 
 function showShippingAddress(checkbox) {
