@@ -35,7 +35,8 @@ function nextStep() {
     window.location.href = "Address.html";
 }
 
-function backStep(current_step) {
+/*function backStep(current_step) {
+    console.log(current_step);
     if (current_step === "step-two") {
         window.location.href = "Basket.html";
     } else if (current_step === "step-three") {
@@ -43,6 +44,23 @@ function backStep(current_step) {
     } else if (current_step === "step-summary") {
         window.location.href = "Payment.html";
     }
+}*/
+
+function addActionsToButtons(product) {
+    const cartItemsDOM = document.querySelectorAll('.cart-item');
+    cartItemsDOM.forEach(cartItemDOM => {
+        if (cartItemDOM.getAttribute('data-article_number') === product.article_number) {
+            cartItemDOM.querySelector('[data-action="INCREASE_ITEM"]').addEventListener('click', () => increaseItemCountCart(product, cartItemDOM));
+            cartItemDOM.querySelector('[data-action="DECREASE_ITEM"]').addEventListener('click', () => decreaseItemCount(product, cartItemDOM));
+            cartItemDOM.querySelector('[data-action="REMOVE_ITEM"]').addEventListener('click', () => removeItem(product, cartItemDOM));
+        }
+    })
+    document.querySelector('[data-action="CLEAR_CART"]').addEventListener('click', () => clearCart());
+
+    document.querySelector('[data-action="CLEAR_ADDRESSES"]').addEventListener('click', () => {
+        sessionStorage.removeItem('billingAddress');
+        sessionStorage.removeItem('deliveryAddress');
+    });
 }
 
 function showShippingAddress(checkbox) {
@@ -66,21 +84,51 @@ function showShippingAddress(checkbox) {
     }
 }
 
-function addActionsToButtons(product) {
-    const cartItemsDOM = document.querySelectorAll('.cart-item');
-    cartItemsDOM.forEach(cartItemDOM => {
-        if (cartItemDOM.getAttribute('data-article_number') === product.article_number) {
-            cartItemDOM.querySelector('[data-action="INCREASE_ITEM"]').addEventListener('click', () => increaseItemCountCart(product, cartItemDOM));
-            cartItemDOM.querySelector('[data-action="DECREASE_ITEM"]').addEventListener('click', () => decreaseItemCount(product, cartItemDOM));
-            cartItemDOM.querySelector('[data-action="REMOVE_ITEM"]').addEventListener('click', () => removeItem(product, cartItemDOM));
-        }
-    })
-    document.querySelector('[data-action="CLEAR_CART"]').addEventListener('click', () => clearCart());
+function saveAddress() {
+    let billingAddress = {
+        Geschlecht: document.getElementById('gender').value,
+        Vorname: document.getElementById('surname').value,
+        Nachname: document.getElementById('lastname').value,
+        Firma: document.getElementById('organisation').value,
+        Straße: document.getElementById('street').value,
+        Hausnummer: document.getElementById('number').value,
+        Postleitzahl: document.getElementById('plz').value,
+        Ort: document.getElementById('ort').value,
+    }
+    sessionStorage.setItem('billingAddress', JSON.stringify(billingAddress));
 
-    document.querySelector('[data-action="CLEAR_ADDRESSES"]').addEventListener('click', () => {
-        sessionStorage.removeItem('billingAddress');
-        sessionStorage.removeItem('deliveryAddress');
-    });
+    if (document.getElementById('different').checked) {
+        let deliveryAddress = {
+            Geschlecht: document.getElementById('genderLief').value,
+            Vorname: document.getElementById('surnameLief').value,
+            Nachname: document.getElementById('lastnameLief').value,
+            Firma: document.getElementById('organisationLief').value,
+            Straße: document.getElementById('streetLief').value,
+            Hausnummer: document.getElementById('numberLief').value,
+            Postleitzahl: document.getElementById('plzLief').value,
+            Ort: document.getElementById('ortLief').value,
+        }
+        sessionStorage.setItem('deliveryAddress', JSON.stringify(deliveryAddress));
+    } else {
+        sessionStorage.setItem('deliveryAddress', JSON.stringify(billingAddress));
+    }
+
+    let contact = {
+        Mail: document.getElementById('mail').value,
+        Telefon: document.getElementById('tel').value,
+    }
+
+    sessionStorage.setItem('contact', JSON.stringify(contact));
+}
+
+function saveBilling() {
+    let billingOption;
+    if (document.getElementById('paypal').checked) {
+        billingOption = 'PayPal'
+    } else {
+        billingOption = 'Vorkasse'
+    }
+    sessionStorage.setItem('billingOption', billingOption);
 }
 
 function switchBilling(method) {
@@ -95,17 +143,17 @@ function summaryAddressesAndBilling() {
     const billingAddressDOM = document.querySelector('.billingAddress');
     let billingAddress = JSON.parse(sessionStorage.getItem('billingAddress'));
     billingAddressDOM.insertAdjacentHTML('beforeend', `
-        <p>${billingAddress.gender} ${billingAddress.surname} ${billingAddress.lastname}</p>
-        <p>${billingAddress.street} ${billingAddress.number}</p>
-        <p>${billingAddress.plz} ${billingAddress.ort}</p>
+        <p>${billingAddress.Geschlecht} ${billingAddress.Vorname} ${billingAddress.Nachname}</p>
+        <p>${billingAddress.Straße} ${billingAddress.Hausnummer}</p>
+        <p>${billingAddress.Postleitzahl} ${billingAddress.Ort}</p>
         `);
 
     const deliveryAddressDOM = document.querySelector('.deliveryAddress');
     let deliveryAddress = JSON.parse(sessionStorage.getItem('deliveryAddress'));
     deliveryAddressDOM.insertAdjacentHTML('beforeend', `
-        <p>${deliveryAddress.gender} ${deliveryAddress.surname} ${deliveryAddress.lastname}</p>
-        <p>${deliveryAddress.street} ${deliveryAddress.number}</p>
-        <p>${deliveryAddress.plz} ${deliveryAddress.ort}</p>
+        <p>${deliveryAddress.Geschlecht} ${deliveryAddress.Vorname} ${deliveryAddress.Nachname}</p>
+        <p>${deliveryAddress.Straße} ${deliveryAddress.Hausnummer}</p>
+        <p>${deliveryAddress.Postleitzahl} ${deliveryAddress.Ort}</p>
         `);
 
     const billingOptionDOM = document.querySelector('.paymentOption');
@@ -115,17 +163,10 @@ function summaryAddressesAndBilling() {
         `);
 }
 
-$(function () {
-    $('#submit').on("click", function (event) {
-        event.preventDefault();
-
-        $.ajax({
-            type: "POST",
-            url: 'Finish.html',
-            data: $form.serialize(),
-            success: after_form_submitted,
-            dataType: 'json'
-        });
-
-    });
-});
+function addItemsToForm() {
+    document.getElementById('hiddenCart').value = JSON.stringify(sessionStorage.getItem('cart'));
+    document.getElementById('hiddenBillingAddress').value = sessionStorage.getItem('billingAddress');
+    document.getElementById('hiddenDeliveryAddress').value = sessionStorage.getItem('deliveryAddress');
+    document.getElementById('hiddenBillingOption').value = sessionStorage.getItem('billingOption');
+    document.getElementById('hiddenContact').value = sessionStorage.getItem('contact');
+}

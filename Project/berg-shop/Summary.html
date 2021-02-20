@@ -23,17 +23,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
     </head>
 
-    <body>
-        <header>
-            <div class="site-nav_Logo">
-                <img alt="" src="../img/Aus de Berg Logo_ohne Text.png" width="50px">
-                <p class="site-nav_Logo">Grafikdesign<br>Veronika Fischer</p>
-            </div>
-            <nav class="site-nav">
-                <i class="fas fa-bars"></i>
-                <ul>
-                    <a href="../index.html">
-                        <li>Home</li>
+    <body onload="summaryAddressesAndBilling()">
+    <header>
+        <div class="site-nav_Logo">
+            <img alt="" src="../img/Aus de Berg Logo_ohne Text.png" width="50px">
+            <p class="site-nav_Logo">Grafikdesign<br>Veronika Fischer</p>
+        </div>
+        <nav class="site-nav">
+            <i class="fas fa-bars"></i>
+            <ul>
+                <a href="../index.html">
+                    <li>Home</li>
                     </a>
                     <a href="../scribt/designvorschlaege.html">
                         <li>Designmuster</li>
@@ -111,32 +111,39 @@
                         </div>
                     </div>
 
-                    <form action="php/summary.php" method="post">
+                    <form action="php/summary.php" method="post" onsubmit="addItemsToForm()">
+                        <input id="hiddenCart" name="cart" type="hidden">
+                        <input id="hiddenBillingAddress" name="billingAddress" type="hidden">
+                        <input id="hiddenDeliveryAddress" name="deliveryAddress" type="hidden">
+                        <input id="hiddenBillingOption" name="billingOption" type="hidden">
+                        <input id="hiddenContact" name="contact" type="hidden">
                         <div class="row agreements" style="padding-top: 3%">
                             <div class="column-50">
-                                <input id="cancellation_policy" name="cancellation_policy" type="radio" value="cancellation_policy" required
+                                <input id="cancellation_policy" name="cancellation_policy" required
+                                       type="radio" value="cancellation_policy"
                                        oninvalid="this.setCustomValidity('Bitte stimm den Widerrufsbelehrungen zu!')">
                                 <label for="cancellation_policy">Ich habe die
                                     <a href="">Widerrufsbelehrung</a>
-                                                                 gelesen und bin mit deren Geltung einverstanden. </label>
+                                    gelesen und bin mit deren Geltung einverstanden. </label>
                                 <br>
                                 <input id="dhl" name="dhl" type="radio" value="dhl" required
                                        oninvalid="this.setCustomValidity('Bitte stimm der Weiterleitung der nötigen Daten an den Paketdienst DHL zu!')">
-                                <label for="dhl">Ich willige ein, dass die zur Vertragsdurchführung notwendigen Daten an den
-                                                 Paketdienst DHL (DHL Express Germany GmbH, Heinrich-Brüning-Straße 5, 53113 Bonn)
-                                                 weitergeleitet werden.</label>
+                                <label for="dhl">Ich willige ein, dass die zur Vertragsdurchführung notwendigen Daten an
+                                    den
+                                    Paketdienst DHL (DHL Express Germany GmbH, Heinrich-Brüning-Straße 5, 53113 Bonn)
+                                    weitergeleitet werden.</label>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="column-100" style="text-align: right">
-                                <div class="button-field">
-                                    <button class="button back" onclick="backStep('step-summary')">
-                                        Zurück
-                                    </button>
-                                    <button class="button" name="submit" type="submit">
-                                        Bestellung absenden
-                                    </button>
+                            <div class="row">
+                                <div class="column-100" style="text-align: right">
+                                    <div class="button-field">
+                                        <!--<button class="button back" onclick="backStep('step-summary')">
+                                            Zurück
+                                        </button>-->
+                                        <button class="button" name="submit" type="submit">
+                                            Bestellung absenden
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -161,11 +168,10 @@
             </footer>
         </center>
 
-        <script crossorigin="anonymous" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-                src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            src="http://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="../js/mobile-menu.js"></script>
         <script src="../js/berg-shop.js"></script>
         <script src="../js/cart.js"></script>
-
     </body>
 </html>

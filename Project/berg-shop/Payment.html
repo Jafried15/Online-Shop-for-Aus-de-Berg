@@ -91,7 +91,7 @@
                 </section>
 
                 <section class="step step-three" id="step-three">
-                    <form action="php/payment.php" method="post">
+                    <form action="php/payment.php" method="post" onsubmit="saveBilling()">
                         <div class="row">
                             <div class="column-100" id="paypal-container">
                                 <input checked id="paypal" name="payment" onchange="switchBilling(this)" type="radio"
@@ -100,8 +100,10 @@
                                     <i class="icon icon-paypal"></i>
                                 </label>
                                 <p class="payment-radio-text">
-                                    Bei Auswahl dieser Zahlungsart erfolgt im nächsten Schritt die Weiterleitung zu PayPal. Wenn
-                                    dort die erforderlichen Daten eingetragen worden sind, geht es automatisch zurück zum Shop,
+                                    Bei Auswahl dieser Zahlungsart erfolgt im nächsten Schritt die Weiterleitung zu
+                                    PayPal. Wenn
+                                    dort die erforderlichen Daten eingetragen worden sind, geht es automatisch zurück
+                                    zum Shop,
                                     um die Bestellung
                                     abzuschließen.<br><br>
                                     Aus de Berg Grafikdesign<br>
@@ -135,9 +137,9 @@
                         <div class="row">
                             <div class="column-100" style="text-align: right">
                                 <div class="button-field">
-                                    <button class="button back" onclick="backStep('step-three')">
+                                    <!--<button class="button back" onclick="backStep('step-three')">
                                         Zurück
-                                    </button>
+                                    </button>-->
                                     <button class="button" type="submit">
                                         Weiter
                                     </button>

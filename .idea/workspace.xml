@@ -20,21 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d2cd333-01ee-490d-923a-987eace00547" name="Default Changelist" comment="Add to Cart now adds up items">
-      <change afterPath="$PROJECT_DIR$/Project/berg-shop/summary.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/berg-shop/Address.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Address.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Basket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Finish.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Finish.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/OrderProcess.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/OrderProcess.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Papeterie.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Papeterie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/berg-shop/Payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Payment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Products.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Serie-Farbe.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Serie-Farbe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Serie-Kornblumen.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Serie-Kornblumen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Serie-Rosen.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Serie-Rosen.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/berg-shop/Summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/berg-shop/php/address.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/php/address.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/summary.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/php/summary.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/js/berg-shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/js/berg-shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/js/cart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,24 +77,14 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="settings.editor.splitter.proportion" value="0.18428373" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Git\Online-Shop-for-Aus-de-Berg\Project\berg-shop\php" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -126,6 +109,12 @@
       <workItem from="1612170007123" duration="3414000" />
       <workItem from="1612355109626" duration="521000" />
       <workItem from="1612355640129" duration="8476000" />
+      <workItem from="1612430554560" duration="21432000" />
+      <workItem from="1612649368054" duration="507000" />
+      <workItem from="1612649893897" duration="305000" />
+      <workItem from="1612650315114" duration="54000" />
+      <workItem from="1612650378338" duration="3732000" />
+      <workItem from="1613846892337" duration="2213000" />
     </task>
     <task id="LOCAL-00001" summary="Add to Cart now adds up items">
       <created>1603893637554</created>
@@ -170,5 +159,9 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

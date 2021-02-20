@@ -5,7 +5,6 @@
  * All Rights Reserved
  *
  */
-
 session_start();
 
 $_billingAddress = null;
