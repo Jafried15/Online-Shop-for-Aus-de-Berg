@@ -116,11 +116,11 @@ function saveAddress() {
 
 function saveBilling() {
     let billingOption;
-    if (document.getElementById('paypal').checked) {
+    /*if (document.getElementById('paypal').checked) {
         billingOption = 'PayPal'
-    } else {
-        billingOption = 'Vorkasse'
-    }
+    } else {*/
+    billingOption = 'Vorkasse'
+    // }
     sessionStorage.setItem('billingOption', billingOption);
 }
 

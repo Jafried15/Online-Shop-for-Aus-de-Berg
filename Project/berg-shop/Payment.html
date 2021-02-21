@@ -92,7 +92,7 @@
 
                 <section class="step step-three" id="step-three">
                     <form action="php/payment.php" method="post" onsubmit="saveBilling()">
-                        <div class="row">
+                        <!--<div class="row">
                             <div class="column-100" id="paypal-container">
                                 <input checked id="paypal" name="payment" onchange="switchBilling(this)" type="radio"
                                        value="paypal">
@@ -113,11 +113,11 @@
                                     USt-IdNr.: DE328297560
                                 </p>
                             </div>
-                        </div>
+                        </div>-->
                         <div class="row">
                             <div class="column-100" id="vorkasse-container">
-                                <input id="prepayment" name="payment" onchange="switchBilling(this)" type="radio"
-                                       value="prepayment">
+                                <input checked id="prepayment" name="payment"
+                                       type="radio" value="prepayment">
                                 <label for="prepayment">
                                     Gegen Vorkasse
                                 </label>

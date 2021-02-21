@@ -21,12 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5d2cd333-01ee-490d-923a-987eace00547" name="Default Changelist" comment="Add to Cart now adds up items">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Address.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Address.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/berg-shop/Payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Payment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/php/summary.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/php/summary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/css/berg-shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project/css/berg-shop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/js/berg-shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/js/berg-shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/js/cart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +115,7 @@
       <workItem from="1612650378338" duration="3732000" />
       <workItem from="1613846892337" duration="2213000" />
       <workItem from="1613849130854" duration="1883000" />
-      <workItem from="1613901030719" duration="1631000" />
+      <workItem from="1613901030719" duration="2115000" />
     </task>
     <task id="LOCAL-00001" summary="Add to Cart now adds up items">
       <created>1603893637554</created>
@@ -148,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613901653388</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Clear cart after submit">
+      <created>1613902749181</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613902749181</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +179,8 @@
     <MESSAGE value="Change handling of Basket" />
     <MESSAGE value="Change Basket and add send mail" />
     <MESSAGE value="Show cart in Summary again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Show cart in Summary again" />
+    <MESSAGE value="Clear cart after submit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clear cart after submit" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

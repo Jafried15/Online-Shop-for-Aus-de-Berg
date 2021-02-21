@@ -650,7 +650,7 @@ input::-webkit-inner-spin-button {
 
 input:required:invalid {
     font-weight: bold;
-    background-color: #D7F0F1;
+    background-color: #efefef;
 }
 
 input:required:invalid:focus {
