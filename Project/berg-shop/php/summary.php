@@ -13,10 +13,15 @@ if (isset($_POST['cart']) && isset($_POST['billingAddress']) && isset($_POST['de
     $billingOption = $_POST['billingOption'];
     $contact = $_POST['contact'];
 
-    $to = 'arbeit@jfriedrich.net';
+    $to = 'info@ausdeberg.de';
     $subject = 'Bestellung';
-
     $message = 'Kontakt: ' . $contact . 'Rechnungsadresse :' . $billingAddress . 'Lieferadresse :' . $deliveryAddress . 'Zahlungsmethode :' . $billingOption . 'Artikel : ' . $cart;
-    echo $message;
-    mail($to, $subject, $message);
+
+    $success = mail($to, $subject, $message);
+    
+    if ($success) {
+        header('Location: ../Finish.html');
+    } else {
+        print_r(error_get_last());
+    }
 }

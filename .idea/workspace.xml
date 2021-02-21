@@ -21,12 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5d2cd333-01ee-490d-923a-987eace00547" name="Default Changelist" comment="Add to Cart now adds up items">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Address.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Address.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Basket.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Basket.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/berg-shop/Summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/php/address.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/php/address.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/summary.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/php/summary.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/js/berg-shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/js/berg-shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/php/summary.php" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/php/summary.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/js/cart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +54,9 @@
     </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1jT1IlOveldGC8ysIsOTkIaUKaX" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -115,6 +115,8 @@
       <workItem from="1612650315114" duration="54000" />
       <workItem from="1612650378338" duration="3732000" />
       <workItem from="1613846892337" duration="2213000" />
+      <workItem from="1613849130854" duration="1883000" />
+      <workItem from="1613901030719" duration="417000" />
     </task>
     <task id="LOCAL-00001" summary="Add to Cart now adds up items">
       <created>1603893637554</created>
@@ -130,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612367207584</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Change Basket and add send mail">
+      <created>1613849226352</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613849226352</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +164,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add to Cart now adds up items" />
     <MESSAGE value="Change handling of Basket" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change handling of Basket" />
+    <MESSAGE value="Change Basket and add send mail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change Basket and add send mail" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

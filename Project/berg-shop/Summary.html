@@ -23,17 +23,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
     </head>
 
-    <body onload="summaryAddressesAndBilling()">
-    <header>
-        <div class="site-nav_Logo">
-            <img alt="" src="../img/Aus de Berg Logo_ohne Text.png" width="50px">
-            <p class="site-nav_Logo">Grafikdesign<br>Veronika Fischer</p>
-        </div>
-        <nav class="site-nav">
-            <i class="fas fa-bars"></i>
-            <ul>
-                <a href="../index.html">
-                    <li>Home</li>
+    <body onload="summaryAddressesAndBilling(); showCart(true)">
+        <header>
+            <div class="site-nav_Logo">
+                <img alt="" src="../img/Aus de Berg Logo_ohne Text.png" width="50px">
+                <p class="site-nav_Logo">Grafikdesign<br>Veronika Fischer</p>
+            </div>
+            <nav class="site-nav">
+                <i class="fas fa-bars"></i>
+                <ul>
+                    <a href="../index.html">
+                        <li>Home</li>
                     </a>
                     <a href="../scribt/designvorschlaege.html">
                         <li>Designmuster</li>
@@ -124,14 +124,14 @@
                                        oninvalid="this.setCustomValidity('Bitte stimm den Widerrufsbelehrungen zu!')">
                                 <label for="cancellation_policy">Ich habe die
                                     <a href="">Widerrufsbelehrung</a>
-                                    gelesen und bin mit deren Geltung einverstanden. </label>
+                                                                 gelesen und bin mit deren Geltung einverstanden. </label>
                                 <br>
                                 <input id="dhl" name="dhl" type="radio" value="dhl" required
                                        oninvalid="this.setCustomValidity('Bitte stimm der Weiterleitung der nötigen Daten an den Paketdienst DHL zu!')">
                                 <label for="dhl">Ich willige ein, dass die zur Vertragsdurchführung notwendigen Daten an
-                                    den
-                                    Paketdienst DHL (DHL Express Germany GmbH, Heinrich-Brüning-Straße 5, 53113 Bonn)
-                                    weitergeleitet werden.</label>
+                                                 den
+                                                 Paketdienst DHL (DHL Express Germany GmbH, Heinrich-Brüning-Straße 5, 53113 Bonn)
+                                                 weitergeleitet werden.</label>
                             </div>
 
                             <div class="row">
@@ -168,8 +168,8 @@
             </footer>
         </center>
 
-    <script crossorigin="anonymous" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-            src="http://code.jquery.com/jquery-3.5.1.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+                src="http://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="../js/mobile-menu.js"></script>
         <script src="../js/berg-shop.js"></script>
         <script src="../js/cart.js"></script>
