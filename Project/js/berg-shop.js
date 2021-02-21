@@ -9,7 +9,7 @@ function switchImage(image) {
     const target = image.dataset.target;
     const expandImg = document.getElementById(target);
     expandImg.src = image.src;
-    expandImg.parentElement.style.display = "block";
+    expandImg.parentElement.style.display = 'block';
 }
 
 /* Modal Dialog */
@@ -20,7 +20,7 @@ function showModal(image) {
     const img = document.getElementById('modal-image');
     img.setAttribute('src', image.src);
 
-    modal.style.display = "block";
+    modal.style.display = 'block';
 }
 
 /* Close Button */
@@ -28,22 +28,15 @@ function closeModal(close) {
     const target = close.parentElement.dataset.target;
     const modal = document.getElementById(target);
 
-    modal.style.display = "none";
+    modal.style.display = 'none';
 }
 
 function nextStep() {
-    window.location.href = "Address.html";
+    window.location.href = 'Address.html';
 }
 
-/*function backStep(current_step) {
-    console.log(current_step);
-    if (current_step === "step-two") {
-        window.location.href = "Basket.html";
-    } else if (current_step === "step-three") {
-        window.location.href = "Address.html";
-    } else if (current_step === "step-summary") {
-        window.location.href = "Payment.html";
-    }
+/*function backStep() {
+    history.back();
 }*/
 
 function addActionsToButtons(product) {
@@ -66,21 +59,21 @@ function addActionsToButtons(product) {
 function showShippingAddress(checkbox) {
     const checked = checkbox.checked;
     if (checked) {
-        document.getElementById("lieferadresse").style.display = "block";
-        document.getElementById("surnameLief").required = true;
-        document.getElementById("lastnameLief").required = true;
-        document.getElementById("streetLief").required = true;
-        document.getElementById("numberLief").required = true;
-        document.getElementById("plzLief").required = true;
-        document.getElementById("ortLief").required = true;
+        document.getElementById('lieferadresse').style.display = 'block';
+        document.getElementById('surnameLief').required = true;
+        document.getElementById('lastnameLief').required = true;
+        document.getElementById('streetLief').required = true;
+        document.getElementById('numberLief').required = true;
+        document.getElementById('plzLief').required = true;
+        document.getElementById('ortLief').required = true;
     } else {
-        document.getElementById("lieferadresse").style.display = "none";
-        document.getElementById("surnameLief").required = false;
-        document.getElementById("lastnameLief").required = false;
-        document.getElementById("streetLief").required = false;
-        document.getElementById("numberLief").required = false;
-        document.getElementById("plzLief").required = false;
-        document.getElementById("ortLief").required = false;
+        document.getElementById('lieferadresse').style.display = 'none';
+        document.getElementById('surnameLief').required = false;
+        document.getElementById('lastnameLief').required = false;
+        document.getElementById('streetLief').required = false;
+        document.getElementById('numberLief').required = false;
+        document.getElementById('plzLief').required = false;
+        document.getElementById('ortLief').required = false;
     }
 }
 
@@ -132,10 +125,10 @@ function saveBilling() {
 }
 
 function switchBilling(method) {
-    if (method.id === "paypal" && method.checked) {
-        document.getElementById("prepayment").checked = false;
-    } else if (method.id === "prepayment" && method.checked) {
-        document.getElementById("paypal").checked = false;
+    if (method.id === 'paypal' && method.checked) {
+        document.getElementById('prepayment').checked = false;
+    } else if (method.id === 'prepayment' && method.checked) {
+        document.getElementById('paypal').checked = false;
     }
 }
 
@@ -164,7 +157,7 @@ function summaryAddressesAndBilling() {
 }
 
 function addItemsToForm() {
-    document.getElementById('hiddenCart').value = JSON.stringify(sessionStorage.getItem('cart'));
+    document.getElementById('hiddenCart').value = JSON.stringify(localStorage.getItem('cart'));
     document.getElementById('hiddenBillingAddress').value = sessionStorage.getItem('billingAddress');
     document.getElementById('hiddenDeliveryAddress').value = sessionStorage.getItem('deliveryAddress');
     document.getElementById('hiddenBillingOption').value = sessionStorage.getItem('billingOption');

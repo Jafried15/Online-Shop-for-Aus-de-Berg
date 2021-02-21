@@ -18,10 +18,13 @@ if (isset($_POST['cart']) && isset($_POST['billingAddress']) && isset($_POST['de
     $message = 'Kontakt: ' . $contact . 'Rechnungsadresse :' . $billingAddress . 'Lieferadresse :' . $deliveryAddress . 'Zahlungsmethode :' . $billingOption . 'Artikel : ' . $cart;
 
     $success = mail($to, $subject, $message);
-    
+
     if ($success) {
+        ?>
+        <script src="../../js/cart.js">clearCart()</script>
+        <?php
         header('Location: ../Finish.html');
     } else {
-        print_r(error_get_last());
+        echo error_get_last()['message'];
     }
 }
