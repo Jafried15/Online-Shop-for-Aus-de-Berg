@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d2cd333-01ee-490d-923a-987eace00547" name="Default Changelist" comment="Add Paypal possibility">
+    <list default="true" id="5d2cd333-01ee-490d-923a-987eace00547" name="Default Changelist" comment="Update git ignore">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +73,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="settings.editor.selected.configurable" value="vcs.Subversion.Presentation" />
     <property name="settings.editor.splitter.proportion" value="0.18428373" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -83,6 +83,9 @@
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\JoélFriedrich\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5d2cd333-01ee-490d-923a-987eace00547" name="Default Changelist" comment="" />
@@ -173,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618997999339</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Update git ignore">
+      <created>1618998146222</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1618998146222</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +214,8 @@
     <MESSAGE value="Comment out PayPal" />
     <MESSAGE value="Remove unused files" />
     <MESSAGE value="Add Paypal possibility" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Paypal possibility" />
+    <MESSAGE value="Update git ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update git ignore" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
