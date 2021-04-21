@@ -19,13 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d2cd333-01ee-490d-923a-987eace00547" name="Default Changelist" comment="Add to Cart now adds up items">
+    <list default="true" id="5d2cd333-01ee-490d-923a-987eace00547" name="Default Changelist" comment="Add Paypal possibility">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Payment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/css/berg-shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project/css/berg-shop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/js/berg-shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/js/berg-shop.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613903865560</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add Paypal possibility">
+      <created>1618997999339</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1618997999339</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +203,8 @@
     <MESSAGE value="Clear cart after submit" />
     <MESSAGE value="Comment out PayPal" />
     <MESSAGE value="Remove unused files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove unused files" />
+    <MESSAGE value="Add Paypal possibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Paypal possibility" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
