@@ -714,7 +714,7 @@ input:required:invalid:focus {
 }
 
 .icon-paypal {
-    content: url(../img/icons/paypal-icon.png);
+    content: url(https://www.paypalobjects.com/webstatic/de_DE/i/de-pp-logo-150px.png);
 }
 
 .icon-finish {

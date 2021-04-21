@@ -47,7 +47,7 @@ function addActionsToButtons(product) {
             cartItemDOM.querySelector('[data-action="DECREASE_ITEM"]').addEventListener('click', () => decreaseItemCount(product, cartItemDOM));
             cartItemDOM.querySelector('[data-action="REMOVE_ITEM"]').addEventListener('click', () => removeItem(product, cartItemDOM));
         }
-    })
+    });
     document.querySelector('[data-action="CLEAR_CART"]').addEventListener('click', () => clearCart());
 
     document.querySelector('[data-action="CLEAR_ADDRESSES"]').addEventListener('click', () => {
@@ -87,7 +87,7 @@ function saveAddress() {
         Hausnummer: document.getElementById('number').value,
         Postleitzahl: document.getElementById('plz').value,
         Ort: document.getElementById('ort').value,
-    }
+    };
     sessionStorage.setItem('billingAddress', JSON.stringify(billingAddress));
 
     if (document.getElementById('different').checked) {
@@ -100,7 +100,7 @@ function saveAddress() {
             Hausnummer: document.getElementById('numberLief').value,
             Postleitzahl: document.getElementById('plzLief').value,
             Ort: document.getElementById('ortLief').value,
-        }
+        };
         sessionStorage.setItem('deliveryAddress', JSON.stringify(deliveryAddress));
     } else {
         sessionStorage.setItem('deliveryAddress', JSON.stringify(billingAddress));
@@ -109,18 +109,18 @@ function saveAddress() {
     let contact = {
         Mail: document.getElementById('mail').value,
         Telefon: document.getElementById('tel').value,
-    }
+    };
 
     sessionStorage.setItem('contact', JSON.stringify(contact));
 }
 
 function saveBilling() {
     let billingOption;
-    /*if (document.getElementById('paypal').checked) {
-        billingOption = 'PayPal'
-    } else {*/
-    billingOption = 'Vorkasse'
-    // }
+    if (document.getElementById('paypal').checked) {
+        billingOption = 'PayPal';
+    } else {
+        billingOption = 'Vorkasse';
+    }
     sessionStorage.setItem('billingOption', billingOption);
 }
 
@@ -163,3 +163,23 @@ function addItemsToForm() {
     document.getElementById('hiddenBillingOption').value = sessionStorage.getItem('billingOption');
     document.getElementById('hiddenContact').value = sessionStorage.getItem('contact');
 }
+
+paypal.Buttons({
+    createOrder: function (data, actions) {
+        // This function sets up the details of the transaction, including the amount and line item details.
+        return actions.order.create({
+            purchase_units: [{
+                amount: {
+                    value: JSON.parse(sessionStorage.getItem('total')),
+                },
+            }],
+        });
+    },
+    onApprove: function (data, actions) {
+        // This function captures the funds from the transaction.
+        return actions.order.capture().then(function (details) {
+            // This function shows a transaction success message to your buyer.
+            alert('Transaction completed by ' + details.payer.name.given_name);
+        });
+    },
+}).render('#paypal-button-container');

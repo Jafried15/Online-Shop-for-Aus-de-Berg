@@ -20,11 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d2cd333-01ee-490d-923a-987eace00547" name="Default Changelist" comment="Add to Cart now adds up items">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/In-da-Not.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Leck-o-Mio.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Products.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/berg-shop/SchaustDuGuadAus.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/berg-shop/Summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/berg-shop/Summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/css/berg-shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project/css/berg-shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/js/berg-shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/js/berg-shop.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
     <property name="settings.editor.splitter.proportion" value="0.18428373" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -116,7 +117,10 @@
       <workItem from="1612650378338" duration="3732000" />
       <workItem from="1613846892337" duration="2213000" />
       <workItem from="1613849130854" duration="1883000" />
-      <workItem from="1613901030719" duration="2779000" />
+      <workItem from="1613901030719" duration="3147000" />
+      <workItem from="1618992864655" duration="16000" />
+      <workItem from="1618992894621" duration="1069000" />
+      <workItem from="1618994000774" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="Add to Cart now adds up items">
       <created>1603893637554</created>
@@ -160,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613903307789</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Remove unused files">
+      <created>1613903865560</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1613903865560</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +200,8 @@
     <MESSAGE value="Show cart in Summary again" />
     <MESSAGE value="Clear cart after submit" />
     <MESSAGE value="Comment out PayPal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comment out PayPal" />
+    <MESSAGE value="Remove unused files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unused files" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
