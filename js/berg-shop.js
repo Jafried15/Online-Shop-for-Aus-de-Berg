@@ -157,7 +157,12 @@ function summaryAddressesAndBilling() {
 }
 
 function addItemsToForm() {
-    document.getElementById('hiddenCart').value = JSON.stringify(localStorage.getItem('cart'));
+    const cart = JSON.parse(localStorage.getItem('cart'));
+    let cartString = '';
+    cart.forEach(item => {
+        cartString = cartString + '{Name:' + item.name + '\n' + 'Preis:' + item.price + '\n' + 'Anzahl:' + item.count + '}';
+    });
+    document.getElementById('hiddenCart').value = cartString;
     document.getElementById('hiddenBillingAddress').value = sessionStorage.getItem('billingAddress');
     document.getElementById('hiddenDeliveryAddress').value = sessionStorage.getItem('deliveryAddress');
     document.getElementById('hiddenBillingOption').value = sessionStorage.getItem('billingOption');
