@@ -188,3 +188,8 @@ paypal.Buttons({
         });
     },
 }).render('#paypal-button-container');
+
+function clearStorage() {
+    sessionStorage.clear();
+    clearCart()
+}

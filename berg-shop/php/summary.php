@@ -8,7 +8,6 @@
 
 if (isset($_POST['cart']) && isset($_POST['billingAddress']) && isset($_POST['deliveryAddress']) && isset($_POST['billingOption'])) {
     $cart = $_POST['cart'];
-    print_r($cart);
     $billingAddress = $_POST['billingAddress'];
     $deliveryAddress = $_POST['deliveryAddress'];
     $billingOption = $_POST['billingOption'];
