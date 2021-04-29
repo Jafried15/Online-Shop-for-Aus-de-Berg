@@ -110,30 +110,31 @@
                 </section>
 
                 <section class="step step-one" id="step-one">
-                    <div class="row">
+                    <div class="row" style="overflow-x:auto;">
                         <table class="cart-table">
+                            <thead>
                             <tr>
-                                <th><p>Produkt</p></th>
-                                <th><p>Einzelpreis</p></th>
-                                <th><p>Stückzahl</p></th>
-                                <th><p>Gesamtpreis</p></th>
+                                <th>Produkt</th>
+                                <th>Einzelpreis</th>
+                                <th>Stückzahl</th>
+                                <th>Gesamtpreis</th>
                             </tr>
+                            </thead>
                         </table>
                     </div>
                     <div class="row total">
-                        <div class="column-50">
-                            <button class="quantity-btn" data-action="CLEAR_CART"> Alle Artikel aus Einkaufswagen entfernen
-                            </button>
+                        <div class="column-50 clear-button">
+                            <button class="quantity-btn" data-action="CLEAR_CART">Alle Artikel aus Einkaufswagen entfernen</button>
                         </div>
                         <div class="column-50">
                             <hr>
                             <div class="row">
-                                <div class="column-50">
+                                <div class="column-75">
                                     <p>Gesamtsumme</p>
                                     <p>Versandkosten</p>
                                     <p>inkl. MWST 19%</p>
                                 </div>
-                                <div class="column-50 calculated-billing" style="text-align: right">
+                                <div class="column-25 calculated-billing" style="text-align: right">
                                     <p class="amount" id="totalItem"></p>
                                     <p class="amount" id="delivery"></p>
                                     <p class="amount" id="mwst"></p>
@@ -141,10 +142,10 @@
                             </div>
                             <hr>
                             <div class="row">
-                                <div class="column-50">
+                                <div class="column-75">
                                     <p style="font-weight: bold">Rechnungsbetrag</p>
                                 </div>
-                                <div class=" column-50 total-billing" style="text-align: right">
+                                <div class=" column-25 total-billing" style="text-align: right">
                                     <p class="amount" id="totalBilling" style="font-weight: bold"></p>
                                 </div>
                             </div>

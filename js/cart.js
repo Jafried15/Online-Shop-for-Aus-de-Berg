@@ -35,7 +35,7 @@ addToCartButtonsDOM.forEach(addItemToCart => {
             cart.push(product);
             localStorage.setItem('cart', JSON.stringify(cart));
         }
-    })
+    });
 });
 
 function increaseItemCountAdd(product, count) {
@@ -45,7 +45,7 @@ function increaseItemCountAdd(product, count) {
             localStorage.setItem('cart', JSON.stringify(cart));
 
         }
-    })
+    });
 }
 
 function getCart() {
@@ -90,15 +90,19 @@ function addToDOM(product) {
     const total = calculateTotal(product.count, product.price).replace('.', ',');
     cartDOM.insertAdjacentHTML('beforeend', `
             <tr class="cart-item" data-article_number="${product.article_number}">
-                <td><img class="cart-item-image" src="${product.image}" alt="${product.name}">
-                     <p class="cart-item-name">${product.name}</p></td>
-                <td><p class="cart-item-price product-price">${product.price}</p></td>
                 <td>
-                <div>
-                    <button class="quantity-btn fa fa-minus" data-action="DECREASE_ITEM"></button>
-                    <p class="cart-item-count">${product.count}</p>
-                    <button class="quantity-btn fa fa-plus" data-action="INCREASE_ITEM"></button>
-                    <button class="quantity-btn fa fa-trash" data-action="REMOVE_ITEM"></button>
+                    <img class="cart-item-image" src="${product.image}" alt="${product.name}">
+                    <p class="cart-item-name" style="white-space: nowrap">${product.name}</p>
+                </td>
+                <td>
+                    <p class="cart-item-price product-price">${product.price}</p>
+                </td>
+                <td>
+                    <div style="white-space: nowrap">
+                        <button class="quantity-btn fa fa-minus" data-action="DECREASE_ITEM"></button>
+                        <p class="cart-item-count">${product.count}</p>
+                        <button class="quantity-btn fa fa-plus" data-action="INCREASE_ITEM"></button>
+                        <button class="quantity-btn fa fa-trash" data-action="REMOVE_ITEM"></button>
                     </div>
                 </td>
                 <td>
@@ -113,12 +117,16 @@ function addToSummaryDOM(product) {
     const total = calculateTotal(product.count, product.price).replace('.', ',');
     cartSummaryDOM.insertAdjacentHTML('beforeend', `
             <tr class="cart-item" data-article_number="${product.article_number}">
-                <td><img class="cart-item-image" src="${product.image}" alt="${product.name}">
-                     <p class="cart-item-name">${product.name}</p></td>
-                <td><p class="cart-item-price product-price">${product.price}</p></td>
                 <td>
-                <div>
-                    <p class="cart-item-count">${product.count}</p>
+                    <img class="cart-item-image" src="${product.image}" alt="${product.name}">
+                    <p class="cart-item-name" style="white-space: nowrap">${product.name}</p>
+                </td>
+                <td>
+                    <p class="cart-item-price product-price">${product.price}</p>
+                </td>
+                <td>
+                    <div>
+                        <p class="cart-item-count">${product.count}</p>
                     </div>
                 </td>
                 <td>
@@ -141,7 +149,7 @@ function increaseItemCountCart(product, cartItemDOM) {
             calculateBilling();
             localStorage.setItem('cart', JSON.stringify(cart));
         }
-    })
+    });
 }
 
 function decreaseItemCount(product, cartItemDOM) {
@@ -171,17 +179,19 @@ function removeItem(product, cartItemDOM) {
     });
 
     if (cart.length < 1) {
-        showElements(true)
+        showElements(true);
     } else {
         calculateBilling();
     }
 }
 
-function clearCart() {
+function clearCart(button) {
     cart = [];
     localStorage.removeItem('cart');
 
-    showElements(true)
+    if (button) {
+        showElements(true);
+    }
 }
 
 function calculateTotal(count, price) {
@@ -191,9 +201,9 @@ function calculateTotal(count, price) {
 function calculateBilling(summary) {
     let totalItems = 0.0;
     cart.forEach(cartItem => {
-        let itemTotal = calculateTotal(cartItem.count, cartItem.price)
+        let itemTotal = calculateTotal(cartItem.count, cartItem.price);
         totalItems = (parseFloat(totalItems) + parseFloat(itemTotal)).toFixed(2);
-    })
+    });
     let mwst = (totalItems * 0.19).toFixed(2);
     let totalBilling = (parseFloat(totalItems) + 4.99 + parseFloat(mwst)).toFixed(2);
     if (summary) {
@@ -208,5 +218,8 @@ function calculateBilling(summary) {
         document.getElementById('totalBilling').innerText = totalBilling.replace('.', ',');
     }
 
+    sessionStorage.setItem('totalItems', totalItems);
+    sessionStorage.setItem('shipping', '4.99');
+    sessionStorage.setItem('mwst', mwst);
     sessionStorage.setItem('total', totalBilling);
 }

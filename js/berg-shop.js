@@ -48,7 +48,7 @@ function addActionsToButtons(product) {
             cartItemDOM.querySelector('[data-action="REMOVE_ITEM"]').addEventListener('click', () => removeItem(product, cartItemDOM));
         }
     });
-    document.querySelector('[data-action="CLEAR_CART"]').addEventListener('click', () => clearCart());
+    document.querySelector('[data-action="CLEAR_CART"]').addEventListener('click', () => clearCart(true));
 
     document.querySelector('[data-action="CLEAR_ADDRESSES"]').addEventListener('click', () => {
         sessionStorage.removeItem('billingAddress');
@@ -154,6 +154,14 @@ function summaryAddressesAndBilling() {
     billingOptionDOM.insertAdjacentHTML('beforeend', `
         <p>${billingOption}</p>
         `);
+
+    if (billingOption === 'PayPal') {
+        document.getElementById('paypal-button-container').style.display = 'block';
+        document.getElementById('submit-order').style.display = 'none';
+    } else {
+        document.getElementById('paypal-button-container').style.display = 'none';
+        document.getElementById('submit-order').style.display = 'block';
+    }
 }
 
 function addItemsToForm() {
@@ -170,25 +178,43 @@ function addItemsToForm() {
 }
 
 paypal.Buttons({
+    style: {
+        shape: 'pill',
+        color: 'gold',
+        layout: 'horizontal',
+        label: 'pay',
+        height: 50,
+        tagline: false,
+    },
+
     createOrder: function (data, actions) {
-        // This function sets up the details of the transaction, including the amount and line item details.
         return actions.order.create({
             purchase_units: [{
                 amount: {
+                    currency_code: 'EUR',
                     value: JSON.parse(sessionStorage.getItem('total')),
+                    breakdown: {
+                        item_total: {currency_code: 'EUR', value: JSON.parse(sessionStorage.getItem('totalItems'))},
+                        shipping: {'currency_code': 'EUR', 'value': JSON.parse(sessionStorage.getItem('shipping'))},
+                        tax_total: {'currency_code': 'EUR', 'value': JSON.parse(sessionStorage.getItem('mwst'))},
+                    },
                 },
             }],
         });
     },
+
     onApprove: function (data, actions) {
         // This function captures the funds from the transaction.
         return actions.order.capture().then(function (details) {
-            window.location.href = 'Finish.html';
+            document.getElementById('submit-order').click();
         });
+    },
+
+    onError: function (err) {
+        console.log(err);
     },
 }).render('#paypal-button-container');
 
 function clearStorage() {
     sessionStorage.clear();
-    clearCart();
 }

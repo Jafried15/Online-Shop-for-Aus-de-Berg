@@ -1,3 +1,13 @@
+/*
+ * <!--
+ *   ~ /**
+ *   ~ * Copyright (c) 2020, 2021 Veronika Fischer
+ *   ~ * All Rights Reserved
+ *   ~ *
+ *   -->
+ *
+ */
+
 @charset "utf-8";
 /*
  *
@@ -15,7 +25,6 @@ section {
 .site-hero {
     background-size: cover;
     background-position: center center;
-    max-height: 65vh;
     width: 100vw;
 }
 
@@ -25,9 +34,8 @@ section {
 }
 
 .head-image {
-    height: 56.25vw;
     position: relative;
-    max-height: 60vh;
+    padding-top: 4rem;
 }
 
 .head-image a, .head-image a:hover {
@@ -377,8 +385,7 @@ hr {
 .modal-dialog {
     position: relative;
     max-height: 80vh;
-    margin: 10vh auto auto;
-    max-width: calc((100vw / 7) * 5.9)
+    margin: 25vh auto auto;
 }
 
 .modal.in .modal-dialog {
@@ -396,7 +403,7 @@ hr {
     outline: none;
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-    max-width: 55vw;
+    max-width: 75vw;
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
@@ -556,8 +563,14 @@ button.close {
     text-decoration: underline;
 }
 
+.clear-button {
+    padding-right: 3rem;
+    text-align: center;
+}
+
 .total,
-.agreements {
+.agreements,
+.submit-button {
     justify-content: flex-end;
     text-align: left;
 }
@@ -581,17 +594,12 @@ button.close {
 }
 
 .step-two .row {
-    justify-content: left;
+    justify-content: center;
     margin-bottom: 0;
 }
 
 .step-two .column {
     padding-top: 0;
-}
-
-.step-two .column-50 {
-    flex: 0 0 50%;
-    max-width: 50%;
 }
 
 .step-three .column-100 {
@@ -711,4 +719,50 @@ input:required:invalid:focus {
     content: url(../img/icons/finish.png);
     height: 35vh;
     margin: 15px;
+}
+
+@media (max-width: 1200px) {
+    .column-33 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .serie .button,
+    .product .button {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 100vw;
+    }
+
+    .column-100,
+    .column-50,
+    .column-40,
+    .column-33,
+    .column-20,
+    .step-two .column-75,
+    .step-two .column-25 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .serie .button,
+    .product .button {
+        margin-top: 1rem;
+    }
+
+    .button-field {
+        padding: 15px 0;
+    }
+
+    .cart-table {
+        display: block;
+    }
+
+    .clear-button {
+        padding: 0 0 1rem 0;
+    }
 }

@@ -7,21 +7,21 @@
 
 <!doctype html>
 <html lang="de">
-    <head>
-        <title>Kasse</title>
+<head>
+    <title>Kasse</title>
 
-        <link href="../img/Aus-de-Berg_Favicon.png"
-              rel="shortcut icon" type="image/x-icon">
+    <link href="../img/Aus-de-Berg_Favicon.png"
+          rel="shortcut icon" type="image/x-icon">
 
-        <meta charset="UTF-8">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
-        <link href="../css/all.css" rel="stylesheet" type="text/css">
-        <link href="../css/Stylesheet.css" rel="stylesheet" type="text/css">
-        <link href="../css/berg-shop.css" rel="stylesheet" type="text/css">
+    <link href="../css/all.css" rel="stylesheet" type="text/css">
+    <link href="../css/Stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="../css/berg-shop.css" rel="stylesheet" type="text/css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+</head>
 
     <body>
         <header>
@@ -93,9 +93,26 @@
                 <section class="step step-three" id="step-three">
                     <form action="php/payment.php" method="post" onsubmit="saveBilling()">
                         <div class="row">
+                            <div class="column-100" id="vorkasse-container">
+                                <input checked id="prepayment" name="payment" type="radio" value="prepayment">
+                                <label for="prepayment">
+                                    Gegen Vorkasse
+                                </label>
+                                <p class="payment-radio-text">
+                                    Bitte überweise den Betrag innerhalb von 7 Tagen auf die unten genannte Bankverbindung. Bei
+                                    nicht Zahlung im o.g. Zeitraum gilt die Bestellung automatisch als storniert! Versand
+                                    erfolgt nach
+                                    Zahlungseingang.<br><br>
+                                    Veronika Fischer<br>
+                                    Sparkasse Rosenheim-Bad-Aibling<br>
+                                    IBAN: DE 96 7115 0000 0024 5577 12<br>
+                                    BIC: BYLADEM1ROS
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="column-100" id="paypal-container">
-                                <input checked id="paypal" name="payment" onchange="switchBilling(this)" type="radio"
-                                       value="paypal">
+                                <input id="paypal" name="payment" onchange="switchBilling(this)" type="radio" value="paypal">
                                 <label for="paypal">
                                     <i class="icon icon-paypal"></i>
                                 </label>
@@ -114,32 +131,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="column-100" id="vorkasse-container">
-                                <input checked id="prepayment" name="payment"
-                                       type="radio" value="prepayment">
-                                <label for="prepayment">
-                                    Gegen Vorkasse
-                                </label>
-                                <p class="payment-radio-text">
-                                    Bitte überweise den Betrag innerhalb von 7 Tagen auf die unten genannte Bankverbindung. Bei
-                                    nicht Zahlung im o.g. Zeitraum gilt die Bestellung automatisch als storniert! Versand
-                                    erfolgt nach
-                                    Zahlungseingang.<br><br>
-                                    Veronika Fischer<br>
-                                    Sparkasse Rosenheim-Bad-Aibling<br>
-                                    IBAN: DE 96 7115 0000 0024 5577 12<br>
-                                    BIC: BYLADEM1ROS
-                                </p>
-                            </div>
-                        </div>
 
                         <div class="row">
                             <div class="column-100" style="text-align: right">
                                 <div class="button-field">
-                                    <!--<button class="button back" onclick="backStep()">
-                                        Zurück
-                                    </button>-->
                                     <button class="button" type="submit">
                                         Weiter
                                     </button>

@@ -55,10 +55,6 @@
             </div>
         </header>
 
-        <script
-                src="https://www.paypal.com/sdk/js?client-id=Af0A5YlILunduSrdYgJ8aCa5F3ZC2HUbXdX-2pkH08pkCpJmW-drO8yogPpjOs35QbjZU0gakkoajMD-&currency=EUR">
-        </script>
-
         <center>
             <main>
                 <section class="basket intro" id="basket-icon" style="padding-bottom: 0;">
@@ -80,24 +76,26 @@
 
                     <div class="row" style="padding-top: 3%">
                         <table class="cart-table cart-summary">
+                            <thead>
                             <tr>
-                                <th><p>Produkt</p></th>
-                                <th><p>Einzelpreis</p></th>
-                                <th><p>Stückzahl</p></th>
-                                <th><p>Gesamtpreis</p></th>
+                                <th>Produkt</th>
+                                <th>Einzelpreis</th>
+                                <th>Stückzahl</th>
+                                <th>Gesamtpreis</th>
                             </tr>
+                            </thead>
                         </table>
                     </div>
                     <div class="row total">
                         <div class="column-50">
                             <hr>
                             <div class="row">
-                                <div class="column-50">
+                                <div class="column-75">
                                     <p>Gesamtsumme</p>
                                     <p>Versandkosten</p>
                                     <p>inkl. MWST 19%</p>
                                 </div>
-                                <div class="column-50 calculated-billing" style="text-align: right">
+                                <div class="column-25 calculated-billing" style="text-align: right">
                                     <p class="amount" id="totalItemSummary"></p>
                                     <p class="amount" id="deliverySummary"></p>
                                     <p class="amount" id="mwstSummary"></p>
@@ -105,10 +103,10 @@
                             </div>
                             <hr>
                             <div class="row">
-                                <div class="column-50">
+                                <div class="column-75">
                                     <p style="font-weight: bold">Rechnungsbetrag</p>
                                 </div>
-                                <div class=" column-50 total-billing" style="text-align: right">
+                                <div class=" column-25 total-billing" style="text-align: right">
                                     <p class="amount" id="totalBillingSummary" style="font-weight: bold"></p>
                                 </div>
                             </div>
@@ -123,31 +121,29 @@
                         <input id="hiddenContact" name="contact" type="hidden">
                         <div class="row agreements" style="padding-top: 3%">
                             <div class="column-50">
-                                <input id="cancellation_policy" name="cancellation_policy" required
-                                       type="radio" value="cancellation_policy"
-                                       oninvalid="this.setCustomValidity('Bitte stimm den Widerrufsbelehrungen zu!')">
-                                <label for="cancellation_policy">Ich habe die
+                                <input id="cancellation_policy" name="cancellation_policy" oninvalid="this.setCustomValidity('Bitte stimm den Widerrufsbelehrungen zu!')" required type="radio" value="cancellation_policy">
+                                <label for="cancellation_policy">
+                                    Ich habe die
                                     <a href="">Widerrufsbelehrung</a>
-                                                                 gelesen und bin mit deren Geltung einverstanden. </label>
+                                    gelesen und bin mit deren Geltung einverstanden. </label>
                                 <br>
-                                <input id="dhl" name="dhl" type="radio" value="dhl" required
-                                       oninvalid="this.setCustomValidity('Bitte stimm der Weiterleitung der nötigen Daten an den Paketdienst DHL zu!')">
-                                <label for="dhl">Ich willige ein, dass die zur Vertragsdurchführung notwendigen Daten an
-                                                 den
-                                                 Paketdienst DHL (DHL Express Germany GmbH, Heinrich-Brüning-Straße 5, 53113 Bonn)
-                                                 weitergeleitet werden.</label>
+                                <input id="dhl" name="dhl" oninvalid="this.setCustomValidity('Bitte stimm der Weiterleitung der nötigen Daten an den Paketdienst DHL zu!')" required type="radio" value="dhl">
+                                <label for="dhl">
+                                    Ich willige ein, dass die zur Vertragsdurchführung notwendigen Daten an den
+                                    Paketdienst DHL (DHL Express Germany GmbH, Heinrich-Brüning-Straße 5, 53113 Bonn)
+                                    weitergeleitet werden.
+                                </label>
                             </div>
 
-                            <div class="row">
-                                <div class="column-100" style="text-align: right">
+                            <div class="row submit-button">
+                                <div class="column-50" style="text-align: right">
                                     <div class="button-field">
-                                        <!--<button class="button back" onclick="backStep()">
-                                            Zurück
-                                        </button>-->
-                                        <button class="button" name="submit" type="submit">
+                                        <button class="button" id="submit-order" name="submit" type="submit">
                                             Bestellung absenden
                                         </button>
-                                        <div id="paypal-button-container"></div>
+
+                                        <script data-sdk-integration-source="button-factory" src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR"></script>
+                                        <div id="paypal-button-container" style="width: 50%"></div>
                                     </div>
                                 </div>
                             </div>
