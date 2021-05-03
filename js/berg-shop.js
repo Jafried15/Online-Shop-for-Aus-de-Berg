@@ -177,43 +177,45 @@ function addItemsToForm() {
     document.getElementById('hiddenContact').value = sessionStorage.getItem('contact');
 }
 
-paypal.Buttons({
-    style: {
-        shape: 'pill',
-        color: 'gold',
-        layout: 'horizontal',
-        label: 'pay',
-        height: 50,
-        tagline: false,
-    },
+function initPayPal(){
+    paypal.Buttons({
+        style: {
+            shape: 'pill',
+            color: 'gold',
+            layout: 'horizontal',
+            label: 'pay',
+            height: 50,
+            tagline: false,
+        },
 
-    createOrder: function (data, actions) {
-        return actions.order.create({
-            purchase_units: [{
-                amount: {
-                    currency_code: 'EUR',
-                    value: JSON.parse(sessionStorage.getItem('total')),
-                    breakdown: {
-                        item_total: {currency_code: 'EUR', value: JSON.parse(sessionStorage.getItem('totalItems'))},
-                        shipping: {'currency_code': 'EUR', 'value': JSON.parse(sessionStorage.getItem('shipping'))},
-                        tax_total: {'currency_code': 'EUR', 'value': JSON.parse(sessionStorage.getItem('mwst'))},
+        createOrder: function (data, actions) {
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        currency_code: 'EUR',
+                        value: JSON.parse(sessionStorage.getItem('total')),
+                        breakdown: {
+                            item_total: {currency_code: 'EUR', value: JSON.parse(sessionStorage.getItem('totalItems'))},
+                            shipping: {'currency_code': 'EUR', 'value': JSON.parse(sessionStorage.getItem('shipping'))},
+                            tax_total: {'currency_code': 'EUR', 'value': JSON.parse(sessionStorage.getItem('mwst'))},
+                        },
                     },
-                },
-            }],
-        });
-    },
+                }],
+            });
+        },
 
-    onApprove: function (data, actions) {
-        // This function captures the funds from the transaction.
-        return actions.order.capture().then(function (details) {
-            document.getElementById('submit-order').click();
-        });
-    },
+        onApprove: function (data, actions) {
+            // This function captures the funds from the transaction.
+            return actions.order.capture().then(function (details) {
+                document.getElementById('submit-order').click();
+            });
+        },
 
-    onError: function (err) {
-        console.log(err);
-    },
-}).render('#paypal-button-container');
+        onError: function (err) {
+            console.log(err);
+        },
+    }).render('#paypal-button-container');
+}
 
 function clearStorage() {
     sessionStorage.clear();

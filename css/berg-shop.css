@@ -248,7 +248,6 @@ hr {
 
 /* Buttons */
 .button-field {
-    flex-grow: 999;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -256,7 +255,6 @@ hr {
 }
 
 .button {
-    min-width: auto;
     padding: 13px;
     font-size: 1.125rem;
     text-transform: uppercase;
@@ -291,10 +289,6 @@ hr {
 
 .step .button {
     padding: 15px 5%;
-}
-
-.step .button {
-    margin: 2%;
 }
 
 .step .back {
@@ -764,5 +758,13 @@ input:required:invalid:focus {
 
     .clear-button {
         padding: 0 0 1rem 0;
+    }
+
+    .total, .agreements, .submit-button {
+        justify-content: center;
+    }
+
+    .next-button .button {
+        width: 50%;
     }
 }
