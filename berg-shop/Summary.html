@@ -121,13 +121,13 @@
                         <input id="hiddenContact" name="contact" type="hidden">
                         <div class="row agreements" style="padding-top: 3%">
                             <div class="column-50">
-                                <input id="cancellation_policy" name="cancellation_policy" oninvalid="this.setCustomValidity('Bitte stimm den Widerrufsbelehrungen zu!')" required type="radio" value="cancellation_policy">
+                                <input id="cancellation_policy" name="cancellation_policy" onchange="checkConsent()" oninvalid="this.setCustomValidity('Bitte stimm den Widerrufsbelehrungen zu!')" required type="radio" value="cancellation_policy">
                                 <label for="cancellation_policy">
                                     Ich habe die
                                     <a href="">Widerrufsbelehrung</a>
                                     gelesen und bin mit deren Geltung einverstanden. </label>
                                 <br>
-                                <input id="dhl" name="dhl" oninvalid="this.setCustomValidity('Bitte stimm der Weiterleitung der nötigen Daten an den Paketdienst DHL zu!')" required type="radio" value="dhl">
+                                <input id="dhl" name="dhl" onchange="checkConsent()" oninvalid="this.setCustomValidity('Bitte stimm der Weiterleitung der nötigen Daten an den Paketdienst DHL zu!')" required type="radio" value="dhl">
                                 <label for="dhl">
                                     Ich willige ein, dass die zur Vertragsdurchführung notwendigen Daten an den
                                     Paketdienst DHL (DHL Express Germany GmbH, Heinrich-Brüning-Straße 5, 53113 Bonn)
@@ -137,12 +137,12 @@
 
                             <div class="row submit-button">
                                 <div class="column-50" style="text-align: right">
-                                    <div class="button-field">
+                                    <div class="button-field" disabled id="y">
                                         <button class="button" id="submit-order" name="submit" type="submit">
                                             Bestellung absenden
                                         </button>
 
-                                        <script data-sdk-integration-source="button-factory" src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR"></script>
+                                        <script data-sdk-integration-source="button-factory" src="https://www.paypal.com/sdk/js?client-id=AWzmOz0dMxj147XPcTAjSGICpuKuJEPm2XUXWCPSUU24qXp9RbtLeXAtI-IXpuCB7F74YeWno-Tpredo&currency=EUR"></script>
                                         <div id="paypal-button-container" style="width: 50%"></div>
                                     </div>
                                 </div>

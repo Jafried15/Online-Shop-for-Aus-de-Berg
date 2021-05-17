@@ -164,6 +164,14 @@ function summaryAddressesAndBilling() {
     }
 }
 
+function checkConsent() {
+    if (document.getElementById('cancellation_policy').checked && document.getElementById('dhl').checked) {
+        document.getElementById('pay').removeAttribute('disabled');
+    } else {
+        document.getElementById('pay').setAttribute('disabled', '');
+    }
+}
+
 function addItemsToForm() {
     const cart = JSON.parse(localStorage.getItem('cart'));
     let cartString = '';
@@ -177,7 +185,7 @@ function addItemsToForm() {
     document.getElementById('hiddenContact').value = sessionStorage.getItem('contact');
 }
 
-function initPayPal(){
+function initPayPal() {
     paypal.Buttons({
         style: {
             shape: 'pill',

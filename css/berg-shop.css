@@ -654,6 +654,10 @@ input:required:invalid:focus {
     margin-left: 5.5%;
 }
 
+div[disabled] {
+    pointer-events: none;
+}
+
 /* Icons */
 .icon {
     display: inline-block;
